@@ -13,6 +13,7 @@
 		E115D675210FFA57007514FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E115D674210FFA57007514FE /* Assets.xcassets */; };
 		E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D676210FFA57007514FE /* LaunchScreen.storyboard */; };
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
+		E115D688210FFE69007514FE /* UIView+DotterLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D686210FFE69007514FE /* UIView+DotterLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E115D677210FFA57007514FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E115D679210FFA58007514FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E115D67A210FFA58007514FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E115D686210FFE69007514FE /* UIView+DotterLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DotterLine.m"; sourceTree = "<group>"; };
+		E115D687210FFE69007514FE /* UIView+DotterLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DotterLine.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +70,42 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
+				E115D685210FFE60007514FE /* 临时文件夹 */,
+				E115D684210FFE3E007514FE /* 特殊控件 */,
+				E115D681210FFD67007514FE /* 工具包 */,
 			);
 			path = ObjectiveCTools;
+			sourceTree = "<group>";
+		};
+		E115D681210FFD67007514FE /* 工具包 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "工具包";
+			sourceTree = "<group>";
+		};
+		E115D684210FFE3E007514FE /* 特殊控件 */ = {
+			isa = PBXGroup;
+			children = (
+				E115D689211001CB007514FE /* 画虚线 */,
+			);
+			path = "特殊控件";
+			sourceTree = "<group>";
+		};
+		E115D685210FFE60007514FE /* 临时文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "临时文件夹";
+			sourceTree = "<group>";
+		};
+		E115D689211001CB007514FE /* 画虚线 */ = {
+			isa = PBXGroup;
+			children = (
+				E115D687210FFE69007514FE /* UIView+DotterLine.h */,
+				E115D686210FFE69007514FE /* UIView+DotterLine.m */,
+			);
+			path = "画虚线";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E115D688210FFE69007514FE /* UIView+DotterLine.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
