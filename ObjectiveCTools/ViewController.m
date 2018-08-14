@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView+DotterLine.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(20, 160, 200, 2)];
+    [self.view addSubview:line3];
+    [line3 drawTransverseDotterLineWithLength:3 lineSpacing:2 lineColor:[UIColor grayColor]];
+    
 }
 
 
