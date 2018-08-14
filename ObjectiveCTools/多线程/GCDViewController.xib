@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCDViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4up-6p-X10">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDn-BQ-4zE">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                            <state key="normal" title="CGD_Group"/>
+                            <connections>
+                                <action selector="CGD_Group:" destination="-1" eventType="touchUpInside" id="aYB-lb-Gj2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0u-r1-Hjf">
+                            <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                            <state key="normal" title="GCD_Enter_Leave"/>
+                            <connections>
+                                <action selector="GCD_Enter_Leave:" destination="-1" eventType="touchUpInside" id="6YK-eu-gGZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXn-6x-dX2">
+                            <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                            <state key="normal" title="GCD_Barrier"/>
+                            <connections>
+                                <action selector="GCD_Barrier:" destination="-1" eventType="touchUpInside" id="YCo-w7-jFu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-V0-xEQ">
+                            <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                            <state key="normal" title="GCD_Semaphore"/>
+                            <connections>
+                                <action selector="GCD_Semaphore:" destination="-1" eventType="touchUpInside" id="EpB-1b-qIR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MXn-6x-dX2" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="G6k-Me-rZV"/>
+                        <constraint firstItem="HIe-V0-xEQ" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="O7C-wY-9Bv"/>
+                        <constraint firstItem="b0u-r1-Hjf" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="jXX-N9-Cgx"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4up-6p-X10" secondAttribute="trailing" id="P4M-E4-cEv"/>
+                <constraint firstItem="4up-6p-X10" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="kBB-8T-2ow"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="4up-6p-X10" secondAttribute="bottom" id="qB7-Ks-tfs"/>
+                <constraint firstItem="4up-6p-X10" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="yzn-NZ-Pgw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-245" y="-83"/>
+        </view>
+    </objects>
+</document>

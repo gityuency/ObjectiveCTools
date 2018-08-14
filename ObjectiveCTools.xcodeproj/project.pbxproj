@@ -29,6 +29,8 @@
 		E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A0F2122DDDF00293226 /* UIDevice+Resolutions.m */; };
 		E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A132122DDDF00293226 /* NSString+IDCardNumber.m */; };
 		E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A162122DDDF00293226 /* NSDictionary+Easy.m */; };
+		E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A292122DF7300293226 /* GCDViewController.m */; };
+		E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1459A2A2122DF7300293226 /* GCDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,9 @@
 		E1459A132122DDDF00293226 /* NSString+IDCardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IDCardNumber.m"; sourceTree = "<group>"; };
 		E1459A152122DDDF00293226 /* NSDictionary+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Easy.h"; sourceTree = "<group>"; };
 		E1459A162122DDDF00293226 /* NSDictionary+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Easy.m"; sourceTree = "<group>"; };
+		E1459A282122DF7300293226 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		E1459A292122DF7300293226 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		E1459A2A2122DF7300293226 /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,7 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
+				E1459A272122DF5200293226 /* 多线程 */,
 				E14599F52122DDDF00293226 /* 工具包 */,
 				E14599ED2122DDDE00293226 /* 临时文件夹 */,
 				E14599F22122DDDF00293226 /* 奇技淫巧 */,
@@ -295,6 +301,16 @@
 			path = "字典数组Json";
 			sourceTree = "<group>";
 		};
+		E1459A272122DF5200293226 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A282122DF7300293226 /* GCDViewController.h */,
+				E1459A292122DF7300293226 /* GCDViewController.m */,
+				E1459A2A2122DF7300293226 /* GCDViewController.xib */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +372,7 @@
 				E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
+				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +386,7 @@
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
+				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
