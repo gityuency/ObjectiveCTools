@@ -13,6 +13,22 @@
 		E115D675210FFA57007514FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E115D674210FFA57007514FE /* Assets.xcassets */; };
 		E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D676210FFA57007514FE /* LaunchScreen.storyboard */; };
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
+		E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */; };
+		E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */; };
+		E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */; };
+		E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599F12122DDDE00293226 /* UIView+DotterLine.m */; };
+		E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599F42122DDDF00293226 /* SkillDevice.m */; };
+		E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599F82122DDDF00293226 /* NetWorkTools.m */; };
+		E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599FB2122DDDF00293226 /* NSString+BankFinance.m */; };
+		E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599FE2122DDDF00293226 /* UIColor+Easy.m */; };
+		E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A022122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m */; };
+		E1459A202122DDDF00293226 /* NSString+Name.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A032122DDDF00293226 /* NSString+Name.m */; };
+		E1459A212122DDDF00293226 /* NSString+Email.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A062122DDDF00293226 /* NSString+Email.m */; };
+		E1459A222122DDDF00293226 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A092122DDDF00293226 /* NSString+URL.m */; };
+		E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A0C2122DDDF00293226 /* NSString+PhoneNumber.m */; };
+		E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A0F2122DDDF00293226 /* UIDevice+Resolutions.m */; };
+		E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A132122DDDF00293226 /* NSString+IDCardNumber.m */; };
+		E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A162122DDDF00293226 /* NSDictionary+Easy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,38 @@
 		E115D677210FFA57007514FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E115D679210FFA58007514FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E115D67A210FFA58007514FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		E14599EA2122DDDE00293226 /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		E14599EB2122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		E14599EC2122DDDE00293226 /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		E14599F02122DDDE00293226 /* UIView+DotterLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DotterLine.h"; sourceTree = "<group>"; };
+		E14599F12122DDDE00293226 /* UIView+DotterLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DotterLine.m"; sourceTree = "<group>"; };
+		E14599F32122DDDF00293226 /* SkillDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillDevice.h; sourceTree = "<group>"; };
+		E14599F42122DDDF00293226 /* SkillDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillDevice.m; sourceTree = "<group>"; };
+		E14599F72122DDDF00293226 /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		E14599F82122DDDF00293226 /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
+		E14599FA2122DDDF00293226 /* NSString+BankFinance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BankFinance.h"; sourceTree = "<group>"; };
+		E14599FB2122DDDF00293226 /* NSString+BankFinance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BankFinance.m"; sourceTree = "<group>"; };
+		E14599FD2122DDDF00293226 /* UIColor+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Easy.h"; sourceTree = "<group>"; };
+		E14599FE2122DDDF00293226 /* UIColor+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Easy.m"; sourceTree = "<group>"; };
+		E1459A002122DDDF00293226 /* NSString+ChineseCharactersToSpelling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChineseCharactersToSpelling.h"; sourceTree = "<group>"; };
+		E1459A012122DDDF00293226 /* NSString+Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Name.h"; sourceTree = "<group>"; };
+		E1459A022122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChineseCharactersToSpelling.m"; sourceTree = "<group>"; };
+		E1459A032122DDDF00293226 /* NSString+Name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Name.m"; sourceTree = "<group>"; };
+		E1459A052122DDDF00293226 /* NSString+Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Email.h"; sourceTree = "<group>"; };
+		E1459A062122DDDF00293226 /* NSString+Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Email.m"; sourceTree = "<group>"; };
+		E1459A092122DDDF00293226 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		E1459A0A2122DDDF00293226 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		E1459A0C2122DDDF00293226 /* NSString+PhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PhoneNumber.m"; sourceTree = "<group>"; };
+		E1459A0D2122DDDF00293226 /* NSString+PhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PhoneNumber.h"; sourceTree = "<group>"; };
+		E1459A0F2122DDDF00293226 /* UIDevice+Resolutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Resolutions.m"; sourceTree = "<group>"; };
+		E1459A102122DDDF00293226 /* UIDevice+Resolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Resolutions.h"; sourceTree = "<group>"; };
+		E1459A122122DDDF00293226 /* NSString+IDCardNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IDCardNumber.h"; sourceTree = "<group>"; };
+		E1459A132122DDDF00293226 /* NSString+IDCardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IDCardNumber.m"; sourceTree = "<group>"; };
+		E1459A152122DDDF00293226 /* NSDictionary+Easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Easy.h"; sourceTree = "<group>"; };
+		E1459A162122DDDF00293226 /* NSDictionary+Easy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Easy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +115,184 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
+				E14599F52122DDDF00293226 /* 工具包 */,
+				E14599ED2122DDDE00293226 /* 临时文件夹 */,
+				E14599F22122DDDF00293226 /* 奇技淫巧 */,
+				E14599E52122DDDE00293226 /* 三方引用 */,
+				E14599EE2122DDDE00293226 /* 特殊控件 */,
 			);
 			path = ObjectiveCTools;
+			sourceTree = "<group>";
+		};
+		E14599E52122DDDE00293226 /* 三方引用 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599E62122DDDE00293226 /* HYBUnicodeReadable */,
+			);
+			path = "三方引用";
+			sourceTree = "<group>";
+		};
+		E14599E62122DDDE00293226 /* HYBUnicodeReadable */ = {
+			isa = PBXGroup;
+			children = (
+				E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */,
+				E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */,
+				E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */,
+				E14599EA2122DDDE00293226 /* NSArray+HYBUnicodeReadable.h */,
+				E14599EB2122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.h */,
+				E14599EC2122DDDE00293226 /* NSSet+HYBUnicodeReadable.h */,
+			);
+			path = HYBUnicodeReadable;
+			sourceTree = "<group>";
+		};
+		E14599ED2122DDDE00293226 /* 临时文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "临时文件夹";
+			sourceTree = "<group>";
+		};
+		E14599EE2122DDDE00293226 /* 特殊控件 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599EF2122DDDE00293226 /* 画虚线 */,
+			);
+			path = "特殊控件";
+			sourceTree = "<group>";
+		};
+		E14599EF2122DDDE00293226 /* 画虚线 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599F02122DDDE00293226 /* UIView+DotterLine.h */,
+				E14599F12122DDDE00293226 /* UIView+DotterLine.m */,
+			);
+			path = "画虚线";
+			sourceTree = "<group>";
+		};
+		E14599F22122DDDF00293226 /* 奇技淫巧 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599F32122DDDF00293226 /* SkillDevice.h */,
+				E14599F42122DDDF00293226 /* SkillDevice.m */,
+			);
+			path = "奇技淫巧";
+			sourceTree = "<group>";
+		};
+		E14599F52122DDDF00293226 /* 工具包 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599F62122DDDF00293226 /* 网络 */,
+				E14599F92122DDDF00293226 /* 银行卡号金额 */,
+				E14599FC2122DDDF00293226 /* 颜色 */,
+				E14599FF2122DDDF00293226 /* 中文姓名 */,
+				E1459A042122DDDF00293226 /* 邮箱 */,
+				E1459A072122DDDF00293226 /* 设备型号信息 */,
+				E1459A082122DDDF00293226 /* 地址URL */,
+				E1459A0B2122DDDF00293226 /* 手机号QQ号 */,
+				E1459A0E2122DDDF00293226 /* 设备 */,
+				E1459A112122DDDF00293226 /* 身份证号 */,
+				E1459A142122DDDF00293226 /* 字典数组Json */,
+			);
+			path = "工具包";
+			sourceTree = "<group>";
+		};
+		E14599F62122DDDF00293226 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599F72122DDDF00293226 /* NetWorkTools.h */,
+				E14599F82122DDDF00293226 /* NetWorkTools.m */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		E14599F92122DDDF00293226 /* 银行卡号金额 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599FA2122DDDF00293226 /* NSString+BankFinance.h */,
+				E14599FB2122DDDF00293226 /* NSString+BankFinance.m */,
+			);
+			path = "银行卡号金额";
+			sourceTree = "<group>";
+		};
+		E14599FC2122DDDF00293226 /* 颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599FD2122DDDF00293226 /* UIColor+Easy.h */,
+				E14599FE2122DDDF00293226 /* UIColor+Easy.m */,
+			);
+			path = "颜色";
+			sourceTree = "<group>";
+		};
+		E14599FF2122DDDF00293226 /* 中文姓名 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A002122DDDF00293226 /* NSString+ChineseCharactersToSpelling.h */,
+				E1459A012122DDDF00293226 /* NSString+Name.h */,
+				E1459A022122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m */,
+				E1459A032122DDDF00293226 /* NSString+Name.m */,
+			);
+			path = "中文姓名";
+			sourceTree = "<group>";
+		};
+		E1459A042122DDDF00293226 /* 邮箱 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A052122DDDF00293226 /* NSString+Email.h */,
+				E1459A062122DDDF00293226 /* NSString+Email.m */,
+			);
+			path = "邮箱";
+			sourceTree = "<group>";
+		};
+		E1459A072122DDDF00293226 /* 设备型号信息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "设备型号信息";
+			sourceTree = "<group>";
+		};
+		E1459A082122DDDF00293226 /* 地址URL */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A092122DDDF00293226 /* NSString+URL.m */,
+				E1459A0A2122DDDF00293226 /* NSString+URL.h */,
+			);
+			path = "地址URL";
+			sourceTree = "<group>";
+		};
+		E1459A0B2122DDDF00293226 /* 手机号QQ号 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A0C2122DDDF00293226 /* NSString+PhoneNumber.m */,
+				E1459A0D2122DDDF00293226 /* NSString+PhoneNumber.h */,
+			);
+			path = "手机号QQ号";
+			sourceTree = "<group>";
+		};
+		E1459A0E2122DDDF00293226 /* 设备 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A0F2122DDDF00293226 /* UIDevice+Resolutions.m */,
+				E1459A102122DDDF00293226 /* UIDevice+Resolutions.h */,
+			);
+			path = "设备";
+			sourceTree = "<group>";
+		};
+		E1459A112122DDDF00293226 /* 身份证号 */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A122122DDDF00293226 /* NSString+IDCardNumber.h */,
+				E1459A132122DDDF00293226 /* NSString+IDCardNumber.m */,
+			);
+			path = "身份证号";
+			sourceTree = "<group>";
+		};
+		E1459A142122DDDF00293226 /* 字典数组Json */ = {
+			isa = PBXGroup;
+			children = (
+				E1459A152122DDDF00293226 /* NSDictionary+Easy.h */,
+				E1459A162122DDDF00293226 /* NSDictionary+Easy.m */,
+			);
+			path = "字典数组Json";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +366,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
+				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
+				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
+				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
+				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
+				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
+				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,
+				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
+				E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */,
+				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
+				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
+				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
+				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
+				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
+				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
