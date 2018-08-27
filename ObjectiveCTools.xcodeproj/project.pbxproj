@@ -13,7 +13,8 @@
 		E115D675210FFA57007514FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E115D674210FFA57007514FE /* Assets.xcassets */; };
 		E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D676210FFA57007514FE /* LaunchScreen.storyboard */; };
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
-
+		E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */; };
+		E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */; };
 		E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */; };
 		E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */; };
 		E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */; };
@@ -45,7 +46,9 @@
 		E115D677210FFA57007514FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E115D679210FFA58007514FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E115D67A210FFA58007514FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-
+		E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
+		E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
 		E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
@@ -122,7 +125,7 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
-
+				E123BAF42133FC45003AE0C9 /* UI控件 */,
 				E1459A272122DF5200293226 /* 多线程 */,
 				E14599F52122DDDF00293226 /* 工具包 */,
 				E14599ED2122DDDE00293226 /* 临时文件夹 */,
@@ -133,7 +136,16 @@
 			path = ObjectiveCTools;
 			sourceTree = "<group>";
 		};
-
+		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
+			isa = PBXGroup;
+			children = (
+				E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */,
+				E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */,
+				E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */,
+			);
+			path = "UI控件";
+			sourceTree = "<group>";
+		};
 		E14599E52122DDDE00293226 /* 三方引用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +174,6 @@
 			path = "临时文件夹";
 			sourceTree = "<group>";
 		};
-
 		E14599EE2122DDDE00293226 /* 特殊控件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +191,6 @@
 			path = "画虚线";
 			sourceTree = "<group>";
 		};
-
 		E14599F22122DDDF00293226 /* 奇技淫巧 */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +389,7 @@
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
+				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
+				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,

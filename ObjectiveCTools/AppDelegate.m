@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GCDViewController.h"
+#import "TextFieldViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     
-    GCDViewController *vc = [[GCDViewController alloc] initWithNibName:@"GCDViewController" bundle:nil];
+    TextFieldViewController *vc = [[TextFieldViewController alloc] initWithNibName:@"TextFieldViewController" bundle:nil];
     self.window = [UIWindow new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
