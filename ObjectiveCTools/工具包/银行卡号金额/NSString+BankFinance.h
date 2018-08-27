@@ -19,4 +19,7 @@
 /// 替换银行名
 - (NSString *)getBankName;
 
+/// 格式化金额 分转元 保留两位小数
+- (NSString *)formatToTwoDecimal;
+
 @end

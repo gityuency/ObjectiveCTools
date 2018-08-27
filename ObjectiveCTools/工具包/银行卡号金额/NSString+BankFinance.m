@@ -10,6 +10,35 @@
 
 @implementation NSString (BankFinance)
 
+
+/// 格式化金额 分转元 保留两位小数
+- (NSString *)formatToTwoDecimal {
+
+    NSDecimalNumber *one = [NSDecimalNumber decimalNumberWithString:self];
+    NSDecimalNumber *two = [NSDecimalNumber decimalNumberWithString:@"100"];
+    NSDecimalNumber *thr = [one decimalNumberByDividingBy:two];
+    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
+    formatter.positiveFormat = @",###.##";
+    NSString *money = [formatter stringFromNumber:[NSNumber numberWithDouble:[thr doubleValue]]];
+    
+    NSString *result = [NSString stringWithFormat:@"￥%@",money];
+    
+    if (![result containsString:@"."]) {  //被整除的情况
+        result = [NSString stringWithFormat:@"%@.00",result];
+    } else {                              //小数不足两位
+        NSArray *array = [result componentsSeparatedByString:@"."];
+        NSString *subNumber = array.lastObject;
+        if (subNumber.length == 1) {
+            result = [NSString stringWithFormat:@"%@.%@0",array.firstObject, array.lastObject];
+        }
+    }
+    return result;
+}
+
+
+
+
 #pragma mark 前后留 4 位
 - (NSString *)bankCardMask {
     if(self.length > 8){
