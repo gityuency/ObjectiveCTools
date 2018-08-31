@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "GCDViewController.h"
 #import "TextFieldViewController.h"
-
+#import "TextViewViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     
-    TextFieldViewController *vc = [[TextFieldViewController alloc] initWithNibName:@"TextFieldViewController" bundle:nil];
+    TextViewViewController *vc = [[TextViewViewController alloc] initWithNibName:@"TextViewViewController" bundle:nil];
     self.window = [UIWindow new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
