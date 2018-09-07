@@ -53,7 +53,7 @@
 - (void)textFieldDidChangeValue:(NSNotification *)notification {
     UITextField *sender = (UITextField *)[notification object];
     self.l.text = sender.text;
-    self.lc.text = [NSString stringWithFormat:@"方案1 个数: %ld",sender.text.length];
+    self.lc.text = [NSString stringWithFormat:@"方案1 个数: %lu",sender.text.length];
 }
 
 
@@ -66,7 +66,7 @@
 - (void)t_2_DidChangeValue:(id)sender {
     UITextField *t = (UITextField *)sender;
     self.l_2.text = t.text;
-    self.lc.text = [NSString stringWithFormat:@"方案2 个数: %ld",t.text.length];
+    self.lc.text = [NSString stringWithFormat:@"方案2 个数: %lu",t.text.length];
 }
 
 

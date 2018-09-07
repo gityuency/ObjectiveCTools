@@ -33,6 +33,8 @@
 		E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A162122DDDF00293226 /* NSDictionary+Easy.m */; };
 		E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1459A292122DF7300293226 /* GCDViewController.m */; };
 		E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1459A2A2122DF7300293226 /* GCDViewController.xib */; };
+		E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148E82C2140F77500019E60 /* UILabelViewController.m */; };
+		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
 /* End PBXBuildFile section */
@@ -86,6 +88,9 @@
 		E1459A282122DF7300293226 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		E1459A292122DF7300293226 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		E1459A2A2122DF7300293226 /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
+		E148E82B2140F77500019E60 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
+		E148E82C2140F77500019E60 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
+		E148E82D2140F77500019E60 /* UILabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILabelViewController.xib; sourceTree = "<group>"; };
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
@@ -150,6 +155,9 @@
 				E1658F112139239100479FE3 /* TextViewViewController.h */,
 				E1658F122139239100479FE3 /* TextViewViewController.m */,
 				E1658F132139239100479FE3 /* TextViewViewController.xib */,
+				E148E82B2140F77500019E60 /* UILabelViewController.h */,
+				E148E82C2140F77500019E60 /* UILabelViewController.m */,
+				E148E82D2140F77500019E60 /* UILabelViewController.xib */,
 			);
 			path = "UI控件";
 			sourceTree = "<group>";
@@ -394,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */,
+				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
@@ -416,6 +425,7 @@
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
+				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
@@ -565,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -579,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

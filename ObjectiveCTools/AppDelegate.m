@@ -10,6 +10,7 @@
 #import "GCDViewController.h"
 #import "TextFieldViewController.h"
 #import "TextViewViewController.h"
+#import "UILabelViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     
-    TextViewViewController *vc = [[TextViewViewController alloc] initWithNibName:@"TextViewViewController" bundle:nil];
+    
+    UILabelViewController *vc = [[UILabelViewController alloc] initWithNibName:@"UILabelViewController" bundle:nil];
     self.window = [UIWindow new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];

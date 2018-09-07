@@ -2,8 +2,8 @@
 //  SkillDevice.m
 //  ObjectiveCTools
 //
-//  Created by ChinaRapidFinance on 2018/7/31.
-//  Copyright © 2018年 ChinaRapidFinance. All rights reserved.
+//  Created by Yuency on 2018/7/31.
+//  Copyright © 2018年 Yuency. All rights reserved.
 //
 
 #import "SkillDevice.h"
