@@ -37,6 +37,8 @@
 		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
+		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
+		E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,9 @@
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
+		E1950D8B2153AD06007D7265 /* PhotoLosslessSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoLosslessSaveViewController.h; sourceTree = "<group>"; };
+		E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLosslessSaveViewController.m; sourceTree = "<group>"; };
+		E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLosslessSaveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +215,8 @@
 		E14599F22122DDDF00293226 /* 奇技淫巧 */ = {
 			isa = PBXGroup;
 			children = (
-				E14599F32122DDDF00293226 /* SkillDevice.h */,
-				E14599F42122DDDF00293226 /* SkillDevice.m */,
+				E1950D902153AD1C007D7265 /* 图片无损存取 */,
+				E1950D912153AD30007D7265 /* 获取设备信息 */,
 			);
 			path = "奇技淫巧";
 			sourceTree = "<group>";
@@ -343,6 +348,25 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		E1950D902153AD1C007D7265 /* 图片无损存取 */ = {
+			isa = PBXGroup;
+			children = (
+				E1950D8B2153AD06007D7265 /* PhotoLosslessSaveViewController.h */,
+				E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */,
+				E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */,
+			);
+			path = "图片无损存取";
+			sourceTree = "<group>";
+		};
+		E1950D912153AD30007D7265 /* 获取设备信息 */ = {
+			isa = PBXGroup;
+			children = (
+				E14599F32122DDDF00293226 /* SkillDevice.h */,
+				E14599F42122DDDF00293226 /* SkillDevice.m */,
+			);
+			path = "获取设备信息";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +429,7 @@
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
+				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
@@ -438,6 +463,7 @@
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
+				E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */,
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,

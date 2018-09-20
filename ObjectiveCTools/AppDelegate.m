@@ -11,6 +11,8 @@
 #import "TextFieldViewController.h"
 #import "TextViewViewController.h"
 #import "UILabelViewController.h"
+#import "PhotoLosslessSaveViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,7 +24,7 @@
 
     
     
-    UILabelViewController *vc = [[UILabelViewController alloc] initWithNibName:@"UILabelViewController" bundle:nil];
+    PhotoLosslessSaveViewController *vc = [[PhotoLosslessSaveViewController alloc] initWithNibName:@"PhotoLosslessSaveViewController" bundle:nil];
     self.window = [UIWindow new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
