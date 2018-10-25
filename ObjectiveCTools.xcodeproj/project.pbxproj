@@ -37,6 +37,8 @@
 		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
+		E17700082178337F0050C110 /* POPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17700062178337F0050C110 /* POPViewController.m */; };
+		E17700092178337F0050C110 /* POPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17700072178337F0050C110 /* POPViewController.xib */; };
 		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
 		E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,9 @@
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
+		E17700052178337F0050C110 /* POPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPViewController.h; sourceTree = "<group>"; };
+		E17700062178337F0050C110 /* POPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPViewController.m; sourceTree = "<group>"; };
+		E17700072178337F0050C110 /* POPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POPViewController.xib; sourceTree = "<group>"; };
 		E1950D8B2153AD06007D7265 /* PhotoLosslessSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoLosslessSaveViewController.h; sourceTree = "<group>"; };
 		E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLosslessSaveViewController.m; sourceTree = "<group>"; };
 		E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLosslessSaveViewController.xib; sourceTree = "<group>"; };
@@ -154,6 +159,9 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E17700052178337F0050C110 /* POPViewController.h */,
+				E17700062178337F0050C110 /* POPViewController.m */,
+				E17700072178337F0050C110 /* POPViewController.xib */,
 				E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */,
 				E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */,
 				E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */,
@@ -393,7 +401,7 @@
 		E115D660210FFA57007514FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = ChinaRapidFinance;
 				TargetAttributes = {
 					E115D667210FFA57007514FE = {
@@ -429,6 +437,7 @@
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
+				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
@@ -445,6 +454,7 @@
 			files = (
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
+				E17700082178337F0050C110 /* POPViewController.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
@@ -506,6 +516,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -513,6 +524,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -540,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -561,6 +573,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -568,6 +581,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -589,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

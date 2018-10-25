@@ -23,7 +23,7 @@
 + (void)skill_2 {
     
     UIInterfaceOrientation currentOrient = [UIApplication sharedApplication].statusBarOrientation;
-
+    NSLog(@"%ld", (long)currentOrient);
     
 }
 
@@ -33,6 +33,7 @@
 + (void)skill_3 {
     
     UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    NSLog(@"%@", window);
 }
 
 

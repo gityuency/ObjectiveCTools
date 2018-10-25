@@ -12,6 +12,7 @@
 #import "TextViewViewController.h"
 #import "UILabelViewController.h"
 #import "PhotoLosslessSaveViewController.h"
+#import "POPViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,14 +22,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     
-    
-    PhotoLosslessSaveViewController *vc = [[PhotoLosslessSaveViewController alloc] initWithNibName:@"PhotoLosslessSaveViewController" bundle:nil];
-    self.window = [UIWindow new];
+    POPViewController *vc = [[POPViewController alloc] initWithNibName:@"POPViewController" bundle:nil];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }
