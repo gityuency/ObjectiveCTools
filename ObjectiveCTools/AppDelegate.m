@@ -13,6 +13,7 @@
 #import "UILabelViewController.h"
 #import "PhotoLosslessSaveViewController.h"
 #import "POPViewController.h"
+#import "ScaleScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +24,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    POPViewController *vc = [[POPViewController alloc] initWithNibName:@"POPViewController" bundle:nil];
+    ScaleScrollViewController *vc = [[ScaleScrollViewController alloc] initWithNibName:@"ScaleScrollViewController" bundle:nil];
+    
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     [self.window makeKeyAndVisible];
     
     return YES;

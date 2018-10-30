@@ -37,6 +37,10 @@
 		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
+		E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DBE2181921900E82979 /* ScaleScrollViewController.m */; };
+		E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1661DBF2181921900E82979 /* ScaleScrollViewController.xib */; };
+		E1661DC42181A39200E82979 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1661DC32181A39100E82979 /* back.jpg */; };
+		E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DC72181B1E200E82979 /* UIImage+Image.m */; };
 		E17700082178337F0050C110 /* POPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17700062178337F0050C110 /* POPViewController.m */; };
 		E17700092178337F0050C110 /* POPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17700072178337F0050C110 /* POPViewController.xib */; };
 		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
@@ -98,6 +102,12 @@
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
+		E1661DBD2181921900E82979 /* ScaleScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScaleScrollViewController.h; sourceTree = "<group>"; };
+		E1661DBE2181921900E82979 /* ScaleScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaleScrollViewController.m; sourceTree = "<group>"; };
+		E1661DBF2181921900E82979 /* ScaleScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScaleScrollViewController.xib; sourceTree = "<group>"; };
+		E1661DC32181A39100E82979 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		E1661DC62181B1E200E82979 /* UIImage+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		E1661DC72181B1E200E82979 /* UIImage+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		E17700052178337F0050C110 /* POPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPViewController.h; sourceTree = "<group>"; };
 		E17700062178337F0050C110 /* POPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPViewController.m; sourceTree = "<group>"; };
 		E17700072178337F0050C110 /* POPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POPViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +155,7 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
+				E1661DC22181A38D00E82979 /* Image */,
 				E123BAF42133FC45003AE0C9 /* UI控件 */,
 				E1459A272122DF5200293226 /* 多线程 */,
 				E14599F52122DDDF00293226 /* 工具包 */,
@@ -159,6 +170,9 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E1661DBD2181921900E82979 /* ScaleScrollViewController.h */,
+				E1661DBE2181921900E82979 /* ScaleScrollViewController.m */,
+				E1661DBF2181921900E82979 /* ScaleScrollViewController.xib */,
 				E17700052178337F0050C110 /* POPViewController.h */,
 				E17700062178337F0050C110 /* POPViewController.m */,
 				E17700072178337F0050C110 /* POPViewController.xib */,
@@ -232,6 +246,7 @@
 		E14599F52122DDDF00293226 /* 工具包 */ = {
 			isa = PBXGroup;
 			children = (
+				E1661DC52181B1CF00E82979 /* 扩展 */,
 				E14599F62122DDDF00293226 /* 网络 */,
 				E14599F92122DDDF00293226 /* 银行卡号金额 */,
 				E14599FC2122DDDF00293226 /* 颜色 */,
@@ -356,6 +371,23 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		E1661DC22181A38D00E82979 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E1661DC32181A39100E82979 /* back.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E1661DC52181B1CF00E82979 /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				E1661DC62181B1E200E82979 /* UIImage+Image.h */,
+				E1661DC72181B1E200E82979 /* UIImage+Image.m */,
+			);
+			path = "扩展";
+			sourceTree = "<group>";
+		};
 		E1950D902153AD1C007D7265 /* 图片无损存取 */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +471,8 @@
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
+				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
+				E1661DC42181A39200E82979 /* back.jpg in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
@@ -464,6 +498,7 @@
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
+				E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */,
 				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,
 				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
 				E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */,
@@ -472,6 +507,7 @@
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
+				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
 				E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */,
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,

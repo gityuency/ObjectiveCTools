@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScaleScrollViewController">
+            <connections>
+                <outlet property="heightConstant" destination="cvJ-nF-Lem" id="FLF-xF-y6i"/>
+                <outlet property="tableView" destination="x7x-h3-42X" id="P6T-jp-eN8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7x-h3-42X" userLabel="表格">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-rP-hPr" userLabel="图片容器">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sxV-L1-fg4" userLabel="图片">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.61753503629999995" blue="0.5883248834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sxV-L1-fg4" secondAttribute="bottom" id="6qk-CK-3cc"/>
+                        <constraint firstItem="sxV-L1-fg4" firstAttribute="leading" secondItem="1cS-rP-hPr" secondAttribute="leading" id="UFa-DY-5Uz"/>
+                        <constraint firstItem="sxV-L1-fg4" firstAttribute="top" secondItem="1cS-rP-hPr" secondAttribute="top" id="YfD-nh-F6y"/>
+                        <constraint firstAttribute="height" constant="200" id="cvJ-nF-Lem"/>
+                        <constraint firstAttribute="trailing" secondItem="sxV-L1-fg4" secondAttribute="trailing" id="qRA-FJ-57T"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWk-26-t8R" userLabel="绿条">
+                    <rect key="frame" x="0.0" y="200" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.68984639670000003" green="1" blue="0.71461167569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="frI-Rp-ubI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cWk-26-t8R" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6c9-e0-fsM"/>
+                <constraint firstItem="1cS-rP-hPr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9YS-27-G8M"/>
+                <constraint firstItem="1cS-rP-hPr" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="G3y-lO-dhW"/>
+                <constraint firstItem="cWk-26-t8R" firstAttribute="top" secondItem="1cS-rP-hPr" secondAttribute="bottom" id="Glg-bi-IJL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="x7x-h3-42X" secondAttribute="trailing" id="MPR-1q-KQl"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="x7x-h3-42X" secondAttribute="bottom" id="T0H-rF-Ymf"/>
+                <constraint firstItem="cWk-26-t8R" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="U9d-0G-v2h"/>
+                <constraint firstItem="x7x-h3-42X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lJ4-j2-b1I"/>
+                <constraint firstItem="x7x-h3-42X" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pY9-Ou-6P7"/>
+                <constraint firstItem="1cS-rP-hPr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qG1-Bj-ZJx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-526" y="14"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.jpg" width="500" height="375"/>
+    </resources>
+</document>
