@@ -15,6 +15,10 @@
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
 		E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */; };
 		E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */; };
+		E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */; };
+		E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E52187F5A600F9A965 /* ItemView.m */; };
+		E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E82187F5A600F9A965 /* ItemCollectionView.m */; };
+		E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */; };
 		E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */; };
 		E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */; };
 		E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */; };
@@ -61,6 +65,14 @@
 		E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
+		E13F22E12187F52E00F9A965 /* FakeChooseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseViewController.h; sourceTree = "<group>"; };
+		E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseViewController.m; sourceTree = "<group>"; };
+		E13F22E52187F5A600F9A965 /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		E13F22E82187F5A600F9A965 /* ItemCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionView.m; sourceTree = "<group>"; };
+		E13F22E92187F5A600F9A965 /* ItemCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionView.h; sourceTree = "<group>"; };
+		E13F22EB2187F5A600F9A965 /* ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		E13F22F32187FA4D00F9A965 /* FakeChooseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseModel.h; sourceTree = "<group>"; };
+		E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseModel.m; sourceTree = "<group>"; };
 		E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
@@ -170,6 +182,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
 				E1661DBD2181921900E82979 /* ScaleScrollViewController.h */,
 				E1661DBE2181921900E82979 /* ScaleScrollViewController.m */,
 				E1661DBF2181921900E82979 /* ScaleScrollViewController.xib */,
@@ -187,6 +200,21 @@
 				E148E82D2140F77500019E60 /* UILabelViewController.xib */,
 			);
 			path = "UI控件";
+			sourceTree = "<group>";
+		};
+		E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */ = {
+			isa = PBXGroup;
+			children = (
+				E13F22E12187F52E00F9A965 /* FakeChooseViewController.h */,
+				E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */,
+				E13F22F32187FA4D00F9A965 /* FakeChooseModel.h */,
+				E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */,
+				E13F22E92187F5A600F9A965 /* ItemCollectionView.h */,
+				E13F22E82187F5A600F9A965 /* ItemCollectionView.m */,
+				E13F22EB2187F5A600F9A965 /* ItemView.h */,
+				E13F22E52187F5A600F9A965 /* ItemView.m */,
+			);
+			path = "仿造某宝商品选择";
 			sourceTree = "<group>";
 		};
 		E14599E52122DDDE00293226 /* 三方引用 */ = {
@@ -486,7 +514,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
+				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
 				E17700082178337F0050C110 /* POPViewController.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
@@ -494,8 +524,10 @@
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
+				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
+				E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
 				E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */,

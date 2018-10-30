@@ -14,6 +14,7 @@
 #import "PhotoLosslessSaveViewController.h"
 #import "POPViewController.h"
 #import "ScaleScrollViewController.h"
+#import "FakeChooseViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,9 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ScaleScrollViewController *vc = [[ScaleScrollViewController alloc] initWithNibName:@"ScaleScrollViewController" bundle:nil];
+    FakeChooseViewController *vc = [[FakeChooseViewController alloc] init];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = vc;
     
     [self.window makeKeyAndVisible];
     
