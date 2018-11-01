@@ -15,6 +15,7 @@
 #import "POPViewController.h"
 #import "ScaleScrollViewController.h"
 #import "FakeChooseViewController.h"
+#import "ClearImageViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +26,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    FakeChooseViewController *vc = [[FakeChooseViewController alloc] init];
+    ClearImageViewController *vc = [[ClearImageViewController alloc] init];
     
     self.window.rootViewController = vc;
     

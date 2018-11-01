@@ -79,7 +79,7 @@ static const CGFloat OriHeight = 200;   //图片高度
     //修改导航条背景图片
     UIColor *alphaColor = [UIColor colorWithWhite:1 alpha:alpha];
     //把颜色生成图片
-    UIImage *alphaImage = [UIImage imageWithColor:alphaColor];
+    UIImage *alphaImage = [UIImage image_WithColor:alphaColor];
     //修改导航条的背景图片
     [self.navigationController.navigationBar setBackgroundImage:alphaImage forBarMetrics:UIBarMetricsDefault];
     

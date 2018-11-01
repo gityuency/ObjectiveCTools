@@ -39,6 +39,9 @@
 		E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1459A2A2122DF7300293226 /* GCDViewController.xib */; };
 		E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148E82C2140F77500019E60 /* UILabelViewController.m */; };
 		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
+		E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */; };
+		E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE6218AE9640011A334 /* ClearImageViewController.m */; };
+		E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
 		E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DBE2181921900E82979 /* ScaleScrollViewController.m */; };
@@ -111,6 +114,11 @@
 		E148E82B2140F77500019E60 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
 		E148E82C2140F77500019E60 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
 		E148E82D2140F77500019E60 /* UILabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILabelViewController.xib; sourceTree = "<group>"; };
+		E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Yuency.m"; sourceTree = "<group>"; };
+		E15F7AE2218AD8F60011A334 /* UIView+Yuency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Yuency.h"; sourceTree = "<group>"; };
+		E15F7AE5218AE9640011A334 /* ClearImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearImageViewController.h; sourceTree = "<group>"; };
+		E15F7AE6218AE9640011A334 /* ClearImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearImageViewController.m; sourceTree = "<group>"; };
+		E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearImageViewController.xib; sourceTree = "<group>"; };
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +190,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */,
 				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
 				E13F22F6218832D000F9A965 /* UITableView表头缩放 */,
 				E13F22F7218832E900F9A965 /* UIPOPView弹出框 */,
@@ -439,6 +448,16 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */ = {
+			isa = PBXGroup;
+			children = (
+				E15F7AE5218AE9640011A334 /* ClearImageViewController.h */,
+				E15F7AE6218AE9640011A334 /* ClearImageViewController.m */,
+				E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */,
+			);
+			path = "图片擦除 刮奖效果";
+			sourceTree = "<group>";
+		};
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +471,8 @@
 			children = (
 				E1661DC62181B1E200E82979 /* UIImage+Image.h */,
 				E1661DC72181B1E200E82979 /* UIImage+Image.m */,
+				E15F7AE2218AD8F60011A334 /* UIView+Yuency.h */,
+				E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -535,6 +556,7 @@
 			files = (
 				E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */,
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
+				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
@@ -565,6 +587,7 @@
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
+				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
 				E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */,
@@ -582,6 +605,7 @@
 				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
 				E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */,
+				E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */,
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
