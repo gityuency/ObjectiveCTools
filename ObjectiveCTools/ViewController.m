@@ -2,14 +2,17 @@
 //  ViewController.m
 //  ObjectiveCTools
 //
-//  Created by ChinaRapidFinance on 2018/7/31.
-//  Copyright © 2018年 ChinaRapidFinance. All rights reserved.
+//  Created by 姬友大人 on 2018/7/31.
+//  Copyright © 2018年 姬友大人. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "UIView+DotterLine.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) NSArray *dataArray;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -18,19 +21,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.dataArray = @[
+                       @{@"DrawingBoardViewController":@"涂鸦"},
+                       @{@"Lock9PointViewController":@"9宫格解锁"},
+                       @{@"ClearImageViewController":@"图片擦除 刮奖效果"},
+                       @{@"FakeChooseViewController":@"仿造某宝商品选择"},
+                       @{@"ScaleScrollViewController":@"UITableView表头缩放"},
+                       @{@"POPViewController":@"UIPOPView弹出框"},
+                       @{@"TextFieldViewController":@"文本框监听文字输入"},
+                       @{@"TextViewViewController":@"文本带连接点击事件"},
+                       @{@"UILabelViewController":@"iOS10根据系统设置改变文字大小"},
+                       @{@"GCDViewController":@"多线程示例"},
+                       @{@"PhotoLosslessSaveViewController":@"图片无损存取"},
+                       @{@"":@""},
+                       @{@"":@""},
+                       ];
     
-    
-    UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(20, 160, 200, 2)];
-    [self.view addSubview:line3];
-    [line3 drawTransverseDotterLineWithLength:3 lineSpacing:2 lineColor:[UIColor grayColor]];
-    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"c"];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"c" forIndexPath:indexPath];
+    
+    NSDictionary *dic = self.dataArray[indexPath.row];
+    NSString *descption = [dic allValues][0];
+    cell.textLabel.text = descption;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dic = self.dataArray[indexPath.row];
+    NSString *vcName = [dic allKeys][0];
+    UIViewController *vc = [[NSClassFromString(vcName) alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

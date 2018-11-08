@@ -7,6 +7,7 @@
 //
 
 #import "UILabelViewController.h"
+#import "UIView+DotterLine.h"
 
 @interface UILabelViewController ()
 
@@ -26,6 +27,13 @@
     
     //允许调整
     self.labeliOS10DynamicType.adjustsFontForContentSizeCategory = YES;
+    
+    
+    ///画虚线
+    UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(20, 160, 200, 2)];
+    [self.view addSubview:line3];
+    [line3 drawTransverseDotterLineWithLength:3 lineSpacing:2 lineColor:[UIColor grayColor]];
+
     
 }
 

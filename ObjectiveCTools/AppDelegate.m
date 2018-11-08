@@ -2,22 +2,11 @@
 //  AppDelegate.m
 //  ObjectiveCTools
 //
-//  Created by ChinaRapidFinance on 2018/7/31.
-//  Copyright © 2018年 ChinaRapidFinance. All rights reserved.
+//  Created by 姬友大人 on 2018/7/31.
+//  Copyright © 2018年 姬友大人. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "GCDViewController.h"
-#import "TextFieldViewController.h"
-#import "TextViewViewController.h"
-#import "UILabelViewController.h"
-#import "PhotoLosslessSaveViewController.h"
-#import "POPViewController.h"
-#import "ScaleScrollViewController.h"
-#import "FakeChooseViewController.h"
-#import "ClearImageViewController.h"
-#import "Lock9PointViewController.h"
-#import "DrawingBoardViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,12 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    DrawingBoardViewController *vc = [[DrawingBoardViewController alloc] init];
-    
-    self.window.rootViewController = vc;
-    
-    [self.window makeKeyAndVisible];
     
     return YES;
 }
