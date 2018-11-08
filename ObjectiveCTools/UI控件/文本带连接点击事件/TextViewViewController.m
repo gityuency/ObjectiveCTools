@@ -2,8 +2,8 @@
 //  TextViewViewController.m
 //  ObjectiveCTools
 //
-//  Created by ChinaRapidFinance on 2018/8/31.
-//  Copyright © 2018年 ChinaRapidFinance. All rights reserved.
+//  Created by 姬友大人 on 2018/8/31.
+//  Copyright © 2018年 姬友大人. All rights reserved.
 //
 
 #import "TextViewViewController.h"

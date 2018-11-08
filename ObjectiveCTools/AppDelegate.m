@@ -16,6 +16,7 @@
 #import "ScaleScrollViewController.h"
 #import "FakeChooseViewController.h"
 #import "ClearImageViewController.h"
+#import "Lock9PointViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ClearImageViewController *vc = [[ClearImageViewController alloc] init];
+    Lock9PointViewController *vc = [[Lock9PointViewController alloc] init];
     
     self.window.rootViewController = vc;
     

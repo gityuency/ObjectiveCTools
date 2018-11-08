@@ -42,6 +42,10 @@
 		E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */; };
 		E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE6218AE9640011A334 /* ClearImageViewController.m */; };
 		E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */; };
+		E163C3EF2193C5AB00B63EC5 /* lock_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E163C3ED2193C5AB00B63EC5 /* lock_selected.png */; };
+		E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E163C3EE2193C5AB00B63EC5 /* lock_normal.png */; };
+		E163C3F32193C5E400B63EC5 /* LockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F22193C5E400B63EC5 /* LockView.m */; };
+		E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F52193C65D00B63EC5 /* Lock9PointViewController.m */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
 		E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DBE2181921900E82979 /* ScaleScrollViewController.m */; };
@@ -119,6 +123,12 @@
 		E15F7AE5218AE9640011A334 /* ClearImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearImageViewController.h; sourceTree = "<group>"; };
 		E15F7AE6218AE9640011A334 /* ClearImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearImageViewController.m; sourceTree = "<group>"; };
 		E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearImageViewController.xib; sourceTree = "<group>"; };
+		E163C3ED2193C5AB00B63EC5 /* lock_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_selected.png; sourceTree = "<group>"; };
+		E163C3EE2193C5AB00B63EC5 /* lock_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_normal.png; sourceTree = "<group>"; };
+		E163C3F12193C5E400B63EC5 /* LockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockView.h; sourceTree = "<group>"; };
+		E163C3F22193C5E400B63EC5 /* LockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockView.m; sourceTree = "<group>"; };
+		E163C3F42193C65D00B63EC5 /* Lock9PointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lock9PointViewController.h; sourceTree = "<group>"; };
+		E163C3F52193C65D00B63EC5 /* Lock9PointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lock9PointViewController.m; sourceTree = "<group>"; };
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
@@ -190,6 +200,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */,
 				E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */,
 				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
 				E13F22F6218832D000F9A965 /* UITableView表头缩放 */,
@@ -458,10 +469,23 @@
 			path = "图片擦除 刮奖效果";
 			sourceTree = "<group>";
 		};
+		E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				E163C3F42193C65D00B63EC5 /* Lock9PointViewController.h */,
+				E163C3F52193C65D00B63EC5 /* Lock9PointViewController.m */,
+				E163C3F12193C5E400B63EC5 /* LockView.h */,
+				E163C3F22193C5E400B63EC5 /* LockView.m */,
+			);
+			path = "9宫格解锁";
+			sourceTree = "<group>";
+		};
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
 				E1661DC32181A39100E82979 /* back.jpg */,
+				E163C3EE2193C5AB00B63EC5 /* lock_normal.png */,
+				E163C3ED2193C5AB00B63EC5 /* lock_selected.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -559,10 +583,12 @@
 				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
+				E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */,
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
 				E1661DC42181A39200E82979 /* back.jpg in Resources */,
+				E163C3EF2193C5AB00B63EC5 /* lock_selected.png in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
@@ -577,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */,
+				E163C3F32193C5E400B63EC5 /* LockView.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
@@ -597,6 +624,7 @@
 				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,
 				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
 				E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */,
+				E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
