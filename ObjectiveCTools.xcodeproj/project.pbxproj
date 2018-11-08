@@ -46,6 +46,11 @@
 		E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E163C3EE2193C5AB00B63EC5 /* lock_normal.png */; };
 		E163C3F32193C5E400B63EC5 /* LockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F22193C5E400B63EC5 /* LockView.m */; };
 		E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F52193C65D00B63EC5 /* Lock9PointViewController.m */; };
+		E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F82193CFEB00B63EC5 /* DrawingBoardViewController.m */; };
+		E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3FA2193CFEC00B63EC5 /* HandleImageView.m */; };
+		E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3FC2193CFEC00B63EC5 /* DrawView.m */; };
+		E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E163C3FF2193CFEC00B63EC5 /* DrawingBoardViewController.xib */; };
+		E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C4002193CFEC00B63EC5 /* MyBezierPath.m */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
 		E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DBE2181921900E82979 /* ScaleScrollViewController.m */; };
@@ -129,6 +134,15 @@
 		E163C3F22193C5E400B63EC5 /* LockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockView.m; sourceTree = "<group>"; };
 		E163C3F42193C65D00B63EC5 /* Lock9PointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lock9PointViewController.h; sourceTree = "<group>"; };
 		E163C3F52193C65D00B63EC5 /* Lock9PointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lock9PointViewController.m; sourceTree = "<group>"; };
+		E163C3F82193CFEB00B63EC5 /* DrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardViewController.m; sourceTree = "<group>"; };
+		E163C3F92193CFEC00B63EC5 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		E163C3FA2193CFEC00B63EC5 /* HandleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleImageView.m; sourceTree = "<group>"; };
+		E163C3FB2193CFEC00B63EC5 /* DrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoardViewController.h; sourceTree = "<group>"; };
+		E163C3FC2193CFEC00B63EC5 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		E163C3FD2193CFEC00B63EC5 /* MyBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBezierPath.h; sourceTree = "<group>"; };
+		E163C3FE2193CFEC00B63EC5 /* HandleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleImageView.h; sourceTree = "<group>"; };
+		E163C3FF2193CFEC00B63EC5 /* DrawingBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardViewController.xib; sourceTree = "<group>"; };
+		E163C4002193CFEC00B63EC5 /* MyBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBezierPath.m; sourceTree = "<group>"; };
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
@@ -200,6 +214,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E163C3F72193CFBD00B63EC5 /* 涂鸦 */,
 				E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */,
 				E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */,
 				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
@@ -480,6 +495,22 @@
 			path = "9宫格解锁";
 			sourceTree = "<group>";
 		};
+		E163C3F72193CFBD00B63EC5 /* 涂鸦 */ = {
+			isa = PBXGroup;
+			children = (
+				E163C3FB2193CFEC00B63EC5 /* DrawingBoardViewController.h */,
+				E163C3F82193CFEB00B63EC5 /* DrawingBoardViewController.m */,
+				E163C3FF2193CFEC00B63EC5 /* DrawingBoardViewController.xib */,
+				E163C3F92193CFEC00B63EC5 /* DrawView.h */,
+				E163C3FC2193CFEC00B63EC5 /* DrawView.m */,
+				E163C3FE2193CFEC00B63EC5 /* HandleImageView.h */,
+				E163C3FA2193CFEC00B63EC5 /* HandleImageView.m */,
+				E163C3FD2193CFEC00B63EC5 /* MyBezierPath.h */,
+				E163C4002193CFEC00B63EC5 /* MyBezierPath.m */,
+			);
+			path = "涂鸦";
+			sourceTree = "<group>";
+		};
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +611,7 @@
 			files = (
 				E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */,
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
+				E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */,
 				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
@@ -603,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */,
+				E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */,
 				E163C3F32193C5E400B63EC5 /* LockView.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
@@ -612,6 +645,7 @@
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
@@ -627,8 +661,10 @@
 				E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
+				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
+				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
 				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,

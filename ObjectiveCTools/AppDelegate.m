@@ -17,6 +17,7 @@
 #import "FakeChooseViewController.h"
 #import "ClearImageViewController.h"
 #import "Lock9PointViewController.h"
+#import "DrawingBoardViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +28,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    Lock9PointViewController *vc = [[Lock9PointViewController alloc] init];
+    DrawingBoardViewController *vc = [[DrawingBoardViewController alloc] init];
     
     self.window.rootViewController = vc;
     
