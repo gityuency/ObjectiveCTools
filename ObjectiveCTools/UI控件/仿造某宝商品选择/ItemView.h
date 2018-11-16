@@ -21,6 +21,8 @@
 @interface ItemView : UIView
 /// 按钮事件代理
 @property (nonatomic, weak) id<ItemViewDelegate> delegate;
+/// 是否是多行
+@property (nonatomic, assign) BOOL isMultiLines;
 /// 位置
 @property (nonatomic, strong) NSIndexPath *indexPath;
 /// 设置选中状态

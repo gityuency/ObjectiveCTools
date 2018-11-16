@@ -199,7 +199,6 @@
 				E115D676210FFA57007514FE /* LaunchScreen.storyboard */,
 				E115D679210FFA58007514FE /* Info.plist */,
 				E115D67A210FFA58007514FE /* main.m */,
-				E1661DC22181A38D00E82979 /* Image */,
 				E123BAF42133FC45003AE0C9 /* UI控件 */,
 				E1459A272122DF5200293226 /* 多线程 */,
 				E14599F52122DDDF00293226 /* 工具包 */,
@@ -207,6 +206,7 @@
 				E14599F22122DDDF00293226 /* 奇技淫巧 */,
 				E14599E52122DDDE00293226 /* 三方引用 */,
 				E14599EE2122DDDE00293226 /* 特殊控件 */,
+				E1661DC22181A38D00E82979 /* Image */,
 			);
 			path = ObjectiveCTools;
 			sourceTree = "<group>";

@@ -49,9 +49,9 @@
                        @{
                            @"sectionName": @"书籍",
                            @"sectionArray": @[
+                                   @{@"itemName": @"Effective JavaScript：编写高质量JavaScript代码的68个有效方法"},
                                    @{@"itemName": @"MySQL索引背后的数据结构及算法原理"},
                                    @{@"itemName": @"从汇编语言到windows内核编程"},
-                                   @{@"itemName": @"Chrome 开发者工具中文手册"},
                                    @{@"itemName": @"You-Dont-Know-JS (深入JavaScript语言核心机制的系列图书)"},
                                    @{@"itemName": @"大型集群上的快速和通用数据处理架构"},
                                    @{@"itemName": @"Network programming with Go 中文翻译版本"},
@@ -137,6 +137,7 @@
 }
 
 - (void)itemCollectionView:(ItemCollectionView *)itemCollectionView didSelectedIndexPath:(NSIndexPath *)indexpath {
+    
     //更改模型的状态
     FakeChooseModel *info = self.itemCollectionArray[indexpath.section];
     for (NSInteger j = 0; j < info.itemArray.count; j++) {
@@ -151,6 +152,18 @@
     }
     FakeItemModel *item = info.itemArray[indexpath.row];
     item.itemType = ItemSelected;
+    
+    
+    // 查看结果
+    NSMutableString *result = [NSMutableString string];
+    for (FakeChooseModel *infoR in self.itemCollectionArray) {
+        for (FakeItemModel *itemR in infoR.itemArray) {
+            if (itemR.itemType == ItemForceSelected || itemR.itemType == ItemSelected) {
+                [result appendFormat:@" * %@", itemR.itemName];
+            }
+        }
+    }
+    NSLog(@"%@", result);
 }
 
 

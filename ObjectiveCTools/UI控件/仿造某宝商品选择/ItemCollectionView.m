@@ -12,10 +12,6 @@
 
 /// 内容视图
 @property (nonatomic, strong) UIView *contentView;
-/// 小格子的高度 默认60
-@property (nonatomic, assign) CGFloat heightOfRow;
-///小格子的最小h宽度, 默认 60
-@property (nonatomic, assign) CGFloat widthOfRow;
 /// 每一行有多少个 默认 0 个
 @property (nonatomic, assign) CGFloat rowCountOfSection;
 /// 一共有多少行 默认1行
@@ -43,8 +39,6 @@
 }
 
 - (void)setUp {
-    _heightOfRow = 60;
-    _widthOfRow = 60;
     _rowCountOfSection = 0;
     _sectionCount = 1;
     _viewsArray = [NSMutableArray array];
@@ -78,7 +72,6 @@
         UIView *headView = [self.dataSource itemCollectionView:self headerInSection:i];
         headView.frame = CGRectMake(headView.frame.origin.x, 0, self.bounds.size.width, headView.frame.size.height);
         [sectionView addSubview:headView];
-        CGFloat offsetX = 0;
         CGFloat offsetY = headView.frame.size.height;
         UIView *lastrowCell;
         
@@ -86,23 +79,40 @@
         
         NSMutableArray *array = [NSMutableArray array];
         
+        ItemView *lastCell = nil; //最后一个单元
+        
         for (NSInteger k = 0; k < self.rowCountOfSection; k++) {
             NSIndexPath *index = [NSIndexPath indexPathForRow:k inSection:i];
             ItemView *rowCell = [self.dataSource itemCollectionView:self cellForRowAtIndexPath: index];
             rowCell.delegate = self;
             rowCell.indexPath = index;
-            self.heightOfRow = rowCell.frame.size.height;
-            self.widthOfRow = rowCell.frame.size.width;
-            CGFloat nextX = offsetX + self.widthOfRow;
-            if (nextX < self.bounds.size.width) {
-                rowCell.frame = CGRectMake(offsetX, offsetY, self.widthOfRow, self.heightOfRow);
-                offsetX += self.widthOfRow;
-            } else {
-                offsetX = 0;
-                offsetY = offsetY + self.heightOfRow;
-                rowCell.frame = CGRectMake(offsetX, offsetY, self.widthOfRow, self.heightOfRow);
-                offsetX = rowCell.frame.size.width;
+            
+            
+            if (lastCell) {  //最后一个单元存在
+                
+                if (CGRectGetMaxX(lastCell.frame) + rowCell.frame.size.width > self.bounds.size.width) { //新来的这个在后面放不下
+                    
+                    offsetY += lastCell.frame.size.height;  //放不下就放到下一行
+                    
+                    rowCell.frame = CGRectMake(0, offsetY, rowCell.frame.size.width, rowCell.frame.size.height);
+                    
+                } else {
+                    
+                    if (lastCell.isMultiLines) { //上一个是多行, 当前就另起一行
+                        offsetY += lastCell.frame.size.height;
+                    }
+                    
+                    rowCell.frame = CGRectMake(CGRectGetMaxX(lastCell.frame), offsetY, rowCell.frame.size.width, rowCell.frame.size.height);
+                }
+                
+            } else { //最后一个单元不存在
+                
+                rowCell.frame = CGRectMake(0, offsetY, rowCell.frame.size.width, rowCell.frame.size.height);
             }
+            
+            lastCell = rowCell;
+
+            
             [sectionView addSubview:rowCell];
             lastrowCell = rowCell;
             [array addObject:rowCell];

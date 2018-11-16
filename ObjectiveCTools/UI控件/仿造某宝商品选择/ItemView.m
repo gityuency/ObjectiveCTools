@@ -53,8 +53,11 @@
         _label = [[UILabel alloc] init];
         _label.textAlignment = NSTextAlignmentCenter;
         _label.userInteractionEnabled = NO;
+        _label.numberOfLines = 0;
         [self addSubview:_label];
         
+        _isMultiLines = NO;
+
         _g = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(click)];
         _g.numberOfTapsRequired = 1;
         [self addGestureRecognizer:_g];
@@ -70,12 +73,23 @@
 
 /// 设置 文本框的文字 文字的最小宽度 文字的字体
 - (void)setText:(NSString *)text minWith:(CGFloat)minWith maxWith:(CGFloat)maxWith font:(UIFont *)font {
-    CGSize stringSize = [text sizeWithAttributes:@{NSFontAttributeName: font}];
     CGFloat offset = 10;
-    if (stringSize.width < minWith) { stringSize.width = minWith; }
-    if (stringSize.width > maxWith) {
-        stringSize.width = maxWith - offset * 2;
+    
+    NSDictionary *dic = @{NSFontAttributeName: font};
+    
+    CGFloat maxW = [UIScreen mainScreen].bounds.size.width - offset * 2;
+    
+    CGSize stringSize = [text boundingRectWithSize:CGSizeMake(maxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
+    
+    CGFloat singleLineWidth = [text sizeWithAttributes:dic].width;  //计算单行字符串长度
+    
+    if (singleLineWidth > maxW) { //判断是否多行
+        stringSize.width = maxW;
+        self.isMultiLines = YES;
+    } else if (stringSize.width < minWith) {  //判断是否小于最小宽度
+        stringSize.width = minWith;
     }
+
     self.label.frame = CGRectMake(offset, offset, stringSize.width, stringSize.height);
     self.contentView.frame = CGRectMake(offset * 0.5, offset * 0.5, stringSize.width + offset, stringSize.height + offset);
     self.frame = CGRectMake(0, 0, self.label.frame.size.width + offset * 2, self.label.frame.size.height + offset * 2);
