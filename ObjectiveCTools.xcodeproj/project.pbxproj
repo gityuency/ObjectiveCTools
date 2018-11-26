@@ -61,6 +61,9 @@
 		E17700092178337F0050C110 /* POPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17700072178337F0050C110 /* POPViewController.xib */; };
 		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
 		E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */; };
+		E199252321A6518600591074 /* NormalPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E199252221A6518600591074 /* NormalPopUpViewController.m */; };
+		E199252721A651A000591074 /* MemoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E199252421A651A000591074 /* MemoryView.xib */; };
+		E199252821A651A000591074 /* MemoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E199252521A651A000591074 /* MemoryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +161,11 @@
 		E1950D8B2153AD06007D7265 /* PhotoLosslessSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoLosslessSaveViewController.h; sourceTree = "<group>"; };
 		E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLosslessSaveViewController.m; sourceTree = "<group>"; };
 		E1950D8D2153AD06007D7265 /* PhotoLosslessSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLosslessSaveViewController.xib; sourceTree = "<group>"; };
+		E199252121A6518600591074 /* NormalPopUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalPopUpViewController.h; sourceTree = "<group>"; };
+		E199252221A6518600591074 /* NormalPopUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalPopUpViewController.m; sourceTree = "<group>"; };
+		E199252421A651A000591074 /* MemoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoryView.xib; sourceTree = "<group>"; };
+		E199252521A651A000591074 /* MemoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryView.m; sourceTree = "<group>"; };
+		E199252621A651A000591074 /* MemoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E199252021A6514900591074 /* 制作一个弹出框 */,
 				E163C3F72193CFBD00B63EC5 /* 涂鸦 */,
 				E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */,
 				E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */,
@@ -551,6 +560,18 @@
 			path = "获取设备信息";
 			sourceTree = "<group>";
 		};
+		E199252021A6514900591074 /* 制作一个弹出框 */ = {
+			isa = PBXGroup;
+			children = (
+				E199252121A6518600591074 /* NormalPopUpViewController.h */,
+				E199252221A6518600591074 /* NormalPopUpViewController.m */,
+				E199252621A651A000591074 /* MemoryView.h */,
+				E199252521A651A000591074 /* MemoryView.m */,
+				E199252421A651A000591074 /* MemoryView.xib */,
+			);
+			path = "制作一个弹出框";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -612,6 +633,7 @@
 				E115D678210FFA57007514FE /* LaunchScreen.storyboard in Resources */,
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
 				E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */,
+				E199252721A651A000591074 /* MemoryView.xib in Resources */,
 				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
@@ -636,6 +658,7 @@
 			files = (
 				E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */,
 				E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */,
+				E199252321A6518600591074 /* NormalPopUpViewController.m in Sources */,
 				E163C3F32193C5E400B63EC5 /* LockView.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
@@ -643,6 +666,7 @@
 				E17700082178337F0050C110 /* POPViewController.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
+				E199252821A651A000591074 /* MemoryView.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,

@@ -72,3 +72,71 @@
 
 @end
 
+/*
+ 
+ 这里记录键盘通知
+ 
+ 
+ #import "ViewController.h"
+ @interface ViewController ()
+ @property(nonatomic ,strong) UITextField * firstResponderTextF;//记录将要编辑的输入框
+ @end
+ @implementation ViewController
+ 
+ - (void)viewDidLoad {
+ [super viewDidLoad];
+ //监听键盘展示和隐藏的通知
+ [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+ [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+ }
+ - (void)dealloc{
+ //移除键盘通知监听者
+ [[NSNotificationCenter defaultCenter]removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+ [[NSNotificationCenter defaultCenter]removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+ }
+ 
+ -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ if ([self.firstResponderTextF isFirstResponder])[self.firstResponderTextF resignFirstResponder];
+ }
+ #pragma maek UITextFieldDelegate
+ - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+ self.firstResponderTextF = textField;//当将要开始编辑的时候，获取当前的textField
+ return YES;
+ }
+ - (BOOL)textFieldShouldReturn:(UITextField *)textField{
+ [textField resignFirstResponder];
+ return YES;
+ }
+ #pragma mark : UIKeyboardWillShowNotification/UIKeyboardWillHideNotification
+ - (void)keyboardWillShow:(NSNotification *)notification{
+ CGRect rect = [self.firstResponderTextF.superview convertRect:self.firstResponderTextF.frame toView:self.view];//获取相对于self.view的位置
+ NSDictionary *userInfo = [notification userInfo];
+ NSValue* aValue = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];//获取弹出键盘的fame的value值
+ CGRect keyboardRect = [aValue CGRectValue];
+ keyboardRect = [self.view convertRect:keyboardRect fromView:self.view.window];//获取键盘相对于self.view的frame ，传window和传nil是一样的
+ CGFloat keyboardTop = keyboardRect.origin.y;
+ NSNumber * animationDurationValue = [userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];//获取键盘弹出动画时间值
+ NSTimeInterval animationDuration = [animationDurationValue doubleValue];
+ if (keyboardTop < CGRectGetMaxY(rect)) {//如果键盘盖住了输入框
+ CGFloat gap = keyboardTop - CGRectGetMaxY(rect) - 10;//计算需要网上移动的偏移量（输入框底部离键盘顶部为10的间距）
+ __weak typeof(self)weakSelf = self;
+ [UIView animateWithDuration:animationDuration animations:^{
+ weakSelf.view.frame = CGRectMake(weakSelf.view.frame.origin.x, gap, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+ }];
+ }
+ }
+ - (void)keyboardWillHide:(NSNotification *)notification{
+ NSDictionary *userInfo = [notification userInfo];
+ NSNumber * animationDurationValue = [userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];//获取键盘隐藏动画时间值
+ NSTimeInterval animationDuration = [animationDurationValue doubleValue];
+ if (self.view.frame.origin.y < 0) {//如果有偏移，当影藏键盘的时候就复原
+ __weak typeof(self)weakSelf = self;
+ [UIView animateWithDuration:animationDuration animations:^{
+ weakSelf.view.frame = CGRectMake(weakSelf.view.frame.origin.x, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);//注意如果带有导航则view的y值就不说0了而是状态栏高度加导航栏的高度
+ }];
+ }
+ }
+ @end
+ 
+
+ */
