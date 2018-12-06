@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"TradingkeyBoardViewController":@"一个交易密码键盘"},
                        @{@"AnimationQQButtonViewController":@"动画 QQ粘性按钮"},
                        @{@"NormalPopUpViewController":@"一个弹框的实验"},
                        @{@"DrawingBoardViewController":@"涂鸦"},

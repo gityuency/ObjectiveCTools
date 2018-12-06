@@ -69,6 +69,9 @@
 		E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19DB29121B512A300FF0042 /* NSObject+Validate.m */; };
 		E1B8573321B8B05E00882989 /* QQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573221B8B05E00882989 /* QQButton.m */; };
 		E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573821B8B4BA00882989 /* AnimationQQButtonViewController.m */; };
+		E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */; };
+		E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */; };
+		E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +184,11 @@
 		E1B8573221B8B05E00882989 /* QQButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQButton.m; sourceTree = "<group>"; };
 		E1B8573721B8B4BA00882989 /* AnimationQQButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationQQButtonViewController.h; sourceTree = "<group>"; };
 		E1B8573821B8B4BA00882989 /* AnimationQQButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationQQButtonViewController.m; sourceTree = "<group>"; };
+		E1B8573D21B8CC6800882989 /* TradingkeyBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingkeyBoardViewController.h; sourceTree = "<group>"; };
+		E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingkeyBoardViewController.m; sourceTree = "<group>"; };
+		E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RebateTradingKeyBoardView.m; sourceTree = "<group>"; };
+		E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RebateTradingKeyBoardView.h; sourceTree = "<group>"; };
+		E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebateTradingKeyBoardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +246,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E1B8573C21B8CC5000882989 /* 密码交易键盘 */,
 				E199252021A6514900591074 /* 制作一个弹出框 */,
 				E163C3F72193CFBD00B63EC5 /* 涂鸦 */,
 				E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */,
@@ -613,6 +622,18 @@
 			path = "QQ 粘性效果";
 			sourceTree = "<group>";
 		};
+		E1B8573C21B8CC5000882989 /* 密码交易键盘 */ = {
+			isa = PBXGroup;
+			children = (
+				E1B8573D21B8CC6800882989 /* TradingkeyBoardViewController.h */,
+				E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */,
+				E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */,
+				E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */,
+				E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */,
+			);
+			path = "密码交易键盘";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -684,6 +705,7 @@
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
 				E1661DC42181A39200E82979 /* back.jpg in Resources */,
 				E163C3EF2193C5AB00B63EC5 /* lock_selected.png in Resources */,
+				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
@@ -712,6 +734,7 @@
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1B8573321B8B05E00882989 /* QQButton.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
@@ -742,6 +765,7 @@
 				E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */,
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
+				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
