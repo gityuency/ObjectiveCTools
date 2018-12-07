@@ -51,6 +51,9 @@
 		E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3FC2193CFEC00B63EC5 /* DrawView.m */; };
 		E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E163C3FF2193CFEC00B63EC5 /* DrawingBoardViewController.xib */; };
 		E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C4002193CFEC00B63EC5 /* MyBezierPath.m */; };
+		E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1646AB421BA0FD900378083 /* SelectionCell.m */; };
+		E1646ABC21BA10E200378083 /* SelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1646ABB21BA10E200378083 /* SelectionTableViewController.m */; };
+		E1646ABE21BA194200378083 /* tooles.png in Resources */ = {isa = PBXBuildFile; fileRef = E1646ABD21BA194100378083 /* tooles.png */; };
 		E1658F142139239100479FE3 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1658F122139239100479FE3 /* TextViewViewController.m */; };
 		E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1658F132139239100479FE3 /* TextViewViewController.xib */; };
 		E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DBE2181921900E82979 /* ScaleScrollViewController.m */; };
@@ -154,6 +157,11 @@
 		E163C3FE2193CFEC00B63EC5 /* HandleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleImageView.h; sourceTree = "<group>"; };
 		E163C3FF2193CFEC00B63EC5 /* DrawingBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingBoardViewController.xib; sourceTree = "<group>"; };
 		E163C4002193CFEC00B63EC5 /* MyBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBezierPath.m; sourceTree = "<group>"; };
+		E1646AB421BA0FD900378083 /* SelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionCell.m; sourceTree = "<group>"; };
+		E1646AB521BA0FD900378083 /* SelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionCell.h; sourceTree = "<group>"; };
+		E1646ABA21BA10E200378083 /* SelectionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionTableViewController.h; sourceTree = "<group>"; };
+		E1646ABB21BA10E200378083 /* SelectionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionTableViewController.m; sourceTree = "<group>"; };
+		E1646ABD21BA194100378083 /* tooles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tooles.png; sourceTree = "<group>"; };
 		E1658F112139239100479FE3 /* TextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
 		E1658F122139239100479FE3 /* TextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		E1658F132139239100479FE3 /* TextViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewViewController.xib; sourceTree = "<group>"; };
@@ -246,6 +254,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E1646AB321BA0FC900378083 /* UITableViewCell选中样式和默认选中 */,
 				E1B8573C21B8CC5000882989 /* 密码交易键盘 */,
 				E199252021A6514900591074 /* 制作一个弹出框 */,
 				E163C3F72193CFBD00B63EC5 /* 涂鸦 */,
@@ -545,9 +554,21 @@
 			path = "涂鸦";
 			sourceTree = "<group>";
 		};
+		E1646AB321BA0FC900378083 /* UITableViewCell选中样式和默认选中 */ = {
+			isa = PBXGroup;
+			children = (
+				E1646ABA21BA10E200378083 /* SelectionTableViewController.h */,
+				E1646ABB21BA10E200378083 /* SelectionTableViewController.m */,
+				E1646AB521BA0FD900378083 /* SelectionCell.h */,
+				E1646AB421BA0FD900378083 /* SelectionCell.m */,
+			);
+			path = "UITableViewCell选中样式和默认选中";
+			sourceTree = "<group>";
+		};
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E1646ABD21BA194100378083 /* tooles.png */,
 				E1661DC32181A39100E82979 /* back.jpg */,
 				E163C3EE2193C5AB00B63EC5 /* lock_normal.png */,
 				E163C3ED2193C5AB00B63EC5 /* lock_selected.png */,
@@ -709,6 +730,7 @@
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
+				E1646ABE21BA194200378083 /* tooles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +773,8 @@
 				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
 				E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */,
 				E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */,
+				E1646ABC21BA10E200378083 /* SelectionTableViewController.m in Sources */,
+				E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
