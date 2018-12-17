@@ -8,6 +8,22 @@
 
 #import "GCDViewController.h"
 
+/**
+ 
+ Grand Central Dispatch
+
+ 纯 C 语言
+ 为 多核 并行 运算提出的解决方案, 充分利用 CPU 内核, 自动管理线程的生命周期
+
+ 核心概念  1.任务(执行什么操作)
+          2.队列(用来存放任务, 先进先出)
+ 
+ GCD 会自动将队列中的任务取出, 放到对应的线程中执行
+ 
+ 同步函数 dispatch_sync 不会开新线程 不管加入到 并发 还是 串行 队列
+ 
+ 
+ */
 @interface GCDViewController ()
 
 @end
@@ -18,6 +34,125 @@
     [super viewDidLoad];
     self.title = @"GCD 示例代码合集";
 }
+
+#pragma mark - 队列决定任务怎么执行  异步决定会不会开子线程 一共 4 中组合方式
+#pragma mark 异步函数 + 并发队列: 会开始多条线程, 队列中的任务是异步(并发,一起)执行
+- (IBAction)analysis_Async_Concurrent {
+    
+    // 创建队列 参数1: C语言字符串,是这个队列的标签 参数2: DISPATCH_QUEUE_CONCURRENT 并发  DISPATCH_QUEUE_SERIAL 串行
+    dispatch_queue_t queue = dispatch_queue_create("名字",  DISPATCH_QUEUE_CONCURRENT);
+    
+    //还可以获取全局的并发队列 这个队列是 GCD 自带, 直接使用,  参数1: 优先级   参数2: 直接传 0
+    //dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    
+    // 创建异步任务, 参数1: 属于哪个队列 参数2: 任务代码
+    // 开多少个线程并不是由任务决定, 当有很多任务时, 系统将决定线程数量
+    dispatch_async(queue, ^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+}
+
+#pragma mark 异步函数 + 串行队列: 会开线程,开一条线程,对列中的任务是串行(有顺序)执行的.
+- (IBAction)analysis_Async_Serial {
+    // 因为串行队列的存在, 这个队列把任务 一个一个按顺序执行, 即便是异步函数, 也被同步执行了
+    dispatch_queue_t queue = dispatch_queue_create("名字",  DISPATCH_QUEUE_SERIAL);
+
+    //确实是开了子线程(只开了一条,而不是多条), 但是这三个任务都在这一个子线程中被执行完毕
+    
+    dispatch_async(queue, ^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+ 
+}
+
+
+#pragma mark 同步函数 + 并发队列: 不会开线程,任务同步/串行/顺序执行
+- (IBAction)analysis_Sync_Concurrent {
+    
+    dispatch_queue_t queue = dispatch_queue_create("名字",  DISPATCH_QUEUE_CONCURRENT);
+    
+    // 这三个任务都在主线程中依次执行
+    dispatch_sync(queue, ^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+    
+}
+
+#pragma mark 同步函数 + 串行队列: 不会开线程,任务同步/串行/顺序执行
+- (IBAction)analysis_Sync_Serial {
+    
+    dispatch_queue_t queue = dispatch_queue_create("名字",  DISPATCH_QUEUE_SERIAL);
+    
+    // 这三个任务都在主线程中依次执行
+    dispatch_sync(queue, ^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+    
+}
+
+
+#pragma mark 异步函数 + 主队列: 所有任务都在主线程中执行, 没有开新线程
+- (IBAction)analysis_Async_Main {
+
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
+    dispatch_async(queue, ^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+}
+
+
+#pragma mark 同步函数 + 主队列: ! 如果这个函数放在主线程里调用, 就是死锁. 如果这个函数放在子线程调用, 就是正常.
+- (IBAction)analysis_Sync_Main {
+    
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
+    // 如果主队列发现当前主线程有任务在执行, 那么主队列会暂停调用队列中的任务,直到主线程空闲为止
+    
+    dispatch_sync(queue, ^{ //立刻执行,如果我没有执行完,后面的代码不能执行
+        NSLog(@"1%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    });
+    dispatch_sync(queue, ^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    });
+}
+
+
+#pragma mark - GCD 其他场景示例代码
 
 /*
  场景1: 有 M 个网络请求, 等 M 个网络请求都结束之后, 再进行第 M + 1 个请求

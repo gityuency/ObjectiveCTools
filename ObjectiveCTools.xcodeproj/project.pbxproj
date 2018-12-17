@@ -39,6 +39,8 @@
 		E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1459A2A2122DF7300293226 /* GCDViewController.xib */; };
 		E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148E82C2140F77500019E60 /* UILabelViewController.m */; };
 		E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148E82D2140F77500019E60 /* UILabelViewController.xib */; };
+		E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E150A7B921C72FC000953640 /* NSthreadViewController.m */; };
+		E150A7BD21C73D7600953640 /* ThreadSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E150A7BC21C73D7600953640 /* ThreadSafeViewController.m */; };
 		E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */; };
 		E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE6218AE9640011A334 /* ClearImageViewController.m */; };
 		E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */; };
@@ -137,6 +139,10 @@
 		E148E82B2140F77500019E60 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
 		E148E82C2140F77500019E60 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
 		E148E82D2140F77500019E60 /* UILabelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UILabelViewController.xib; sourceTree = "<group>"; };
+		E150A7B821C72FC000953640 /* NSthreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSthreadViewController.h; sourceTree = "<group>"; };
+		E150A7B921C72FC000953640 /* NSthreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSthreadViewController.m; sourceTree = "<group>"; };
+		E150A7BB21C73D7600953640 /* ThreadSafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafeViewController.h; sourceTree = "<group>"; };
+		E150A7BC21C73D7600953640 /* ThreadSafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeViewController.m; sourceTree = "<group>"; };
 		E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Yuency.m"; sourceTree = "<group>"; };
 		E15F7AE2218AD8F60011A334 /* UIView+Yuency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Yuency.h"; sourceTree = "<group>"; };
 		E15F7AE5218AE9640011A334 /* ClearImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearImageViewController.h; sourceTree = "<group>"; };
@@ -513,6 +519,10 @@
 				E1459A282122DF7300293226 /* GCDViewController.h */,
 				E1459A292122DF7300293226 /* GCDViewController.m */,
 				E1459A2A2122DF7300293226 /* GCDViewController.xib */,
+				E150A7B821C72FC000953640 /* NSthreadViewController.h */,
+				E150A7B921C72FC000953640 /* NSthreadViewController.m */,
+				E150A7BB21C73D7600953640 /* ThreadSafeViewController.h */,
+				E150A7BC21C73D7600953640 /* ThreadSafeViewController.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -759,6 +769,7 @@
 				E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
+				E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
@@ -775,6 +786,7 @@
 				E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */,
 				E1646ABC21BA10E200378083 /* SelectionTableViewController.m in Sources */,
 				E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */,
+				E150A7BD21C73D7600953640 /* ThreadSafeViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
