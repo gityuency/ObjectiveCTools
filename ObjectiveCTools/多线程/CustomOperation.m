@@ -17,6 +17,29 @@
     
     NSLog(@"%@ %s", [NSThread currentThread], __func__);
     
+    //场景 : 如果这个线程里有多个耗时操作, 那么如何相应暂停
+    
+    for (NSInteger i = 0; i < 1000; i ++) {
+        NSLog(@"耗时任务 1 %@", [NSThread currentThread]);
+    }
+    
+    // 加上这个判断, 就可以让自定义的子类线程相应 NSOperationQueue 的 取消 操作
+    // 苹果官方的建议
+    if (self.isCancelled) { return; }
+    
+    
+    for (NSInteger i = 0; i < 1000; i ++) {
+        NSLog(@"耗时任务 2 %@", [NSThread currentThread]);
+    }
+    
+    
+    // 加上这个判断
+    if (self.isCancelled) { return; }
+    
+    
+    for (NSInteger i = 0; i < 1000; i ++) {
+        NSLog(@"耗时任务 3 %@", [NSThread currentThread]);
+    }
 }
 
 @end

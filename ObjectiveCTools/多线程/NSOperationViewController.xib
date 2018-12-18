@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSOperationViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="9Cx-T5-7yL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yMo-hl-Ecl">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEZ-Dd-hRW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                            <state key="normal" title="方案1 使用 NSInvocationOperation"/>
+                            <connections>
+                                <action selector="invocationOperationWithQueue" destination="-1" eventType="touchUpInside" id="agM-I7-JbP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buS-Kg-vtP">
+                            <rect key="frame" x="0.0" y="129.5" width="375" height="129.5"/>
+                            <state key="normal" title="方案2 使用 NSBlockOperation"/>
+                            <connections>
+                                <action selector="blockOperationWithQueue" destination="-1" eventType="touchUpInside" id="ar7-TG-BEu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-Xk-Ve0">
+                            <rect key="frame" x="0.0" y="259" width="375" height="129"/>
+                            <state key="normal" title="方案3 自定义 NSOperation 子类"/>
+                            <connections>
+                                <action selector="customOperationWithQueue" destination="-1" eventType="touchUpInside" id="Hvp-4g-7zv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-zO-QdR">
+                            <rect key="frame" x="0.0" y="388" width="375" height="129.5"/>
+                            <state key="normal" title="设置最大并发数"/>
+                            <connections>
+                                <action selector="operationMaxCount:" destination="-1" eventType="touchUpInside" id="Mw0-ax-1jg"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-Kh-Bgc">
+                            <rect key="frame" x="0.0" y="517.5" width="375" height="129.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQJ-b7-NhB">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
+                                    <state key="normal" title="开始"/>
+                                    <connections>
+                                        <action selector="start:" destination="-1" eventType="touchUpInside" id="Oxd-Ny-vbF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-tT-JcS">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
+                                    <state key="normal" title="暂停"/>
+                                    <connections>
+                                        <action selector="suspend:" destination="-1" eventType="touchUpInside" id="WfJ-ld-eD0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-o9-3LD">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
+                                    <state key="normal" title="继续"/>
+                                    <connections>
+                                        <action selector="goOn:" destination="-1" eventType="touchUpInside" id="4cB-98-xCd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnH-VU-vjX">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
+                                    <state key="normal" title="取消"/>
+                                    <connections>
+                                        <action selector="cancle:" destination="-1" eventType="touchUpInside" id="QIE-sh-UeL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wnH-VU-vjX" firstAttribute="width" secondItem="SQJ-b7-NhB" secondAttribute="width" id="eIa-YS-lo6"/>
+                                <constraint firstItem="1yo-o9-3LD" firstAttribute="width" secondItem="SQJ-b7-NhB" secondAttribute="width" id="uof-kS-g9L"/>
+                                <constraint firstItem="Tch-tT-JcS" firstAttribute="width" secondItem="SQJ-b7-NhB" secondAttribute="width" id="yNS-kL-gHR"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GFS-Xk-Ve0" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="EyN-YM-STo"/>
+                        <constraint firstItem="gFF-zO-QdR" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="HHS-GD-Afn"/>
+                        <constraint firstItem="buS-Kg-vtP" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="f1J-RV-59a"/>
+                        <constraint firstItem="KOa-Kh-Bgc" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="gVX-6p-6xv"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yMo-hl-Ecl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GLb-Xh-WNZ"/>
+                <constraint firstItem="yMo-hl-Ecl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="h7H-lx-mH4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yMo-hl-Ecl" secondAttribute="bottom" id="iWW-0I-Wd2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yMo-hl-Ecl" secondAttribute="trailing" id="wMc-tf-nhp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-246" y="131"/>
+        </view>
+    </objects>
+</document>

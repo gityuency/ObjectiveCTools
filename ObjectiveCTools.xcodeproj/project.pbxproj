@@ -65,6 +65,7 @@
 		E1689AE821C8989B00F85232 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AE721C8989B00F85232 /* Tools.m */; };
 		E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AEB21C8C99400F85232 /* NSOperationViewController.m */; };
 		E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AEE21C8CE4200F85232 /* CustomOperation.m */; };
+		E1689AF121C8D0B500F85232 /* NSOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1689AF021C8D0B500F85232 /* NSOperationViewController.xib */; };
 		E17700082178337F0050C110 /* POPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17700062178337F0050C110 /* POPViewController.m */; };
 		E17700092178337F0050C110 /* POPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17700072178337F0050C110 /* POPViewController.xib */; };
 		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
@@ -187,6 +188,7 @@
 		E1689AEB21C8C99400F85232 /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
 		E1689AED21C8CE4200F85232 /* CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
 		E1689AEE21C8CE4200F85232 /* CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
+		E1689AF021C8D0B500F85232 /* NSOperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSOperationViewController.xib; sourceTree = "<group>"; };
 		E17700052178337F0050C110 /* POPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPViewController.h; sourceTree = "<group>"; };
 		E17700062178337F0050C110 /* POPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPViewController.m; sourceTree = "<group>"; };
 		E17700072178337F0050C110 /* POPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POPViewController.xib; sourceTree = "<group>"; };
@@ -536,6 +538,7 @@
 				E150A7BC21C73D7600953640 /* ThreadSafeViewController.m */,
 				E1689AEA21C8C99400F85232 /* NSOperationViewController.h */,
 				E1689AEB21C8C99400F85232 /* NSOperationViewController.m */,
+				E1689AF021C8D0B500F85232 /* NSOperationViewController.xib */,
 				E1689AED21C8CE4200F85232 /* CustomOperation.h */,
 				E1689AEE21C8CE4200F85232 /* CustomOperation.m */,
 			);
@@ -760,6 +763,7 @@
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
 				E1661DC42181A39200E82979 /* back.jpg in Resources */,
+				E1689AF121C8D0B500F85232 /* NSOperationViewController.xib in Resources */,
 				E163C3EF2193C5AB00B63EC5 /* lock_selected.png in Resources */,
 				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,

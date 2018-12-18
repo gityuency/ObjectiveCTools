@@ -18,39 +18,30 @@
 
 @interface NSOperationViewController ()
 
+/// 线程状态的队列
+@property (nonatomic, strong) NSOperationQueue *myQueue;
+
 @end
 
 @implementation NSOperationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"点击屏幕";
-    self.view.backgroundColor = [UIColor lightGrayColor];
- 
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    //[self invocationOperationWithQueue];
-    
-    //[self blockOperationWithQueue];
-    
-    [self customOperationWithQueue];
 }
 
 /// 方案 1
-- (void)invocationOperationWithQueue {
+- (IBAction)invocationOperationWithQueue {
     
     NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
     NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
     NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(fuck:) object:@"氮磷钾"];
-
+    
     //创建队列
     /*
      GCD
      串行类型: create & 主队列
      并发类型: create & 全局并发队列
-    
+     
      NSOperation
      主队列:   [NSOperationQueue mainQueue]  和 GCD 中的主队列一样, 串行队列
      非主队列:  [[NSOperationQueue alloc] init] 非常特殊, (同时具备并发和串行的功能)
@@ -68,7 +59,7 @@
 
 
 /// 方案 2
-- (void)blockOperationWithQueue {
+- (IBAction)blockOperationWithQueue {
     
     NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
         NSLog(@"%@", [NSThread currentThread]);
@@ -90,7 +81,7 @@
     [op1 addExecutionBlock:^{
         NSLog(@"追加任务2 %@", [NSThread currentThread]);
     }];
-
+    
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
     [queue addOperation:op1];
@@ -99,13 +90,13 @@
     
     //简便写法 创建操作 -> 添加操作到队列 -> 开始任务
     [queue addOperationWithBlock:^{
-       NSLog(@"简便写法 %@", [NSThread currentThread]);
+        NSLog(@"简便写法 %@", [NSThread currentThread]);
     }];
 }
 
 
 /// 方案 3
-- (void)customOperationWithQueue {
+- (IBAction)customOperationWithQueue {
     
     CustomOperation *op1 = [[CustomOperation alloc] init];
     
@@ -115,15 +106,121 @@
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
-    [queue addOperation:op1]; 
+    [queue addOperation:op1];
     [queue addOperation:op2];
     [queue addOperation:op3];
 }
 
 
+- (IBAction)operationMaxCount:(id)sender {
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    // 设置最大并发数 设置为 1 就是串行
+    //串行执行任务不等于只开一条线程, (线程同步)
+    //设置为0不会执行任务
+    //设置为 -1 特殊意义, 最大值, 表示最大并发数不受限制
+    queue.maxConcurrentOperationCount = 2;
+    
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    }];
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"4%@", [NSThread currentThread]);
+    }];
+    NSBlockOperation *op5 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"5%@", [NSThread currentThread]);
+    }];
+    NSBlockOperation *op6 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"6%@", [NSThread currentThread]);
+    }];
+    
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queue addOperation:op3];
+    [queue addOperation:op4];
+    [queue addOperation:op5];
+    [queue addOperation:op6];
+}
+
 - (void)fuck:(NSString *)para {
     NSLog(@"fucking %@  %@", para, [NSThread currentThread]);
 }
 
+
+#pragma mark - 线程的各种状态设置
+- (IBAction)start:(id)sender {
+    
+    self.myQueue = [[NSOperationQueue alloc] init];
+    
+    self.myQueue.maxConcurrentOperationCount = 1;
+
+    
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"1%@", [NSThread currentThread]);
+        }
+    }];
+    
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"2%@", [NSThread currentThread]);
+        }
+    }];
+    
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"3%@", [NSThread currentThread]);
+        }
+    }];
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"4%@", [NSThread currentThread]);
+        }
+    }];
+    NSBlockOperation *op5 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"5%@", [NSThread currentThread]);
+        }
+    }];
+    NSBlockOperation *op6 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 1000; i ++) {
+            NSLog(@"6%@", [NSThread currentThread]);
+        }
+    }];
+    
+    [self.myQueue addOperation:op1];  //这里的队列添加的是系统提供的任务, 如果是自定义的任务,如何相应 取消 操作
+    [self.myQueue addOperation:op2];
+    [self.myQueue addOperation:op3];
+    [self.myQueue addOperation:op4];
+    [self.myQueue addOperation:op5];
+    [self.myQueue addOperation:op6];
+}
+
+
+- (IBAction)suspend:(id)sender { //暂停之后可以恢复任务, 不能暂停正在执行中的任务
+    /*
+     队列中的任务也是有状态的
+     正在执行 | 排队等待 |
+     */
+    self.myQueue.suspended = YES;
+}
+
+- (IBAction)goOn:(id)sender {
+    self.myQueue.suspended = NO;
+}
+
+- (IBAction)cancle:(id)sender { //取消任务之后将不可恢复任务
+    //内部调用了所有操作的 cancle 操作
+    [self.myQueue cancelAllOperations];
+}
 
 @end
