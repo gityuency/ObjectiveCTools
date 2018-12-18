@@ -24,59 +24,73 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEZ-Dd-hRW">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
                             <state key="normal" title="方案1 使用 NSInvocationOperation"/>
                             <connections>
                                 <action selector="invocationOperationWithQueue" destination="-1" eventType="touchUpInside" id="agM-I7-JbP"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buS-Kg-vtP">
-                            <rect key="frame" x="0.0" y="129.5" width="375" height="129.5"/>
+                            <rect key="frame" x="0.0" y="92.5" width="375" height="92.5"/>
                             <state key="normal" title="方案2 使用 NSBlockOperation"/>
                             <connections>
                                 <action selector="blockOperationWithQueue" destination="-1" eventType="touchUpInside" id="ar7-TG-BEu"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-Xk-Ve0">
-                            <rect key="frame" x="0.0" y="259" width="375" height="129"/>
+                            <rect key="frame" x="0.0" y="185" width="375" height="92.5"/>
                             <state key="normal" title="方案3 自定义 NSOperation 子类"/>
                             <connections>
                                 <action selector="customOperationWithQueue" destination="-1" eventType="touchUpInside" id="Hvp-4g-7zv"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFF-zO-QdR">
-                            <rect key="frame" x="0.0" y="388" width="375" height="129.5"/>
+                            <rect key="frame" x="0.0" y="277.5" width="375" height="92"/>
                             <state key="normal" title="设置最大并发数"/>
                             <connections>
                                 <action selector="operationMaxCount:" destination="-1" eventType="touchUpInside" id="Mw0-ax-1jg"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yU-bt-onn">
+                            <rect key="frame" x="0.0" y="369.5" width="375" height="92.5"/>
+                            <state key="normal" title="添加操作依赖,控制执行顺序"/>
+                            <connections>
+                                <action selector="operationDependency:" destination="-1" eventType="touchUpInside" id="S1i-cP-JDm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-VP-nsR">
+                            <rect key="frame" x="0.0" y="462" width="375" height="92.5"/>
+                            <state key="normal" title="线程间通信切换"/>
+                            <connections>
+                                <action selector="operationConnection:" destination="-1" eventType="touchUpInside" id="fGv-41-tiE"/>
+                            </connections>
+                        </button>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-Kh-Bgc">
-                            <rect key="frame" x="0.0" y="517.5" width="375" height="129.5"/>
+                            <rect key="frame" x="0.0" y="554.5" width="375" height="92.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQJ-b7-NhB">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="92.5"/>
                                     <state key="normal" title="开始"/>
                                     <connections>
                                         <action selector="start:" destination="-1" eventType="touchUpInside" id="Oxd-Ny-vbF"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-tT-JcS">
-                                    <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="92.5"/>
                                     <state key="normal" title="暂停"/>
                                     <connections>
                                         <action selector="suspend:" destination="-1" eventType="touchUpInside" id="WfJ-ld-eD0"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-o9-3LD">
-                                    <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="92.5"/>
                                     <state key="normal" title="继续"/>
                                     <connections>
                                         <action selector="goOn:" destination="-1" eventType="touchUpInside" id="4cB-98-xCd"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnH-VU-vjX">
-                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="92.5"/>
                                     <state key="normal" title="取消"/>
                                     <connections>
                                         <action selector="cancle:" destination="-1" eventType="touchUpInside" id="QIE-sh-UeL"/>
@@ -93,7 +107,9 @@
                     <constraints>
                         <constraint firstItem="GFS-Xk-Ve0" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="EyN-YM-STo"/>
                         <constraint firstItem="gFF-zO-QdR" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="HHS-GD-Afn"/>
+                        <constraint firstItem="7yU-bt-onn" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="RZS-Yb-AOr"/>
                         <constraint firstItem="buS-Kg-vtP" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="f1J-RV-59a"/>
+                        <constraint firstItem="KeR-VP-nsR" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="fQ2-gT-8Fl"/>
                         <constraint firstItem="KOa-Kh-Bgc" firstAttribute="height" secondItem="XEZ-Dd-hRW" secondAttribute="height" id="gVX-6p-6xv"/>
                     </constraints>
                 </stackView>

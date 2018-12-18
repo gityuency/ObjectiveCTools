@@ -151,6 +151,80 @@
     [queue addOperation:op6];
 }
 
+
+- (IBAction)operationDependency:(id)sender {
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    NSOperationQueue *queueAddtionan = [[NSOperationQueue alloc] init];
+
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"1%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"2%@", [NSThread currentThread]);
+    }];
+    
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"3%@", [NSThread currentThread]);
+    }];
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"4%@", [NSThread currentThread]);
+    }];
+
+    
+    //操作监听 1.不是任务完成立即收到监听, 2.可能在其他线程中收到监听
+    op3.completionBlock = ^{
+        NSLog(@"任务3 执行完成 %@", [NSThread currentThread]);
+    };
+    
+    
+    // 执行顺序 4 -> 3 -> 2 -> 1  任务执行的线程可能不同,但是顺序是固定的,线程同步
+    // 不能循环依赖,不会崩溃,循环依赖的任务不会执行
+    // 可以跨队列依赖
+    [op1 addDependency:op2];
+    [op2 addDependency:op3];
+    [op3 addDependency:op4];
+    
+    
+    //也可以这么设置依赖, op1 的执行 依赖 op2 和 op3 完成
+    /*
+     [op1 addDependency:op2];
+     [op1 addDependency:op3];
+     */
+    
+
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queueAddtionan addOperation:op3];
+    [queue addOperation:op4];
+}
+
+
+- (IBAction)operationConnection:(UIButton *)sender {
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+
+        NSURL *url = [NSURL URLWithString:@"http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1601/07/c7/17318133_1452142939893_mthumb.jpg"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *img = [UIImage imageWithData:data];
+        NSLog(@"线程 %@", [NSThread currentThread]);
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{ //主线程更新
+            [sender setBackgroundImage:img forState:UIControlStateNormal];
+            NSLog(@"线程 %@", [NSThread currentThread]);
+        }];
+    }];
+
+    //添加操作到队列
+    [queue addOperation:op1];
+    
+}
+
+
 - (void)fuck:(NSString *)para {
     NSLog(@"fucking %@  %@", para, [NSThread currentThread]);
 }

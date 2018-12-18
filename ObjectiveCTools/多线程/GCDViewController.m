@@ -280,7 +280,7 @@
     
     // 栅栏 函数 不能使用全局并发队列(dispatch_get_global_queue), 需要自己创建一个并发队列, 不能是同步队列, 同步队列将失去栅栏的意义
     dispatch_barrier_async(queue, ^{
-        NSLog(@"处理任务 1 2 3");
+        NSLog(@"处理任务 1 2 3 %@", [NSThread currentThread]);
     });
     
     
@@ -293,7 +293,7 @@
         NSLog(@"5 当前线程%@",[NSThread currentThread]);
     });
     dispatch_barrier_async(queue, ^{
-        NSLog(@"处理任务 4 5");
+        NSLog(@"处理任务 4 5 %@", [NSThread currentThread]);
     });
 }
 
