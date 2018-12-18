@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"点击屏幕";
     self.view.backgroundColor = [UIColor orangeColor];
     
     // 线程同步: 多条线程在同一条线上按顺序执行 怎么做? 加互斥锁

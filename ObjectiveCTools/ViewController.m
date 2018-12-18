@@ -35,6 +35,7 @@
                        @{@"TextFieldViewController":@"文本框监听文字输入"},
                        @{@"TextViewViewController":@"文本带连接点击事件"},
                        @{@"UILabelViewController":@"iOS10根据系统设置改变文字大小"},
+                       @{@"NSOperationViewController":@"NSOperation 示例代码"},
                        @{@"ThreadSafeViewController":@"线程安全 互斥锁"},
                        @{@"NSthreadViewController":@"NSThread 线程示例"},
                        @{@"GCDViewController":@"GCD 多线程示例"},

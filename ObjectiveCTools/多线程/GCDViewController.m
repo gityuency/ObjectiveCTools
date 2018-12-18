@@ -181,10 +181,23 @@
         sleep(3);
         NSLog(@"3 当前线程%@",[NSThread currentThread]);
     });
+  
     
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+    /*
+     dispatch_group_notify  这个方法 内部本身是异步的
+     dispatch_group_notify  是 dispatch_group_enter leave 的简写版本
+     */
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{ //这里可以根据情况 使用 全局队列 或者 主队列
         NSLog(@"任务全部完成,当前线程 %@",[NSThread currentThread]);
     });
+ 
+    
+    /*
+     //这个方法表示 要等待 group 里面所有任务都执行完毕, 才往下走代码  这个方法可以代替 dispatch_group_notify
+     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+     NSLog(@"代码走到这里, 表示 group 里的任务都完成");
+     */
+    
 }
 
 
@@ -218,19 +231,21 @@
     [dataTask2 resume];
     
     
-    dispatch_group_enter(group);
-    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+    dispatch_group_enter(group);  //在该方法后面的异步任务会被纳入到队列租的监听范围
+    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{   // dispatch_group_async 使用组
         sleep(3);
         NSLog(@"1 当前线程%@",[NSThread currentThread]);
         dispatch_group_leave(group);
     });
     
+    
     dispatch_group_enter(group);
-    dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{                //dispatch_async  没有使用组
         sleep(2);
         NSLog(@"2 当前线程%@",[NSThread currentThread]);
         dispatch_group_leave(group);
     });
+    
     
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"任务全部完成,当前线程 %@",[NSThread currentThread]);
@@ -261,9 +276,14 @@
         sleep(2);
         NSLog(@"3 当前线程%@",[NSThread currentThread]);
     });
+
+    
+    // 栅栏 函数 不能使用全局并发队列(dispatch_get_global_queue), 需要自己创建一个并发队列, 不能是同步队列, 同步队列将失去栅栏的意义
     dispatch_barrier_async(queue, ^{
         NSLog(@"处理任务 1 2 3");
     });
+    
+    
     dispatch_async(queue, ^{
         sleep(2);
         NSLog(@"4 当前线程%@",[NSThread currentThread]);
@@ -348,6 +368,23 @@
     });
 }
 
+/*
+ 快速迭代
+ 开子线程 并且 和 主线程一起完成任务, 任务的执行是并发的
+ */
+- (IBAction)GCD_Apply:(id)sender {
+    
+    /*
+     参数1: 遍历的次数
+     参数2: 队列(并发队列)
+     参数3: index 索引
+     */
+    
+    dispatch_apply(10, dispatch_get_global_queue(0, 0), ^(size_t index) {
+        NSLog(@"任务执行 当前线程%@",[NSThread currentThread]);
+    });
+    
+}
 
 
 @end

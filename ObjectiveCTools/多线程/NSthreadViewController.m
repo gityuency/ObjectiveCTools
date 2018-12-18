@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"点击屏幕";
     self.view.backgroundColor = [UIColor brownColor];
 }
 

@@ -62,6 +62,9 @@
 		E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1661DBF2181921900E82979 /* ScaleScrollViewController.xib */; };
 		E1661DC42181A39200E82979 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1661DC32181A39100E82979 /* back.jpg */; };
 		E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E1661DC72181B1E200E82979 /* UIImage+Image.m */; };
+		E1689AE821C8989B00F85232 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AE721C8989B00F85232 /* Tools.m */; };
+		E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AEB21C8C99400F85232 /* NSOperationViewController.m */; };
+		E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1689AEE21C8CE4200F85232 /* CustomOperation.m */; };
 		E17700082178337F0050C110 /* POPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17700062178337F0050C110 /* POPViewController.m */; };
 		E17700092178337F0050C110 /* POPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E17700072178337F0050C110 /* POPViewController.xib */; };
 		E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1950D8C2153AD06007D7265 /* PhotoLosslessSaveViewController.m */; };
@@ -177,6 +180,13 @@
 		E1661DC32181A39100E82979 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		E1661DC62181B1E200E82979 /* UIImage+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		E1661DC72181B1E200E82979 /* UIImage+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		E1689AE621C8989B00F85232 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		E1689AE721C8989B00F85232 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		E1689AE921C898BE00F85232 /* SingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleInstance.h; sourceTree = "<group>"; };
+		E1689AEA21C8C99400F85232 /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		E1689AEB21C8C99400F85232 /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		E1689AED21C8CE4200F85232 /* CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
+		E1689AEE21C8CE4200F85232 /* CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
 		E17700052178337F0050C110 /* POPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPViewController.h; sourceTree = "<group>"; };
 		E17700062178337F0050C110 /* POPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPViewController.m; sourceTree = "<group>"; };
 		E17700072178337F0050C110 /* POPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POPViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +270,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E1689AE521C8987F00F85232 /* 单例的写法 */,
 				E1646AB321BA0FC900378083 /* UITableViewCell选中样式和默认选中 */,
 				E1B8573C21B8CC5000882989 /* 密码交易键盘 */,
 				E199252021A6514900591074 /* 制作一个弹出框 */,
@@ -523,6 +534,10 @@
 				E150A7B921C72FC000953640 /* NSthreadViewController.m */,
 				E150A7BB21C73D7600953640 /* ThreadSafeViewController.h */,
 				E150A7BC21C73D7600953640 /* ThreadSafeViewController.m */,
+				E1689AEA21C8C99400F85232 /* NSOperationViewController.h */,
+				E1689AEB21C8C99400F85232 /* NSOperationViewController.m */,
+				E1689AED21C8CE4200F85232 /* CustomOperation.h */,
+				E1689AEE21C8CE4200F85232 /* CustomOperation.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -601,6 +616,16 @@
 				E19DB29121B512A300FF0042 /* NSObject+Validate.m */,
 			);
 			path = "扩展";
+			sourceTree = "<group>";
+		};
+		E1689AE521C8987F00F85232 /* 单例的写法 */ = {
+			isa = PBXGroup;
+			children = (
+				E1689AE621C8989B00F85232 /* Tools.h */,
+				E1689AE721C8989B00F85232 /* Tools.m */,
+				E1689AE921C898BE00F85232 /* SingleInstance.h */,
+			);
+			path = "单例的写法";
 			sourceTree = "<group>";
 		};
 		E1950D902153AD1C007D7265 /* 图片无损存取 */ = {
@@ -765,6 +790,7 @@
 				E199252821A651A000591074 /* MemoryView.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1B8573321B8B05E00882989 /* QQButton.m in Sources */,
+				E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
@@ -790,6 +816,7 @@
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
+				E1689AE821C8989B00F85232 /* Tools.m in Sources */,
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
 				E19DB28D21B509C400FF0042 /* NSArray+Yuency.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
@@ -803,6 +830,7 @@
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
+				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

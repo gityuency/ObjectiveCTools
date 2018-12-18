@@ -78,7 +78,7 @@
                     <rect key="frame" x="187.5" y="20" width="187.5" height="647"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDn-BQ-4zE">
-                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="162"/>
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="129.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="CGD_Group"/>
                             <connections>
@@ -86,7 +86,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0u-r1-Hjf">
-                            <rect key="frame" x="0.0" y="162" width="187.5" height="161.5"/>
+                            <rect key="frame" x="0.0" y="129.5" width="187.5" height="129.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="GCD_Enter_Leave"/>
                             <connections>
@@ -94,7 +94,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXn-6x-dX2">
-                            <rect key="frame" x="0.0" y="323.5" width="187.5" height="162"/>
+                            <rect key="frame" x="0.0" y="259" width="187.5" height="129"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="GCD_Barrier"/>
                             <connections>
@@ -102,15 +102,23 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-V0-xEQ">
-                            <rect key="frame" x="0.0" y="485.5" width="187.5" height="161.5"/>
+                            <rect key="frame" x="0.0" y="388" width="187.5" height="129.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="GCD_Semaphore"/>
                             <connections>
                                 <action selector="GCD_Semaphore:" destination="-1" eventType="touchUpInside" id="EpB-1b-qIR"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-A8-V1U">
+                            <rect key="frame" x="0.0" y="517.5" width="187.5" height="129.5"/>
+                            <state key="normal" title="GCD_Apply"/>
+                            <connections>
+                                <action selector="GCD_Apply:" destination="-1" eventType="touchUpInside" id="b2O-GA-IK4"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="hIg-A8-V1U" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="AZ8-9n-eic"/>
                         <constraint firstItem="MXn-6x-dX2" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="G6k-Me-rZV"/>
                         <constraint firstItem="HIe-V0-xEQ" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="O7C-wY-9Bv"/>
                         <constraint firstItem="b0u-r1-Hjf" firstAttribute="height" secondItem="BDn-BQ-4zE" secondAttribute="height" id="jXX-N9-Cgx"/>
