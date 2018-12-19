@@ -19,6 +19,7 @@
 		E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E52187F5A600F9A965 /* ItemView.m */; };
 		E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E82187F5A600F9A965 /* ItemCollectionView.m */; };
 		E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */; };
+		E142FB4A21C9E05C00C8227C /* CustomThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E142FB4921C9E05C00C8227C /* CustomThread.m */; };
 		E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */; };
 		E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */; };
 		E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */; };
@@ -105,6 +106,8 @@
 		E13F22EB2187F5A600F9A965 /* ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
 		E13F22F32187FA4D00F9A965 /* FakeChooseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseModel.h; sourceTree = "<group>"; };
 		E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseModel.m; sourceTree = "<group>"; };
+		E142FB4821C9E05C00C8227C /* CustomThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomThread.h; sourceTree = "<group>"; };
+		E142FB4921C9E05C00C8227C /* CustomThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomThread.m; sourceTree = "<group>"; };
 		E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
@@ -541,6 +544,8 @@
 				E1689AF021C8D0B500F85232 /* NSOperationViewController.xib */,
 				E1689AED21C8CE4200F85232 /* CustomOperation.h */,
 				E1689AEE21C8CE4200F85232 /* CustomOperation.m */,
+				E142FB4821C9E05C00C8227C /* CustomThread.h */,
+				E142FB4921C9E05C00C8227C /* CustomThread.m */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -808,6 +813,7 @@
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
+				E142FB4A21C9E05C00C8227C /* CustomThread.m in Sources */,
 				E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */,
 				E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */,
 				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,

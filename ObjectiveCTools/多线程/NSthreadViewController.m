@@ -7,6 +7,7 @@
 //
 
 #import "NSthreadViewController.h"
+#import "CustomThread.h"
 
 @interface NSthreadViewController ()
 
@@ -31,7 +32,9 @@
     
     //[self create_thread_2];
     
-    [self create_thread_3];
+    //[self create_thread_3];
+    
+    [self create_thread_4];
 }
 
 
@@ -73,5 +76,18 @@
     
     [NSThread exit];  //强制退出线程  // 如果在 for 循环里使用 break 退出, 那么表示任务执行完毕退出
 }
+
+
+
+/// 示例代码4
+- (void)create_thread_4 {
+    
+    // 如果需要直接使用 NSThread alloc init 这样的方式创建任务, 需要自定义子类, 然后重写 main 方法, 就可以执行
+    CustomThread *c = [[CustomThread alloc] init];
+    
+    [c start];
+    
+}
+
 
 @end
