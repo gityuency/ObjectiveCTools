@@ -46,6 +46,9 @@
 		E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE1218AD8F50011A334 /* UIView+Yuency.m */; };
 		E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15F7AE6218AE9640011A334 /* ClearImageViewController.m */; };
 		E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */; };
+		E15FD01C21D4CB58003B1B15 /* BankCardListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15FD01921D4CB58003B1B15 /* BankCardListView.xib */; };
+		E15FD01D21D4CB58003B1B15 /* BankCardListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E15FD01A21D4CB58003B1B15 /* BankCardListView.m */; };
+		E15FD01F21D4CC1E003B1B15 /* NormalPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15FD01E21D4CC1E003B1B15 /* NormalPopUpViewController.xib */; };
 		E163C3EF2193C5AB00B63EC5 /* lock_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E163C3ED2193C5AB00B63EC5 /* lock_selected.png */; };
 		E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E163C3EE2193C5AB00B63EC5 /* lock_normal.png */; };
 		E163C3F32193C5E400B63EC5 /* LockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E163C3F22193C5E400B63EC5 /* LockView.m */; };
@@ -80,7 +83,6 @@
 		E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19DB29121B512A300FF0042 /* NSObject+Validate.m */; };
 		E1B8573321B8B05E00882989 /* QQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573221B8B05E00882989 /* QQButton.m */; };
 		E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573821B8B4BA00882989 /* AnimationQQButtonViewController.m */; };
-		E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */; };
 		E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */; };
 		E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */; };
 /* End PBXBuildFile section */
@@ -158,6 +160,10 @@
 		E15F7AE5218AE9640011A334 /* ClearImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearImageViewController.h; sourceTree = "<group>"; };
 		E15F7AE6218AE9640011A334 /* ClearImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearImageViewController.m; sourceTree = "<group>"; };
 		E15F7AE7218AE9640011A334 /* ClearImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearImageViewController.xib; sourceTree = "<group>"; };
+		E15FD01921D4CB58003B1B15 /* BankCardListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCardListView.xib; sourceTree = "<group>"; };
+		E15FD01A21D4CB58003B1B15 /* BankCardListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardListView.m; sourceTree = "<group>"; };
+		E15FD01B21D4CB58003B1B15 /* BankCardListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardListView.h; sourceTree = "<group>"; };
+		E15FD01E21D4CC1E003B1B15 /* NormalPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalPopUpViewController.xib; sourceTree = "<group>"; };
 		E163C3ED2193C5AB00B63EC5 /* lock_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_selected.png; sourceTree = "<group>"; };
 		E163C3EE2193C5AB00B63EC5 /* lock_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock_normal.png; sourceTree = "<group>"; };
 		E163C3F12193C5E400B63EC5 /* LockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockView.h; sourceTree = "<group>"; };
@@ -216,8 +222,6 @@
 		E1B8573221B8B05E00882989 /* QQButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQButton.m; sourceTree = "<group>"; };
 		E1B8573721B8B4BA00882989 /* AnimationQQButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationQQButtonViewController.h; sourceTree = "<group>"; };
 		E1B8573821B8B4BA00882989 /* AnimationQQButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationQQButtonViewController.m; sourceTree = "<group>"; };
-		E1B8573D21B8CC6800882989 /* TradingkeyBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TradingkeyBoardViewController.h; sourceTree = "<group>"; };
-		E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingkeyBoardViewController.m; sourceTree = "<group>"; };
 		E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RebateTradingKeyBoardView.m; sourceTree = "<group>"; };
 		E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RebateTradingKeyBoardView.h; sourceTree = "<group>"; };
 		E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebateTradingKeyBoardView.xib; sourceTree = "<group>"; };
@@ -282,14 +286,13 @@
 				E142FB4B21CA521F00C8227C /* 位移枚举 */,
 				E1689AE521C8987F00F85232 /* 单例的写法 */,
 				E1646AB321BA0FC900378083 /* UITableViewCell选中样式和默认选中 */,
-				E1B8573C21B8CC5000882989 /* 密码交易键盘 */,
+				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
 				E199252021A6514900591074 /* 制作一个弹出框 */,
+				E13F22F7218832E900F9A965 /* UIPOPView弹出框 */,
 				E163C3F72193CFBD00B63EC5 /* 涂鸦 */,
 				E163C3EC2193C58B00B63EC5 /* 9宫格解锁 */,
 				E15F7AE4218AE9480011A334 /* 图片擦除 刮奖效果 */,
-				E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */,
 				E13F22F6218832D000F9A965 /* UITableView表头缩放 */,
-				E13F22F7218832E900F9A965 /* UIPOPView弹出框 */,
 				E13F22F82188330300F9A965 /* 文本框监听文字输入 */,
 				E13F22F92188332100F9A965 /* 文本带连接点击事件 */,
 				E13F22FA2188334400F9A965 /* iOS10根据系统设置改变文字大小 */,
@@ -681,9 +684,16 @@
 			children = (
 				E199252121A6518600591074 /* NormalPopUpViewController.h */,
 				E199252221A6518600591074 /* NormalPopUpViewController.m */,
+				E15FD01E21D4CC1E003B1B15 /* NormalPopUpViewController.xib */,
 				E199252621A651A000591074 /* MemoryView.h */,
 				E199252521A651A000591074 /* MemoryView.m */,
 				E199252421A651A000591074 /* MemoryView.xib */,
+				E15FD01B21D4CB58003B1B15 /* BankCardListView.h */,
+				E15FD01A21D4CB58003B1B15 /* BankCardListView.m */,
+				E15FD01921D4CB58003B1B15 /* BankCardListView.xib */,
+				E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */,
+				E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */,
+				E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */,
 			);
 			path = "制作一个弹出框";
 			sourceTree = "<group>";
@@ -705,18 +715,6 @@
 				E1B8573221B8B05E00882989 /* QQButton.m */,
 			);
 			path = "QQ 粘性效果";
-			sourceTree = "<group>";
-		};
-		E1B8573C21B8CC5000882989 /* 密码交易键盘 */ = {
-			isa = PBXGroup;
-			children = (
-				E1B8573D21B8CC6800882989 /* TradingkeyBoardViewController.h */,
-				E1B8573E21B8CC6800882989 /* TradingkeyBoardViewController.m */,
-				E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */,
-				E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */,
-				E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */,
-			);
-			path = "密码交易键盘";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -787,6 +785,7 @@
 				E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */,
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
+				E15FD01C21D4CB58003B1B15 /* BankCardListView.xib in Resources */,
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
 				E1661DC42181A39200E82979 /* back.jpg in Resources */,
 				E1689AF121C8D0B500F85232 /* NSOperationViewController.xib in Resources */,
@@ -794,6 +793,7 @@
 				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
+				E15FD01F21D4CC1E003B1B15 /* NormalPopUpViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
 			);
@@ -822,10 +822,10 @@
 				E1B8573321B8B05E00882989 /* QQButton.m in Sources */,
 				E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
-				E1B8573F21B8CC6800882989 /* TradingkeyBoardViewController.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */,
+				E15FD01D21D4CB58003B1B15 /* BankCardListView.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,

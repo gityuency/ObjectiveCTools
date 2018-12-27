@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+/// 最简单的弹框示例
 @interface MemoryView : UIView
 
 typedef void(^ActionBlock)(NSInteger index);
