@@ -55,7 +55,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (nonatomic, strong) NSArray<NSString *> *array;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpace;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpace;
 
 @end
 
@@ -79,6 +79,21 @@ static BCLVBlockAdd actionBlockAdd = nil;
     bankCardListView.tableView.tableFooterView = [UIView new];
     [bankCardListView.tableView reloadData];
     [[[UIApplication sharedApplication].delegate window] addSubview:bankCardListView];
+}
+
+- (void)didMoveToWindow {
+    [super didMoveToWindow];
+    
+    //装内容的 View, 设置了 左(0) 下(0) 右(0) 高(300) 这四个约束, 然后做底部高度约束动画
+    
+    bankCardListView.bottomSpace.constant = -300;
+    [bankCardListView layoutIfNeeded]; //先把约束更新
+    
+    bankCardListView.bottomSpace.constant = 0;
+    
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [bankCardListView layoutIfNeeded];
+    } completion:nil];
 }
 
 
