@@ -168,3 +168,20 @@
 
 
 @end
+
+
+/*
+ 
+UICollectionView根据内容高度调整尺寸
+ 
+ - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+ if (collectionView == self.collectionView) {
+ if([indexPath row] == ((NSIndexPath*)[[collectionView indexPathsForVisibleItems] lastObject]).row){
+ dispatch_async(dispatch_get_main_queue(), ^{
+ self.heightOfCollectionView.constant = self.collectionView.contentSize.height;
+ });
+ }
+ }
+ }
+
+ */

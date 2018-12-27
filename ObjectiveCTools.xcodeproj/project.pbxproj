@@ -20,6 +20,7 @@
 		E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E82187F5A600F9A965 /* ItemCollectionView.m */; };
 		E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */; };
 		E142FB4A21C9E05C00C8227C /* CustomThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E142FB4921C9E05C00C8227C /* CustomThread.m */; };
+		E142FB4E21CA523200C8227C /* OptionEnumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E142FB4D21CA523200C8227C /* OptionEnumeViewController.m */; };
 		E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */; };
 		E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */; };
 		E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */; };
@@ -108,6 +109,8 @@
 		E13F22F42187FA4D00F9A965 /* FakeChooseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseModel.m; sourceTree = "<group>"; };
 		E142FB4821C9E05C00C8227C /* CustomThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomThread.h; sourceTree = "<group>"; };
 		E142FB4921C9E05C00C8227C /* CustomThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomThread.m; sourceTree = "<group>"; };
+		E142FB4C21CA523200C8227C /* OptionEnumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionEnumeViewController.h; sourceTree = "<group>"; };
+		E142FB4D21CA523200C8227C /* OptionEnumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionEnumeViewController.m; sourceTree = "<group>"; };
 		E14599E72122DDDE00293226 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E82122DDDE00293226 /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		E14599E92122DDDE00293226 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E17243B421CB71E2007FBECA /* 线程保活 */,
+				E142FB4B21CA521F00C8227C /* 位移枚举 */,
 				E1689AE521C8987F00F85232 /* 单例的写法 */,
 				E1646AB321BA0FC900378083 /* UITableViewCell选中样式和默认选中 */,
 				E1B8573C21B8CC5000882989 /* 密码交易键盘 */,
@@ -355,6 +360,15 @@
 				E148E82D2140F77500019E60 /* UILabelViewController.xib */,
 			);
 			path = "iOS10根据系统设置改变文字大小";
+			sourceTree = "<group>";
+		};
+		E142FB4B21CA521F00C8227C /* 位移枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				E142FB4C21CA523200C8227C /* OptionEnumeViewController.h */,
+				E142FB4D21CA523200C8227C /* OptionEnumeViewController.m */,
+			);
+			path = "位移枚举";
 			sourceTree = "<group>";
 		};
 		E14599E52122DDDE00293226 /* 三方引用 */ = {
@@ -636,6 +650,13 @@
 			path = "单例的写法";
 			sourceTree = "<group>";
 		};
+		E17243B421CB71E2007FBECA /* 线程保活 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "线程保活";
+			sourceTree = "<group>";
+		};
 		E1950D902153AD1C007D7265 /* 图片无损存取 */ = {
 			isa = PBXGroup;
 			children = (
@@ -828,6 +849,7 @@
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
 				E1689AE821C8989B00F85232 /* Tools.m in Sources */,
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
+				E142FB4E21CA523200C8227C /* OptionEnumeViewController.m in Sources */,
 				E19DB28D21B509C400FF0042 /* NSArray+Yuency.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
