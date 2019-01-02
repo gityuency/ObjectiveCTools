@@ -15,6 +15,9 @@
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
 		E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */; };
 		E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */; };
+		E134E76221DC48C000CD2019 /* HomePagePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E134E76021DC48C000CD2019 /* HomePagePopView.xib */; };
+		E134E76321DC48C000CD2019 /* HomePagePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E134E76121DC48C000CD2019 /* HomePagePopView.m */; };
+		E134E76521DC492E00CD2019 /* 忘了爱.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E134E76421DC492E00CD2019 /* 忘了爱.jpg */; };
 		E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */; };
 		E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E52187F5A600F9A965 /* ItemView.m */; };
 		E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E82187F5A600F9A965 /* ItemCollectionView.m */; };
@@ -101,6 +104,10 @@
 		E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
+		E134E75F21DC48C000CD2019 /* HomePagePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePagePopView.h; sourceTree = "<group>"; };
+		E134E76021DC48C000CD2019 /* HomePagePopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePagePopView.xib; sourceTree = "<group>"; };
+		E134E76121DC48C000CD2019 /* HomePagePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePagePopView.m; sourceTree = "<group>"; };
+		E134E76421DC492E00CD2019 /* 忘了爱.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "忘了爱.jpg"; sourceTree = "<group>"; };
 		E13F22E12187F52E00F9A965 /* FakeChooseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseViewController.h; sourceTree = "<group>"; };
 		E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseViewController.m; sourceTree = "<group>"; };
 		E13F22E52187F5A600F9A965 /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
@@ -618,6 +625,7 @@
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E134E76421DC492E00CD2019 /* 忘了爱.jpg */,
 				E1646ABD21BA194100378083 /* tooles.png */,
 				E1661DC32181A39100E82979 /* back.jpg */,
 				E163C3EE2193C5AB00B63EC5 /* lock_normal.png */,
@@ -694,6 +702,9 @@
 				E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */,
 				E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */,
 				E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */,
+				E134E75F21DC48C000CD2019 /* HomePagePopView.h */,
+				E134E76121DC48C000CD2019 /* HomePagePopView.m */,
+				E134E76021DC48C000CD2019 /* HomePagePopView.xib */,
 			);
 			path = "制作一个弹出框";
 			sourceTree = "<group>";
@@ -786,6 +797,7 @@
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
 				E15FD01C21D4CB58003B1B15 /* BankCardListView.xib in Resources */,
+				E134E76521DC492E00CD2019 /* 忘了爱.jpg in Resources */,
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
 				E1661DC42181A39200E82979 /* back.jpg in Resources */,
 				E1689AF121C8D0B500F85232 /* NSOperationViewController.xib in Resources */,
@@ -793,6 +805,7 @@
 				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
+				E134E76221DC48C000CD2019 /* HomePagePopView.xib in Resources */,
 				E15FD01F21D4CC1E003B1B15 /* NormalPopUpViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
@@ -820,6 +833,7 @@
 				E199252821A651A000591074 /* MemoryView.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1B8573321B8B05E00882989 /* QQButton.m in Sources */,
+				E134E76321DC48C000CD2019 /* HomePagePopView.m in Sources */,
 				E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,

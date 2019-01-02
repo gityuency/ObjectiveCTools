@@ -10,6 +10,7 @@
 #import "MemoryView.h"
 #import "BankCardListView.h"
 #import "RebateTradingKeyBoardView.h"
+#import "HomePagePopView.h"
 
 @interface NormalPopUpViewController ()
 
@@ -19,6 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+
+/// 弹框 首页弹框
+- (IBAction)homePagePop:(UIButton *)sender {
+    
+    [HomePagePopView show:@"莣了噯" subTitle:@"莪庰騑別妩選萚，軹煶罘厢弌錯侢錯。" image:[UIImage imageNamed:@"忘了爱.jpg"] content:@"過祛锝憱穰τā過祛，曾俓滭竟枳褆曾俓。" click:^{
+        
+    } close:^{
+        
+    }];
 }
 
 
