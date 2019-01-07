@@ -35,7 +35,7 @@
     } else {
         v.labelSubTitle.text = subtitle;
     }
-    
+
     if (image == nil) {
         v.imageView.hidden = YES;
     } else {

@@ -15,8 +15,6 @@
 		E115D67B210FFA58007514FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D67A210FFA58007514FE /* main.m */; };
 		E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */; };
 		E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */; };
-		E134E76221DC48C000CD2019 /* HomePagePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E134E76021DC48C000CD2019 /* HomePagePopView.xib */; };
-		E134E76321DC48C000CD2019 /* HomePagePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E134E76121DC48C000CD2019 /* HomePagePopView.m */; };
 		E134E76521DC492E00CD2019 /* 忘了爱.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E134E76421DC492E00CD2019 /* 忘了爱.jpg */; };
 		E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */; };
 		E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E52187F5A600F9A965 /* ItemView.m */; };
@@ -84,6 +82,8 @@
 		E19DB28D21B509C400FF0042 /* NSArray+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E19DB28C21B509C400FF0042 /* NSArray+Yuency.m */; };
 		E19DB29021B50CB100FF0042 /* NSString+Yuency.m in Sources */ = {isa = PBXBuildFile; fileRef = E19DB28F21B50CB100FF0042 /* NSString+Yuency.m */; };
 		E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19DB29121B512A300FF0042 /* NSObject+Validate.m */; };
+		E1AD94FA21E2E38B0082E77D /* HomePagePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AD94F821E2E38A0082E77D /* HomePagePopView.m */; };
+		E1AD94FB21E2E38B0082E77D /* HomePagePopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AD94F921E2E38B0082E77D /* HomePagePopView.xib */; };
 		E1B8573321B8B05E00882989 /* QQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573221B8B05E00882989 /* QQButton.m */; };
 		E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8573821B8B4BA00882989 /* AnimationQQButtonViewController.m */; };
 		E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */; };
@@ -104,9 +104,6 @@
 		E123BAF52133FC5F003AE0C9 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
-		E134E75F21DC48C000CD2019 /* HomePagePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePagePopView.h; sourceTree = "<group>"; };
-		E134E76021DC48C000CD2019 /* HomePagePopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePagePopView.xib; sourceTree = "<group>"; };
-		E134E76121DC48C000CD2019 /* HomePagePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePagePopView.m; sourceTree = "<group>"; };
 		E134E76421DC492E00CD2019 /* 忘了爱.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "忘了爱.jpg"; sourceTree = "<group>"; };
 		E13F22E12187F52E00F9A965 /* FakeChooseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseViewController.h; sourceTree = "<group>"; };
 		E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseViewController.m; sourceTree = "<group>"; };
@@ -225,6 +222,9 @@
 		E19DB28F21B50CB100FF0042 /* NSString+Yuency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Yuency.m"; sourceTree = "<group>"; };
 		E19DB29121B512A300FF0042 /* NSObject+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Validate.m"; sourceTree = "<group>"; };
 		E19DB29221B512A400FF0042 /* NSObject+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Validate.h"; sourceTree = "<group>"; };
+		E1AD94F721E2E38A0082E77D /* HomePagePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePagePopView.h; sourceTree = "<group>"; };
+		E1AD94F821E2E38A0082E77D /* HomePagePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePagePopView.m; sourceTree = "<group>"; };
+		E1AD94F921E2E38B0082E77D /* HomePagePopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePagePopView.xib; sourceTree = "<group>"; };
 		E1B8573121B8B05E00882989 /* QQButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQButton.h; sourceTree = "<group>"; };
 		E1B8573221B8B05E00882989 /* QQButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQButton.m; sourceTree = "<group>"; };
 		E1B8573721B8B4BA00882989 /* AnimationQQButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationQQButtonViewController.h; sourceTree = "<group>"; };
@@ -702,9 +702,9 @@
 				E1B8574121B8CC7D00882989 /* RebateTradingKeyBoardView.h */,
 				E1B8574021B8CC7D00882989 /* RebateTradingKeyBoardView.m */,
 				E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */,
-				E134E75F21DC48C000CD2019 /* HomePagePopView.h */,
-				E134E76121DC48C000CD2019 /* HomePagePopView.m */,
-				E134E76021DC48C000CD2019 /* HomePagePopView.xib */,
+				E1AD94F721E2E38A0082E77D /* HomePagePopView.h */,
+				E1AD94F821E2E38A0082E77D /* HomePagePopView.m */,
+				E1AD94F921E2E38B0082E77D /* HomePagePopView.xib */,
 			);
 			path = "制作一个弹出框";
 			sourceTree = "<group>";
@@ -805,10 +805,10 @@
 				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E1658F152139239100479FE3 /* TextViewViewController.xib in Resources */,
-				E134E76221DC48C000CD2019 /* HomePagePopView.xib in Resources */,
 				E15FD01F21D4CC1E003B1B15 /* NormalPopUpViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
+				E1AD94FB21E2E38B0082E77D /* HomePagePopView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,7 +833,7 @@
 				E199252821A651A000591074 /* MemoryView.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
 				E1B8573321B8B05E00882989 /* QQButton.m in Sources */,
-				E134E76321DC48C000CD2019 /* HomePagePopView.m in Sources */,
+				E1AD94FA21E2E38B0082E77D /* HomePagePopView.m in Sources */,
 				E1689AEF21C8CE4200F85232 /* CustomOperation.m in Sources */,
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,

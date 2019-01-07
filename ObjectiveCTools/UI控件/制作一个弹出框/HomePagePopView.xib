@@ -22,19 +22,19 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-BU-5e7" userLabel="内容背景">
                             <rect key="frame" x="0.0" y="0.0" width="295" height="454"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="800" verticalCompressionResistancePriority="800" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cph-U3-6dc" userLabel="主标题">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cph-U3-6dc" userLabel="主标题">
                                     <rect key="frame" x="20" y="30" width="255" height="21.5"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="textColor" red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="700" verticalCompressionResistancePriority="700" text="Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-B5-par" userLabel="副标题">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label Label Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-B5-par" userLabel="副标题">
                                     <rect key="frame" x="20" y="61.5" width="255" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="600" verticalCompressionResistancePriority="600" translatesAutoresizingMaskIntoConstraints="NO" id="93d-Lr-hR1" userLabel="图片">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="93d-Lr-hR1" userLabel="图片">
                                     <rect key="frame" x="20" y="102" width="255" height="268"/>
                                 </imageView>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcl-bc-Xvn" userLabel="内容">
@@ -80,9 +80,9 @@
                                 <constraint firstItem="Bcl-bc-Xvn" firstAttribute="top" secondItem="93d-Lr-hR1" secondAttribute="top" id="kef-Ly-LXo"/>
                                 <constraint firstItem="Bcl-bc-Xvn" firstAttribute="leading" secondItem="93d-Lr-hR1" secondAttribute="leading" id="p1U-1G-hBE"/>
                                 <constraint firstAttribute="bottom" secondItem="6mi-jD-v1O" secondAttribute="bottom" constant="20" id="poc-CN-qyd"/>
-                                <constraint firstItem="93d-Lr-hR1" firstAttribute="top" secondItem="cph-U3-6dc" secondAttribute="bottom" priority="600" constant="20" id="whs-mS-tet"/>
+                                <constraint firstItem="93d-Lr-hR1" firstAttribute="top" secondItem="cph-U3-6dc" secondAttribute="bottom" priority="751" constant="20" id="whs-mS-tet"/>
                                 <constraint firstItem="Bcl-bc-Xvn" firstAttribute="bottom" secondItem="93d-Lr-hR1" secondAttribute="bottom" id="zJg-PY-THA"/>
-                                <constraint firstItem="93d-Lr-hR1" firstAttribute="top" secondItem="XvQ-B5-par" secondAttribute="bottom" priority="700" constant="20" id="zpA-yk-VqZ"/>
+                                <constraint firstItem="93d-Lr-hR1" firstAttribute="top" secondItem="XvQ-B5-par" secondAttribute="bottom" constant="20" id="zpA-yk-VqZ"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -127,19 +127,19 @@
                 <outlet property="labelTitle" destination="cph-U3-6dc" id="Bkj-tb-FUZ"/>
                 <outlet property="textView" destination="Bcl-bc-Xvn" id="nXx-bp-gql"/>
             </connections>
-            <point key="canvasLocation" x="-628" y="55"/>
+            <point key="canvasLocation" x="-697" y="63"/>
         </view>
         <view contentMode="scaleToFill" id="tGA-tO-bvd">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实验约束标题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjg-32-7iF">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Father" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjg-32-7iF">
                     <rect key="frame" x="20" y="40" width="335" height="49"/>
                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="约束副标题" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-UH-hAj">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSSSSS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-UH-hAj">
                     <rect key="frame" x="20" y="109" width="335" height="47"/>
                     <fontDescription key="fontDescription" type="system" pointSize="39"/>
                     <color key="textColor" red="0.95686274510000002" green="0.25256019159999998" blue="0.1350349062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,7 +164,7 @@
                 <constraint firstItem="zjg-32-7iF" firstAttribute="leading" secondItem="egt-LZ-9PR" secondAttribute="leading" constant="20" id="zxz-uI-KPM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="egt-LZ-9PR"/>
-            <point key="canvasLocation" x="87" y="54"/>
+            <point key="canvasLocation" x="564" y="107"/>
         </view>
     </objects>
 </document>
