@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"LeftSwipDeleteViewController":@"微信Cell左滑确认删除"},
                        @{@"OptionEnumeViewController":@"位移枚举"},
                        @{@"SelectionTableViewController":@"UITableViewCell选中样式和默认选中"},
                        @{@"FakeChooseViewController":@"仿造某宝商品选择"},

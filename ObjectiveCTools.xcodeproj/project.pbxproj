@@ -16,6 +16,9 @@
 		E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */; };
 		E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */; };
 		E134E76521DC492E00CD2019 /* 忘了爱.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E134E76421DC492E00CD2019 /* 忘了爱.jpg */; };
+		E13A562D21F9B09B006447E3 /* LeftSwipDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13A562C21F9B09B006447E3 /* LeftSwipDeleteViewController.m */; };
+		E13A562F21F9B147006447E3 /* file_folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E13A562E21F9B147006447E3 /* file_folder@2x.png */; };
+		E13A563121F9B150006447E3 /* file_zipped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E13A563021F9B150006447E3 /* file_zipped@2x.png */; };
 		E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */; };
 		E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E52187F5A600F9A965 /* ItemView.m */; };
 		E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13F22E82187F5A600F9A965 /* ItemCollectionView.m */; };
@@ -105,6 +108,10 @@
 		E123BAF62133FC5F003AE0C9 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		E123BAF72133FC5F003AE0C9 /* TextFieldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldViewController.xib; sourceTree = "<group>"; };
 		E134E76421DC492E00CD2019 /* 忘了爱.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "忘了爱.jpg"; sourceTree = "<group>"; };
+		E13A562B21F9B09B006447E3 /* LeftSwipDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSwipDeleteViewController.h; sourceTree = "<group>"; };
+		E13A562C21F9B09B006447E3 /* LeftSwipDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSwipDeleteViewController.m; sourceTree = "<group>"; };
+		E13A562E21F9B147006447E3 /* file_folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file_folder@2x.png"; sourceTree = "<group>"; };
+		E13A563021F9B150006447E3 /* file_zipped@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file_zipped@2x.png"; sourceTree = "<group>"; };
 		E13F22E12187F52E00F9A965 /* FakeChooseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeChooseViewController.h; sourceTree = "<group>"; };
 		E13F22E22187F52E00F9A965 /* FakeChooseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeChooseViewController.m; sourceTree = "<group>"; };
 		E13F22E52187F5A600F9A965 /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
@@ -289,6 +296,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				E13A562A21F9B055006447E3 /* 微信Cell左滑确认删除 */,
 				E17243B421CB71E2007FBECA /* 线程保活 */,
 				E142FB4B21CA521F00C8227C /* 位移枚举 */,
 				E1689AE521C8987F00F85232 /* 单例的写法 */,
@@ -305,6 +313,15 @@
 				E13F22FA2188334400F9A965 /* iOS10根据系统设置改变文字大小 */,
 			);
 			path = "UI控件";
+			sourceTree = "<group>";
+		};
+		E13A562A21F9B055006447E3 /* 微信Cell左滑确认删除 */ = {
+			isa = PBXGroup;
+			children = (
+				E13A562B21F9B09B006447E3 /* LeftSwipDeleteViewController.h */,
+				E13A562C21F9B09B006447E3 /* LeftSwipDeleteViewController.m */,
+			);
+			path = "微信Cell左滑确认删除";
 			sourceTree = "<group>";
 		};
 		E13F22E42187F57500F9A965 /* 仿造某宝商品选择 */ = {
@@ -625,6 +642,8 @@
 		E1661DC22181A38D00E82979 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E13A563021F9B150006447E3 /* file_zipped@2x.png */,
+				E13A562E21F9B147006447E3 /* file_folder@2x.png */,
 				E134E76421DC492E00CD2019 /* 忘了爱.jpg */,
 				E1646ABD21BA194100378083 /* tooles.png */,
 				E1661DC32181A39100E82979 /* back.jpg */,
@@ -795,7 +814,9 @@
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
 				E163C3F02193C5AB00B63EC5 /* lock_normal.png in Resources */,
 				E17700092178337F0050C110 /* POPViewController.xib in Resources */,
+				E13A563121F9B150006447E3 /* file_zipped@2x.png in Resources */,
 				E1950D8F2153AD06007D7265 /* PhotoLosslessSaveViewController.xib in Resources */,
+				E13A562F21F9B147006447E3 /* file_folder@2x.png in Resources */,
 				E15FD01C21D4CB58003B1B15 /* BankCardListView.xib in Resources */,
 				E134E76521DC492E00CD2019 /* 忘了爱.jpg in Resources */,
 				E1661DC12181921900E82979 /* ScaleScrollViewController.xib in Resources */,
@@ -867,6 +888,7 @@
 				E19DB28D21B509C400FF0042 /* NSArray+Yuency.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
+				E13A562D21F9B09B006447E3 /* LeftSwipDeleteViewController.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
 				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
