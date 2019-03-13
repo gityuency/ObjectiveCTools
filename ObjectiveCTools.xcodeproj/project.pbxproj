@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0E9A78D2238EBA200787F85 /* YXReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A78B2238EBA200787F85 /* YXReplayManager.m */; };
+		B0E9A7942238EBD000787F85 /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A7922238EBD000787F85 /* RecordingViewController.m */; };
+		B0E9A7952238EBD000787F85 /* RecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E9A7932238EBD000787F85 /* RecordingViewController.xib */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
 		E115D673210FFA57007514FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D671210FFA57007514FE /* Main.storyboard */; };
@@ -94,6 +97,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0E9A78B2238EBA200787F85 /* YXReplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXReplayManager.m; sourceTree = "<group>"; };
+		B0E9A78C2238EBA200787F85 /* YXReplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXReplayManager.h; sourceTree = "<group>"; };
+		B0E9A7912238EBD000787F85 /* RecordingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
+		B0E9A7922238EBD000787F85 /* RecordingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordingViewController.m; sourceTree = "<group>"; };
+		B0E9A7932238EBD000787F85 /* RecordingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingViewController.xib; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E115D66B210FFA57007514FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E115D66C210FFA57007514FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -252,6 +260,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0E9A78A2238EB9A00787F85 /* 屏幕录制 */ = {
+			isa = PBXGroup;
+			children = (
+				B0E9A7912238EBD000787F85 /* RecordingViewController.h */,
+				B0E9A7922238EBD000787F85 /* RecordingViewController.m */,
+				B0E9A7932238EBD000787F85 /* RecordingViewController.xib */,
+				B0E9A78C2238EBA200787F85 /* YXReplayManager.h */,
+				B0E9A78B2238EBA200787F85 /* YXReplayManager.m */,
+			);
+			path = "屏幕录制";
+			sourceTree = "<group>";
+		};
 		E115D65F210FFA57007514FE = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +316,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				B0E9A78A2238EB9A00787F85 /* 屏幕录制 */,
 				E13A562A21F9B055006447E3 /* 微信Cell左滑确认删除 */,
 				E17243B421CB71E2007FBECA /* 线程保活 */,
 				E142FB4B21CA521F00C8227C /* 位移枚举 */,
@@ -809,6 +830,7 @@
 				E148E82F2140F77500019E60 /* UILabelViewController.xib in Resources */,
 				E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */,
 				E199252721A651A000591074 /* MemoryView.xib in Resources */,
+				B0E9A7952238EBD000787F85 /* RecordingViewController.xib in Resources */,
 				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
@@ -859,6 +881,7 @@
 				E1459A182122DDDF00293226 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
+				B0E9A7942238EBD000787F85 /* RecordingViewController.m in Sources */,
 				E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */,
 				E15FD01D21D4CB58003B1B15 /* BankCardListView.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
@@ -869,6 +892,7 @@
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
+				B0E9A78D2238EBA200787F85 /* YXReplayManager.m in Sources */,
 				E142FB4A21C9E05C00C8227C /* CustomThread.m in Sources */,
 				E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */,
 				E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */,
@@ -1037,11 +1061,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				DEVELOPMENT_TEAM = QXFXE9H6KG;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oc.ObjectiveCTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.livetest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1052,11 +1076,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				DEVELOPMENT_TEAM = QXFXE9H6KG;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oc.ObjectiveCTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.livetest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

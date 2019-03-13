@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"RecordingViewController":@"ReplayKit 屏幕录制 视频放到相册"},
                        @{@"LeftSwipDeleteViewController":@"微信Cell左滑确认删除"},
                        @{@"OptionEnumeViewController":@"位移枚举"},
                        @{@"SelectionTableViewController":@"UITableViewCell选中样式和默认选中"},
@@ -46,6 +47,14 @@
                        ];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"c"];
+    
+    /// 解决顶部留白  解决scrollview顶部留白 滚动式图顶部空白
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    
 }
 
 
