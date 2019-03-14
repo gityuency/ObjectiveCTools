@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 单例对象
 + (instancetype)sharedManager;
 
+/// 销毁对象
++ (void)destoryManager;
+
 /// 用于查看相册和麦克风权限是否已经获取;
 + (void)demandForAuthorization:(void(^)(void))authorizedResultBlock;
 
