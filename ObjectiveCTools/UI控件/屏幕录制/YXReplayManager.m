@@ -1,15 +1,18 @@
 //
 //  YXReplayManager.m
-//  YX_ReplayKitDemo
+//  YXReplayManager.m
 //
 //  Created by HPCL20190110 on 2019/3/13.
-//  Copyright © 2019 qiu. All rights reserved.
+//  Copyright © 2019 ChinaRapidFinance. All rights reserved.
 //
 
 #import "YXReplayManager.h"
 #import <Photos/Photos.h>
 #import <ReplayKit/ReplayKit.h>
-#import <objc/runtime.h>
+
+@interface YXReplayManager() <RPPreviewViewControllerDelegate>
+
+@end
 
 @implementation YXReplayManager
 
@@ -87,14 +90,14 @@ static RPScreenRecorder *recorder;
                 NSLog(@"录制开始... 10.0 系统");
             }
         }];
+    } else if (@available(iOS 9.0, *)) {
+        [recorder startRecordingWithMicrophoneEnabled:YES handler:^(NSError * _Nullable error) {
+            if (!error) {
+                NSLog(@"录制开始... 9.0 系统");
+            }
+        }];
     } else {
-        if (@available(iOS 9.0, *)) {
-            [recorder startRecordingWithMicrophoneEnabled:YES handler:^(NSError * _Nullable error) {
-                if (!error) {
-                    NSLog(@"录制开始... 9.0 系统");
-                }
-            }];
-        }
+        NSLog(@"系统版本太低,没法玩.");
     }
 }
 
@@ -118,24 +121,61 @@ static RPScreenRecorder *recorder;
                 NSLog(@"出错: %@", error);
             } else {  //成功回调
                 
-                // 在iOS9 里面取不到 movieURL 这个变量,程序会崩溃.
-                NSURL *videoURL = [previewViewController valueForKey:@"movieURL"];
-                
-                if (videoURL) {
-                    BOOL compatible = UIVideoAtPathIsCompatibleWithSavedPhotosAlbum([videoURL path]);
-                  
-                    if (compatible) {
-                        UISaveVideoAtPathToSavedPhotosAlbum([videoURL path], self, @selector(savedPhotoImage:didFinishSavingWithError:contextInfo:), nil);
-                    }
-
-                } else {
-                    NSLog(@"没有找到 movieURL");
+                if (@available(iOS 10.0, *)) {
+                    
+                    /*
+                     iOS 10 这里我选择直接保存到相册,不使用 previewViewController 弹出来
+                     */
+                    [self handleiOS10:previewViewController];
+                    
+                } else if (@available(iOS 9.0, *)) {
+                    
+                    /*
+                     在iOS9 里面取不到 movieURL 这个变量,程序会崩溃. 所以直接弹出这个 previewViewController 让用户来操作保存
+                     */
+                    [self handleiOS9:previewViewController];
                 }
             }
         }];
     });
 }
 
+/// 处理 iOS 10
+- (void)handleiOS10:(RPPreviewViewController *)previewViewController {
+    
+    NSURL *videoURL = [previewViewController valueForKey:@"movieURL"];
+    
+    if (videoURL) {
+        BOOL compatible = UIVideoAtPathIsCompatibleWithSavedPhotosAlbum([videoURL path]);
+        
+        if (compatible) {
+            UISaveVideoAtPathToSavedPhotosAlbum([videoURL path], self, @selector(savedPhotoImage:didFinishSavingWithError:contextInfo:), nil);
+        }
+        
+    } else {
+        NSLog(@"没有找到 movieURL");
+    }
+}
+
+
+/// 处理 iOS 9
+- (void)handleiOS9:(RPPreviewViewController *)previewViewController {
+    previewViewController.previewControllerDelegate = self;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:previewViewController animated:YES completion:nil];
+}
+
+#pragma mark - RPPreviewViewController 代理,用于 iOS 9
+- (void)previewControllerDidFinish:(RPPreviewViewController *)previewController {
+    [previewController dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"预览控制器消失");
+}
+
+- (void)previewController:(RPPreviewViewController *)previewController didFinishWithActivityTypes:(NSSet <NSString *> *)activityTypes {
+    NSLog(@"用户已经操作! %@", activityTypes);
+}
+
+
+#pragma mark - iOS 10 保存视频的回调
 /// 保存视频之后的回调,这个方法不能乱写
 - (void)savedPhotoImage:(UIImage*)image didFinishSavingWithError: (NSError *)error contextInfo: (void *)contextInfo {
     
@@ -145,6 +185,5 @@ static RPScreenRecorder *recorder;
         NSLog(@"已经成功保存了视频!");
     }
 }
-
 
 @end

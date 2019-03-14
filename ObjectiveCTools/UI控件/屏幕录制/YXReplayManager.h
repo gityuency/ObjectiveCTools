@@ -1,9 +1,9 @@
 //
 //  YXReplayManager.h
-//  YX_ReplayKitDemo
+//  YXReplayManager
 //
 //  Created by HPCL20190110 on 2019/3/13.
-//  Copyright © 2019 qiu. All rights reserved.
+//  Copyright © 2019 ChinaRapidFinance. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

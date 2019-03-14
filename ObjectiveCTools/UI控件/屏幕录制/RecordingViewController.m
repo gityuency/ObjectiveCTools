@@ -20,15 +20,16 @@
 
 }
 
+- (IBAction)start:(UIButton *)sender {
 
-- (IBAction)start:(id)sender {
-
+    sender.backgroundColor = [UIColor redColor];
     [[YXReplayManager sharedManager] startRecording];
 
 }
 
-- (IBAction)stop:(id)sender {
+- (IBAction)stop:(UIButton *)sender {
 
+    sender.backgroundColor = [UIColor greenColor];
     [[YXReplayManager sharedManager] stopRecording];
 }
 

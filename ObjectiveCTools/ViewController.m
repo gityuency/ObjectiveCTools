@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"ScreenShotViewController":@"各种截屏的手段"},
                        @{@"RecordingViewController":@"ReplayKit 屏幕录制 视频放到相册"},
                        @{@"LeftSwipDeleteViewController":@"微信Cell左滑确认删除"},
                        @{@"OptionEnumeViewController":@"位移枚举"},
