@@ -28,9 +28,9 @@
 		<true/>
 	</dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>要添加照片到你的相册!</string>
+	<string>警告! 要添加照片到你的相册!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>给个相册访问权限!</string>
+	<string>警告! 给个相册访问权限!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -52,5 +52,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>警告! 需要使用麦克风!</string>
 </dict>
 </plist>

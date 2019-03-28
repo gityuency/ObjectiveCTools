@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"LiveRecordViewController": @"直播录屏 自定义屏幕录制 解决直播录屏黑屏"},
                        @{@"ScreenShotViewController":@"各种截屏的手段"},
                        @{@"RecordingViewController":@"ReplayKit 屏幕录制 视频放到相册"},
                        @{@"LeftSwipDeleteViewController":@"微信Cell左滑确认删除"},

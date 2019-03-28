@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B07BFF07224B0F2B0094C2D8 /* LiveRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BFF05224B0F2B0094C2D8 /* LiveRecordViewController.m */; };
+		B07BFF08224B0F2B0094C2D8 /* LiveRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07BFF06224B0F2B0094C2D8 /* LiveRecordViewController.xib */; };
 		B0E9A78D2238EBA200787F85 /* YXReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A78B2238EBA200787F85 /* YXReplayManager.m */; };
 		B0E9A7942238EBD000787F85 /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A7922238EBD000787F85 /* RecordingViewController.m */; };
 		B0E9A7952238EBD000787F85 /* RecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E9A7932238EBD000787F85 /* RecordingViewController.xib */; };
 		B0E9A79A2238F57700787F85 /* ScreenShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A7982238F57700787F85 /* ScreenShotViewController.m */; };
 		B0E9A79B2238F57700787F85 /* ScreenShotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E9A7992238F57700787F85 /* ScreenShotViewController.xib */; };
+		B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28B224CB06800A8A2AD /* YXFrameRecorder.m */; };
+		B0F8B294224CB06800A8A2AD /* YXFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28C224CB06800A8A2AD /* YXFilePath.m */; };
+		B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */; };
+		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
 		E115D673210FFA57007514FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D671210FFA57007514FE /* Main.storyboard */; };
@@ -99,6 +105,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B07BFF04224B0F2B0094C2D8 /* LiveRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRecordViewController.h; sourceTree = "<group>"; };
+		B07BFF05224B0F2B0094C2D8 /* LiveRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRecordViewController.m; sourceTree = "<group>"; };
+		B07BFF06224B0F2B0094C2D8 /* LiveRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveRecordViewController.xib; sourceTree = "<group>"; };
 		B0E9A78B2238EBA200787F85 /* YXReplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXReplayManager.m; sourceTree = "<group>"; };
 		B0E9A78C2238EBA200787F85 /* YXReplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXReplayManager.h; sourceTree = "<group>"; };
 		B0E9A7912238EBD000787F85 /* RecordingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
@@ -107,6 +116,14 @@
 		B0E9A7972238F57700787F85 /* ScreenShotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotViewController.h; sourceTree = "<group>"; };
 		B0E9A7982238F57700787F85 /* ScreenShotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShotViewController.m; sourceTree = "<group>"; };
 		B0E9A7992238F57700787F85 /* ScreenShotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenShotViewController.xib; sourceTree = "<group>"; };
+		B0F8B28B224CB06800A8A2AD /* YXFrameRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFrameRecorder.m; sourceTree = "<group>"; };
+		B0F8B28C224CB06800A8A2AD /* YXFilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFilePath.m; sourceTree = "<group>"; };
+		B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRecorderManager.m; sourceTree = "<group>"; };
+		B0F8B28E224CB06800A8A2AD /* YXAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAudioRecorder.h; sourceTree = "<group>"; };
+		B0F8B28F224CB06800A8A2AD /* YXFrameRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFrameRecorder.h; sourceTree = "<group>"; };
+		B0F8B290224CB06800A8A2AD /* YXFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFilePath.h; sourceTree = "<group>"; };
+		B0F8B291224CB06800A8A2AD /* YXRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecorderManager.h; sourceTree = "<group>"; };
+		B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAudioRecorder.m; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E115D66B210FFA57007514FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E115D66C210FFA57007514FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -265,6 +282,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B07BFF03224B0F080094C2D8 /* 直播录屏 */ = {
+			isa = PBXGroup;
+			children = (
+				B07BFF04224B0F2B0094C2D8 /* LiveRecordViewController.h */,
+				B07BFF05224B0F2B0094C2D8 /* LiveRecordViewController.m */,
+				B07BFF06224B0F2B0094C2D8 /* LiveRecordViewController.xib */,
+				B0F8B28A224CB06800A8A2AD /* YXRecorder */,
+			);
+			path = "直播录屏";
+			sourceTree = "<group>";
+		};
 		B0E9A78A2238EB9A00787F85 /* 屏幕录制 */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +313,21 @@
 				B0E9A7992238F57700787F85 /* ScreenShotViewController.xib */,
 			);
 			path = "截屏";
+			sourceTree = "<group>";
+		};
+		B0F8B28A224CB06800A8A2AD /* YXRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				B0F8B291224CB06800A8A2AD /* YXRecorderManager.h */,
+				B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */,
+				B0F8B28F224CB06800A8A2AD /* YXFrameRecorder.h */,
+				B0F8B28B224CB06800A8A2AD /* YXFrameRecorder.m */,
+				B0F8B28E224CB06800A8A2AD /* YXAudioRecorder.h */,
+				B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */,
+				B0F8B290224CB06800A8A2AD /* YXFilePath.h */,
+				B0F8B28C224CB06800A8A2AD /* YXFilePath.m */,
+			);
+			path = YXRecorder;
 			sourceTree = "<group>";
 		};
 		E115D65F210FFA57007514FE = {
@@ -331,6 +374,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				B07BFF03224B0F080094C2D8 /* 直播录屏 */,
 				B0E9A7962238F52C00787F85 /* 截屏 */,
 				B0E9A78A2238EB9A00787F85 /* 屏幕录制 */,
 				E13A562A21F9B055006447E3 /* 微信Cell左滑确认删除 */,
@@ -869,6 +913,7 @@
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
 				E1AD94FB21E2E38B0082E77D /* HomePagePopView.xib in Resources */,
+				B07BFF08224B0F2B0094C2D8 /* LiveRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,8 +932,10 @@
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
+				B07BFF07224B0F2B0094C2D8 /* LiveRecordViewController.m in Sources */,
 				E17700082178337F0050C110 /* POPViewController.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
+				B0F8B294224CB06800A8A2AD /* YXFilePath.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
 				E199252821A651A000591074 /* MemoryView.m in Sources */,
 				E1459A2B2122DF7300293226 /* GCDViewController.m in Sources */,
@@ -913,6 +960,7 @@
 				E142FB4A21C9E05C00C8227C /* CustomThread.m in Sources */,
 				E19DB29321B512A400FF0042 /* NSObject+Validate.m in Sources */,
 				E1661DC82181B1E200E82979 /* UIImage+Image.m in Sources */,
+				B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */,
 				B0E9A79A2238F57700787F85 /* ScreenShotViewController.m in Sources */,
 				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,
 				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
@@ -923,6 +971,7 @@
 				E150A7BD21C73D7600953640 /* ThreadSafeViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
+				B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
 				E1689AE821C8989B00F85232 /* Tools.m in Sources */,
 				E1459A1C2122DDDF00293226 /* NetWorkTools.m in Sources */,
@@ -940,6 +989,7 @@
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
+				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
