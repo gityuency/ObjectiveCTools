@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A45399AE22EEA84E00918A12 /* SlidingCircularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45399AC22EEA84E00918A12 /* SlidingCircularViewController.m */; };
+		A45399AF22EEA84E00918A12 /* SlidingCircularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45399AD22EEA84E00918A12 /* SlidingCircularViewController.xib */; };
+		A45399B222EEA87C00918A12 /* YXGoalReviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = A45399B122EEA87C00918A12 /* YXGoalReviewView.m */; };
+		A45399BF22EEBA8B00918A12 /* LZGoalReviewViewOC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45399BD22EEBA8B00918A12 /* LZGoalReviewViewOC.m */; };
 		B07BFF07224B0F2B0094C2D8 /* LiveRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BFF05224B0F2B0094C2D8 /* LiveRecordViewController.m */; };
 		B07BFF08224B0F2B0094C2D8 /* LiveRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07BFF06224B0F2B0094C2D8 /* LiveRecordViewController.xib */; };
 		B0E9A78D2238EBA200787F85 /* YXReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E9A78B2238EBA200787F85 /* YXReplayManager.m */; };
@@ -105,6 +109,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A45399AB22EEA84E00918A12 /* SlidingCircularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingCircularViewController.h; sourceTree = "<group>"; };
+		A45399AC22EEA84E00918A12 /* SlidingCircularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidingCircularViewController.m; sourceTree = "<group>"; };
+		A45399AD22EEA84E00918A12 /* SlidingCircularViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidingCircularViewController.xib; sourceTree = "<group>"; };
+		A45399B022EEA87C00918A12 /* YXGoalReviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGoalReviewView.h; sourceTree = "<group>"; };
+		A45399B122EEA87C00918A12 /* YXGoalReviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGoalReviewView.m; sourceTree = "<group>"; };
+		A45399BD22EEBA8B00918A12 /* LZGoalReviewViewOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZGoalReviewViewOC.m; sourceTree = "<group>"; };
+		A45399BE22EEBA8B00918A12 /* LZGoalReviewViewOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZGoalReviewViewOC.h; sourceTree = "<group>"; };
 		B07BFF04224B0F2B0094C2D8 /* LiveRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveRecordViewController.h; sourceTree = "<group>"; };
 		B07BFF05224B0F2B0094C2D8 /* LiveRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveRecordViewController.m; sourceTree = "<group>"; };
 		B07BFF06224B0F2B0094C2D8 /* LiveRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveRecordViewController.xib; sourceTree = "<group>"; };
@@ -282,6 +293,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */ = {
+			isa = PBXGroup;
+			children = (
+				A45399AB22EEA84E00918A12 /* SlidingCircularViewController.h */,
+				A45399AC22EEA84E00918A12 /* SlidingCircularViewController.m */,
+				A45399AD22EEA84E00918A12 /* SlidingCircularViewController.xib */,
+				A45399B022EEA87C00918A12 /* YXGoalReviewView.h */,
+				A45399B122EEA87C00918A12 /* YXGoalReviewView.m */,
+				A45399BE22EEBA8B00918A12 /* LZGoalReviewViewOC.h */,
+				A45399BD22EEBA8B00918A12 /* LZGoalReviewViewOC.m */,
+			);
+			path = "自定义一个圆圈评分控件";
+			sourceTree = "<group>";
+		};
 		B07BFF03224B0F080094C2D8 /* 直播录屏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +399,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */,
 				B07BFF03224B0F080094C2D8 /* 直播录屏 */,
 				B0E9A7962238F52C00787F85 /* 截屏 */,
 				B0E9A78A2238EB9A00787F85 /* 屏幕录制 */,
@@ -913,6 +939,7 @@
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
 				E1AD94FB21E2E38B0082E77D /* HomePagePopView.xib in Resources */,
+				A45399AF22EEA84E00918A12 /* SlidingCircularViewController.xib in Resources */,
 				B07BFF08224B0F2B0094C2D8 /* LiveRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -970,6 +997,7 @@
 				E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */,
 				E150A7BD21C73D7600953640 /* ThreadSafeViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
+				A45399B222EEA87C00918A12 /* YXGoalReviewView.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
 				B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
@@ -980,6 +1008,7 @@
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
 				E13A562D21F9B09B006447E3 /* LeftSwipDeleteViewController.m in Sources */,
+				A45399AE22EEA84E00918A12 /* SlidingCircularViewController.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
 				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
@@ -989,6 +1018,7 @@
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
+				A45399BF22EEBA8B00918A12 /* LZGoalReviewViewOC.m in Sources */,
 				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 			);
