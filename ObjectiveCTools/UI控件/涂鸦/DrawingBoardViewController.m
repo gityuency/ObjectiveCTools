@@ -49,7 +49,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    //图片放到桌面
+    //图片放到桌面 图片保存到桌面
     NSData *data = UIImagePNGRepresentation(image);
     [data writeToFile:@"/Users/姬友大人/Desktop/其他/a.png" atomically:YES];
     

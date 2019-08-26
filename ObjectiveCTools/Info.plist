@@ -27,6 +27,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>警告! 需要使用麦克风!</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>警告! 要添加照片到你的相册!</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -52,7 +54,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>警告! 需要使用麦克风!</string>
 </dict>
 </plist>

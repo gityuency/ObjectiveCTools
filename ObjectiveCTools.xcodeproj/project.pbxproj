@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44AE9D5231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A44AE9D4231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m */; };
+		A44AE9D823137A07006E2FEB /* NSDate+YXDateCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A44AE9D723137A07006E2FEB /* NSDate+YXDateCategory.m */; };
+		A44AE9DB23137A5C006E2FEB /* NSString+YXDateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A44AE9DA23137A5C006E2FEB /* NSString+YXDateFormat.m */; };
+		A44AE9DF23137AE3006E2FEB /* DateFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A44AE9DE23137AE3006E2FEB /* DateFormatViewController.m */; };
 		A45399AE22EEA84E00918A12 /* SlidingCircularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45399AC22EEA84E00918A12 /* SlidingCircularViewController.m */; };
 		A45399AF22EEA84E00918A12 /* SlidingCircularViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45399AD22EEA84E00918A12 /* SlidingCircularViewController.xib */; };
 		A45399B222EEA87C00918A12 /* YXGoalReviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = A45399B122EEA87C00918A12 /* YXGoalReviewView.m */; };
@@ -109,6 +113,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A44AE9D22313797D006E2FEB /* YXDateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXDateFormat.h; sourceTree = "<group>"; };
+		A44AE9D3231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+YXDateComponentsCategory.h"; sourceTree = "<group>"; };
+		A44AE9D4231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+YXDateComponentsCategory.m"; sourceTree = "<group>"; };
+		A44AE9D623137A07006E2FEB /* NSDate+YXDateCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+YXDateCategory.h"; sourceTree = "<group>"; };
+		A44AE9D723137A07006E2FEB /* NSDate+YXDateCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YXDateCategory.m"; sourceTree = "<group>"; };
+		A44AE9D923137A5C006E2FEB /* NSString+YXDateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YXDateFormat.h"; sourceTree = "<group>"; };
+		A44AE9DA23137A5C006E2FEB /* NSString+YXDateFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YXDateFormat.m"; sourceTree = "<group>"; };
+		A44AE9DD23137AE3006E2FEB /* DateFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateFormatViewController.h; sourceTree = "<group>"; };
+		A44AE9DE23137AE3006E2FEB /* DateFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateFormatViewController.m; sourceTree = "<group>"; };
 		A45399AB22EEA84E00918A12 /* SlidingCircularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingCircularViewController.h; sourceTree = "<group>"; };
 		A45399AC22EEA84E00918A12 /* SlidingCircularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidingCircularViewController.m; sourceTree = "<group>"; };
 		A45399AD22EEA84E00918A12 /* SlidingCircularViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidingCircularViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +306,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44AE9D123137954006E2FEB /* 时间日期格式化 */ = {
+			isa = PBXGroup;
+			children = (
+				A44AE9D22313797D006E2FEB /* YXDateFormat.h */,
+				A44AE9D923137A5C006E2FEB /* NSString+YXDateFormat.h */,
+				A44AE9DA23137A5C006E2FEB /* NSString+YXDateFormat.m */,
+				A44AE9D623137A07006E2FEB /* NSDate+YXDateCategory.h */,
+				A44AE9D723137A07006E2FEB /* NSDate+YXDateCategory.m */,
+				A44AE9D3231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.h */,
+				A44AE9D4231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m */,
+			);
+			path = "时间日期格式化";
+			sourceTree = "<group>";
+		};
+		A44AE9DC23137ACA006E2FEB /* 时间日期格式化示例 */ = {
+			isa = PBXGroup;
+			children = (
+				A44AE9DD23137AE3006E2FEB /* DateFormatViewController.h */,
+				A44AE9DE23137AE3006E2FEB /* DateFormatViewController.m */,
+			);
+			path = "时间日期格式化示例";
+			sourceTree = "<group>";
+		};
 		A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +435,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				A44AE9DC23137ACA006E2FEB /* 时间日期格式化示例 */,
 				A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */,
 				B07BFF03224B0F080094C2D8 /* 直播录屏 */,
 				B0E9A7962238F52C00787F85 /* 截屏 */,
@@ -562,6 +599,7 @@
 		E14599F52122DDDF00293226 /* 工具包 */ = {
 			isa = PBXGroup;
 			children = (
+				A44AE9D123137954006E2FEB /* 时间日期格式化 */,
 				E1661DC52181B1CF00E82979 /* 扩展 */,
 				E14599F62122DDDF00293226 /* 网络 */,
 				E14599F92122DDDF00293226 /* 银行卡号金额 */,
@@ -881,7 +919,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = ChinaRapidFinance;
+				ORGANIZATIONNAME = "姬友大人";
 				TargetAttributes = {
 					E115D667210FFA57007514FE = {
 						CreatedOnToolsVersion = 9.1;
@@ -951,6 +989,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44AE9DB23137A5C006E2FEB /* NSString+YXDateFormat.m in Sources */,
 				E13F22E32187F52E00F9A965 /* FakeChooseViewController.m in Sources */,
 				E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */,
 				E199252321A6518600591074 /* NormalPopUpViewController.m in Sources */,
@@ -959,6 +998,7 @@
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
+				A44AE9DF23137AE3006E2FEB /* DateFormatViewController.m in Sources */,
 				B07BFF07224B0F2B0094C2D8 /* LiveRecordViewController.m in Sources */,
 				E17700082178337F0050C110 /* POPViewController.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
@@ -981,6 +1021,7 @@
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
 				E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
+				A44AE9D5231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m in Sources */,
 				E1B8573A21B8B4BA00882989 /* AnimationQQButtonViewController.m in Sources */,
 				E1459A232122DDDF00293226 /* NSString+PhoneNumber.m in Sources */,
 				B0E9A78D2238EBA200787F85 /* YXReplayManager.m in Sources */,
@@ -999,6 +1040,7 @@
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				A45399B222EEA87C00918A12 /* YXGoalReviewView.m in Sources */,
 				E1459A202122DDDF00293226 /* NSString+Name.m in Sources */,
+				A44AE9D823137A07006E2FEB /* NSDate+YXDateCategory.m in Sources */,
 				B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */,
 				E163C4032193CFEC00B63EC5 /* DrawView.m in Sources */,
 				E1689AE821C8989B00F85232 /* Tools.m in Sources */,
@@ -1159,11 +1201,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QXFXE9H6KG;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.livetest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1174,11 +1216,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QXFXE9H6KG;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.livetest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
