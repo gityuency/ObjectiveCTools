@@ -79,7 +79,37 @@
     
     self.dataArray = @[time0,time1,time2,time3,time4,time5,time6,time7,time8,time9,time10,time11,time12,time13,time14];
     
+    
+    /// 时间戳和日期互转
+    long long time = [self getDateTimeTOMilliSeconds:[NSDate date]];
+    NSLog(@"时间戳: %llu",time);
+    NSDate *dat = [self getDateTimeFromMilliSeconds:time];
+    NSDateFormatter * formatter = [[NSDateFormatter alloc ] init];
+    [formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss.SSS"];
+    NSString *date = [formatter stringFromDate:dat];
+    NSString *timeLocal = [[NSString alloc] initWithFormat:@"%@", date];
+    NSLog(@"从时间戳转化到时间: %@", timeLocal);
+    
+    
 }
+
+#pragma mark - 时间戳和日期互转
+//将时间戳转换为NSDate类型
+- (NSDate *)getDateTimeFromMilliSeconds:(long long) miliSeconds {
+    NSTimeInterval tempMilli = miliSeconds;
+    NSTimeInterval seconds = tempMilli/1000.0;
+    //这里的.0一定要加上，不然除下来的数据会被截断导致时间不一致NSLog(@"传入的时间戳=%f",seconds);
+    return [NSDate dateWithTimeIntervalSince1970:seconds];
+}
+
+//将NSDate类型的时间转换为时间戳,从1970/1/1开始
+- (long long)getDateTimeTOMilliSeconds:(NSDate *)datetime {
+    NSTimeInterval interval = [datetime timeIntervalSince1970];NSLog(@"转换的时间戳=%f",interval);
+    long long totalMilliseconds = interval*1000 ;
+    NSLog(@"totalMilliseconds=%llu",totalMilliseconds);
+    return totalMilliseconds;
+}
+
 
 #pragma mark - tableView
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
