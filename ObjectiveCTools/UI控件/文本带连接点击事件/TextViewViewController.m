@@ -7,10 +7,11 @@
 //
 
 #import "TextViewViewController.h"
+#import "MyTextView.h"
 
 @interface TextViewViewController () <UITextViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextView *vvv;
+@property (nonatomic, strong) MyTextView *tview;
 
 @end
 
@@ -18,14 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
     
-    self.vvv.delegate = self;
-    self.vvv.editable = NO;
-    self.vvv.scrollEnabled = NO;
+    self.tview = [[MyTextView alloc] initWithFrame:CGRectMake(20, 150, [UIScreen mainScreen].bounds.size.width - 40, 300)];
+    self.tview.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.5];
+    [self.view addSubview:self.tview];
+    
+    self.tview.delegate = self;
+    self.tview.editable = NO;
+    self.tview.scrollEnabled = NO;
     //self.vvv.selectable = NO; 这一句写了点击事件就失效
     
-    NSString *aLink = @"《青米网络科技无限公司协议》";
-    NSString *bLink = @"《青米网络科卖身协议》";
+    NSString *aLink = @"《青米网络科技无限公司隐私协议》";
+    NSString *bLink = @"《青米网络科技卖身协议》";
     NSString *link = [NSString stringWithFormat:@"我已经同意并且认真阅读了遵守%@%@",aLink,bLink];
     
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:link];
@@ -40,18 +46,20 @@
                              range:[[attributedString string] rangeOfString:bLink]];
     
     [attributedString addAttribute:NSFontAttributeName
-                             value:[UIFont systemFontOfSize:20]
+                             value:[UIFont systemFontOfSize:24]
                              range:[[attributedString string] rangeOfString:link]];
     
     //设置链接样式
-    self.vvv.linkTextAttributes = @{
-                                    NSForegroundColorAttributeName: [UIColor redColor],
-                                    NSUnderlineColorAttributeName: [UIColor clearColor],
-                                    NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)
-                                    };
+    self.tview.linkTextAttributes = @{
+        NSForegroundColorAttributeName: [UIColor redColor],
+        NSUnderlineColorAttributeName: [UIColor clearColor],
+        NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)
+    };
     
-    self.vvv.attributedText = attributedString;
+    self.tview.attributedText = attributedString;
     
+    
+    NSLog(@"各种手势:\n %@", self.tview.gestureRecognizers);
 }
 
 #pragma mark - 实现链接代理
@@ -66,3 +74,4 @@
 }
 
 @end
+
