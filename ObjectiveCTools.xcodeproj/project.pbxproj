@@ -27,6 +27,9 @@
 		B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */; };
 		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
 		D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BD630248A047E00BDAD0D /* MyTextView.m */; };
+		D622B01024B2F57900CB3CF9 /* LetSVSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */; };
+		D622B01324B2F64600CB3CF9 /* LetCenter_A_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */; };
+		D622B01624B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
 		E115D673210FFA57007514FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D671210FFA57007514FE /* Main.storyboard */; };
@@ -150,6 +153,12 @@
 		B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAudioRecorder.m; sourceTree = "<group>"; };
 		D61BD62F248A047E00BDAD0D /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
 		D61BD630248A047E00BDAD0D /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
+		D622B00E24B2F57900CB3CF9 /* LetSVSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetSVSCViewController.h; sourceTree = "<group>"; };
+		D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetSVSCViewController.m; sourceTree = "<group>"; };
+		D622B01124B2F64600CB3CF9 /* LetCenter_A_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_A_ScrollView.h; sourceTree = "<group>"; };
+		D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_A_ScrollView.m; sourceTree = "<group>"; };
+		D622B01424B2F64F00CB3CF9 /* LetCenter_B_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_B_ScrollView.h; sourceTree = "<group>"; };
+		D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_B_ScrollView.m; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E115D66B210FFA57007514FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E115D66C210FFA57007514FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -392,6 +401,19 @@
 			path = YXRecorder;
 			sourceTree = "<group>";
 		};
+		D622B00D24B2F51B00CB3CF9 /* UIScrollView让子控件居中 */ = {
+			isa = PBXGroup;
+			children = (
+				D622B00E24B2F57900CB3CF9 /* LetSVSCViewController.h */,
+				D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */,
+				D622B01124B2F64600CB3CF9 /* LetCenter_A_ScrollView.h */,
+				D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */,
+				D622B01424B2F64F00CB3CF9 /* LetCenter_B_ScrollView.h */,
+				D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */,
+			);
+			path = "UIScrollView让子控件居中";
+			sourceTree = "<group>";
+		};
 		E115D65F210FFA57007514FE = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +458,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D622B00D24B2F51B00CB3CF9 /* UIScrollView让子控件居中 */,
 				A44AE9DC23137ACA006E2FEB /* 时间日期格式化示例 */,
 				A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */,
 				B07BFF03224B0F080094C2D8 /* 直播录屏 */,
@@ -1021,6 +1044,7 @@
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
+				D622B01324B2F64600CB3CF9 /* LetCenter_A_ScrollView.m in Sources */,
 				E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				A44AE9D5231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m in Sources */,
@@ -1035,6 +1059,7 @@
 				E1459A222122DDDF00293226 /* NSString+URL.m in Sources */,
 				E1459A252122DDDF00293226 /* NSString+IDCardNumber.m in Sources */,
 				E1459A1E2122DDDF00293226 /* UIColor+Easy.m in Sources */,
+				D622B01024B2F57900CB3CF9 /* LetSVSCViewController.m in Sources */,
 				E163C3F62193C65D00B63EC5 /* Lock9PointViewController.m in Sources */,
 				E1646ABC21BA10E200378083 /* SelectionTableViewController.m in Sources */,
 				E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */,
@@ -1063,6 +1088,7 @@
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
 				A45399BF22EEBA8B00918A12 /* LZGoalReviewViewOC.m in Sources */,
+				D622B01624B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m in Sources */,
 				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 			);
@@ -1203,11 +1229,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NMSK6FA9N;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.aidong.me;
+				PRODUCT_BUNDLE_IDENTIFIER = yuency.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1218,11 +1244,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NMSK6FA9N;
+				DEVELOPMENT_TEAM = DPG7R2T6WP;
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.aidong.me;
+				PRODUCT_BUNDLE_IDENTIFIER = yuency.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

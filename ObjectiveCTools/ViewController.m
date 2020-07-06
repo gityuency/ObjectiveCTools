@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+                       @{@"LetSVSCViewController": @"如何让 UIScrollView 子控件居中"},
                        @{@"DateFormatViewController": @"收集时间日期格式化"},
                        @{@"SlidingCircularViewController": @"自定义一个圆圈评分控件"},
                        @{@"LiveRecordViewController": @"直播录屏 自定义屏幕录制 解决直播录屏黑屏"},
