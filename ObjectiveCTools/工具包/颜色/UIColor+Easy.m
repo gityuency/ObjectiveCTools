@@ -53,5 +53,13 @@
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
 
+///随机颜色
++ (UIColor *)randomColor {
+    NSInteger r = arc4random() % 255;
+    NSInteger g = arc4random() % 255;
+    NSInteger b = arc4random() % 255;
+    UIColor *randColor = [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f];
+    return randColor;
+}
 
 @end

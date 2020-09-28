@@ -44,6 +44,7 @@
 		D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */; };
 		D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */; };
 		D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */; };
+		D6FCA6112521DA08008639B0 /* FloatScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FCA6102521DA08008639B0 /* FloatScrollViewController.m */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
 		E115D673210FFA57007514FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D671210FFA57007514FE /* Main.storyboard */; };
@@ -204,6 +205,8 @@
 		D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AsyncDemoViewController.xib; sourceTree = "<group>"; };
 		D6B614CF24B32D1E00B6EC90 /* AsyncDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoView.h; sourceTree = "<group>"; };
 		D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoView.m; sourceTree = "<group>"; };
+		D6FCA60F2521DA08008639B0 /* FloatScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatScrollViewController.h; sourceTree = "<group>"; };
+		D6FCA6102521DA08008639B0 /* FloatScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatScrollViewController.m; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E115D66B210FFA57007514FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E115D66C210FFA57007514FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -504,6 +507,15 @@
 			path = "多重异步最为致命";
 			sourceTree = "<group>";
 		};
+		D6FCA60E2521D9D9008639B0 /* UIScrollView控件悬浮 */ = {
+			isa = PBXGroup;
+			children = (
+				D6FCA60F2521DA08008639B0 /* FloatScrollViewController.h */,
+				D6FCA6102521DA08008639B0 /* FloatScrollViewController.m */,
+			);
+			path = "UIScrollView控件悬浮";
+			sourceTree = "<group>";
+		};
 		E115D65F210FFA57007514FE = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +560,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D6FCA60E2521D9D9008639B0 /* UIScrollView控件悬浮 */,
 				D6B614C924B3266A00B6EC90 /* 多重异步最为致命 */,
 				D622B00D24B2F51B00CB3CF9 /* UIScrollView让子控件居中 */,
 				A44AE9DC23137ACA006E2FEB /* 时间日期格式化示例 */,
@@ -1126,6 +1139,7 @@
 				D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */,
 				D6996B312521C24100C0A78B /* MASConstraint.m in Sources */,
 				E1459A172122DDDF00293226 /* NSArray+HYBUnicodeReadable.m in Sources */,
+				D6FCA6112521DA08008639B0 /* FloatScrollViewController.m in Sources */,
 				B0F8B294224CB06800A8A2AD /* YXFilePath.m in Sources */,
 				E1459A1A2122DDDF00293226 /* UIView+DotterLine.m in Sources */,
 				E199252821A651A000591074 /* MemoryView.m in Sources */,

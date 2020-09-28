@@ -15,4 +15,7 @@
 /// 十六进制获取颜色
 + (UIColor *)colorWithHexString:(NSString *)color;
 
+///随机颜色
++ (UIColor *)randomColor;
+
 @end
