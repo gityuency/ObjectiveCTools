@@ -30,6 +30,9 @@
 		D622B01024B2F57900CB3CF9 /* LetSVSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */; };
 		D622B01324B2F64600CB3CF9 /* LetCenter_A_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */; };
 		D622B01624B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */; };
+		D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */; };
+		D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */; };
+		D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
 		E115D673210FFA57007514FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E115D671210FFA57007514FE /* Main.storyboard */; };
@@ -159,6 +162,11 @@
 		D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_A_ScrollView.m; sourceTree = "<group>"; };
 		D622B01424B2F64F00CB3CF9 /* LetCenter_B_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_B_ScrollView.h; sourceTree = "<group>"; };
 		D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_B_ScrollView.m; sourceTree = "<group>"; };
+		D6B614CA24B3268C00B6EC90 /* AsyncDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoViewController.h; sourceTree = "<group>"; };
+		D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoViewController.m; sourceTree = "<group>"; };
+		D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AsyncDemoViewController.xib; sourceTree = "<group>"; };
+		D6B614CF24B32D1E00B6EC90 /* AsyncDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoView.h; sourceTree = "<group>"; };
+		D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoView.m; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E115D66B210FFA57007514FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E115D66C210FFA57007514FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,6 +422,18 @@
 			path = "UIScrollView让子控件居中";
 			sourceTree = "<group>";
 		};
+		D6B614C924B3266A00B6EC90 /* 多重异步最为致命 */ = {
+			isa = PBXGroup;
+			children = (
+				D6B614CA24B3268C00B6EC90 /* AsyncDemoViewController.h */,
+				D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */,
+				D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */,
+				D6B614CF24B32D1E00B6EC90 /* AsyncDemoView.h */,
+				D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */,
+			);
+			path = "多重异步最为致命";
+			sourceTree = "<group>";
+		};
 		E115D65F210FFA57007514FE = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +478,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D6B614C924B3266A00B6EC90 /* 多重异步最为致命 */,
 				D622B00D24B2F51B00CB3CF9 /* UIScrollView让子控件居中 */,
 				A44AE9DC23137ACA006E2FEB /* 时间日期格式化示例 */,
 				A45399AA22EEA82300918A12 /* 自定义一个圆圈评分控件 */,
@@ -998,6 +1019,7 @@
 				E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */,
 				E1459A2C2122DF7300293226 /* GCDViewController.xib in Resources */,
 				E15FD01F21D4CC1E003B1B15 /* NormalPopUpViewController.xib in Resources */,
+				D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */,
 				E123BAF92133FC5F003AE0C9 /* TextFieldViewController.xib in Resources */,
 				E1646ABE21BA194200378083 /* tooles.png in Resources */,
 				E1AD94FB21E2E38B0082E77D /* HomePagePopView.xib in Resources */,
@@ -1080,10 +1102,12 @@
 				A45399AE22EEA84E00918A12 /* SlidingCircularViewController.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
 				E1661DC02181921900E82979 /* ScaleScrollViewController.m in Sources */,
+				D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */,
 				E1459A242122DDDF00293226 /* UIDevice+Resolutions.m in Sources */,
 				E1950D8E2153AD06007D7265 /* PhotoLosslessSaveViewController.m in Sources */,
 				E15F7AE8218AE9640011A334 /* ClearImageViewController.m in Sources */,
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
+				D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */,
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
