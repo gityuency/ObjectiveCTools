@@ -15,23 +15,23 @@ typedef void(^BlockClose)(void);
 typedef void(^BlockClick)(void);
 
 ///标题
-@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UILabel * _Nullable labelTitle;
 ///副标题
-@property (weak, nonatomic) IBOutlet UILabel *labelSubTitle;
+@property (weak, nonatomic) IBOutlet UILabel * _Nullable labelSubTitle;
 ///图片
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView * _Nullable imageView;
 ///文本
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITextView * _Nullable textView;
 ///按钮事件
-@property (nonatomic, strong) BlockClick blockClick;
+@property (nonatomic, strong) BlockClick _Nullable blockClick;
 ///关闭
-@property (nonatomic, strong) BlockClose blockClose;
+@property (nonatomic, strong) BlockClose _Nullable blockClose;
 
 ///显示
 + (void)show:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable UIImage *)image content:(nullable NSString *)content click:(nullable BlockClick)click close:(nullable BlockClose)close;
 
 ///显示
-- (instancetype)initWithFrame:(CGRect)frame;
+- (instancetype _Nonnull )initWithFrame:(CGRect)frame;
 
 
 @end
