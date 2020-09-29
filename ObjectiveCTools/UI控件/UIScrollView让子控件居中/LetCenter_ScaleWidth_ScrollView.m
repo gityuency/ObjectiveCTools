@@ -6,9 +6,9 @@
 //  Copyright © 2020 姬友大人. All rights reserved.
 //
 
-#import "LetCenter_B_ScrollView.h"
+#import "LetCenter_ScaleWidth_ScrollView.h"
 
-@interface LetCenter_B_ScrollView () <UIScrollViewDelegate>
+@interface LetCenter_ScaleWidth_ScrollView () <UIScrollViewDelegate>
 /// 存放子控件
 @property (nonatomic, strong) NSMutableArray <UIView *> *arrayItemViews;
 /// 存放标题,根据标题个数来计算子控件数
@@ -25,7 +25,7 @@
 @end
 
 
-@implementation LetCenter_B_ScrollView
+@implementation LetCenter_ScaleWidth_ScrollView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

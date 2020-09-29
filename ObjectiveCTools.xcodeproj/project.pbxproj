@@ -28,8 +28,8 @@
 		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
 		D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BD630248A047E00BDAD0D /* MyTextView.m */; };
 		D622B01024B2F57900CB3CF9 /* LetSVSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */; };
-		D622B01324B2F64600CB3CF9 /* LetCenter_A_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */; };
-		D622B01624B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */; };
+		D622B01324B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01224B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m */; };
+		D622B01624B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01524B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m */; };
 		D6996B2A2521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B112521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D6996B2B2521C24100C0A78B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B1A2521C24100C0A78B /* ViewController+MASAdditions.m */; };
 		D6996B2C2521C24100C0A78B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B1E2521C24100C0A78B /* MASCompositeConstraint.m */; };
@@ -41,6 +41,7 @@
 		D6996B322521C24100C0A78B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B272521C24100C0A78B /* MASViewConstraint.m */; };
 		D6996B332521C24100C0A78B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B282521C24100C0A78B /* MASViewAttribute.m */; };
 		D6996B342521C24100C0A78B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6996B292521C24100C0A78B /* Info.plist */; };
+		D69C267D2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69C267C2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m */; };
 		D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */; };
 		D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */; };
 		D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */; };
@@ -170,10 +171,10 @@
 		D61BD630248A047E00BDAD0D /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
 		D622B00E24B2F57900CB3CF9 /* LetSVSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetSVSCViewController.h; sourceTree = "<group>"; };
 		D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetSVSCViewController.m; sourceTree = "<group>"; };
-		D622B01124B2F64600CB3CF9 /* LetCenter_A_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_A_ScrollView.h; sourceTree = "<group>"; };
-		D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_A_ScrollView.m; sourceTree = "<group>"; };
-		D622B01424B2F64F00CB3CF9 /* LetCenter_B_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_B_ScrollView.h; sourceTree = "<group>"; };
-		D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_B_ScrollView.m; sourceTree = "<group>"; };
+		D622B01124B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_RandomWidth_ScrollView.h; sourceTree = "<group>"; };
+		D622B01224B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_RandomWidth_ScrollView.m; sourceTree = "<group>"; };
+		D622B01424B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_ScaleWidth_ScrollView.h; sourceTree = "<group>"; };
+		D622B01524B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_ScaleWidth_ScrollView.m; sourceTree = "<group>"; };
 		D6996B102521C24100C0A78B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		D6996B112521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		D6996B122521C24100C0A78B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -200,6 +201,8 @@
 		D6996B272521C24100C0A78B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		D6996B282521C24100C0A78B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		D6996B292521C24100C0A78B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69C267B2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_FixedWidth_UIScrollView.h; sourceTree = "<group>"; };
+		D69C267C2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_FixedWidth_UIScrollView.m; sourceTree = "<group>"; };
 		D6B614CA24B3268C00B6EC90 /* AsyncDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoViewController.h; sourceTree = "<group>"; };
 		D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoViewController.m; sourceTree = "<group>"; };
 		D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AsyncDemoViewController.xib; sourceTree = "<group>"; };
@@ -454,10 +457,12 @@
 			children = (
 				D622B00E24B2F57900CB3CF9 /* LetSVSCViewController.h */,
 				D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */,
-				D622B01124B2F64600CB3CF9 /* LetCenter_A_ScrollView.h */,
-				D622B01224B2F64600CB3CF9 /* LetCenter_A_ScrollView.m */,
-				D622B01424B2F64F00CB3CF9 /* LetCenter_B_ScrollView.h */,
-				D622B01524B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m */,
+				D69C267B2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.h */,
+				D69C267C2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m */,
+				D622B01124B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.h */,
+				D622B01224B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m */,
+				D622B01424B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.h */,
+				D622B01524B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m */,
 			);
 			path = "UIScrollView让子控件居中";
 			sourceTree = "<group>";
@@ -1157,7 +1162,7 @@
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
 				E148E82E2140F77500019E60 /* UILabelViewController.m in Sources */,
 				E115D670210FFA57007514FE /* ViewController.m in Sources */,
-				D622B01324B2F64600CB3CF9 /* LetCenter_A_ScrollView.m in Sources */,
+				D622B01324B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m in Sources */,
 				E13F22EC2187F5A600F9A965 /* ItemView.m in Sources */,
 				E1459A212122DDDF00293226 /* NSString+Email.m in Sources */,
 				A44AE9D5231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.m in Sources */,
@@ -1208,8 +1213,9 @@
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
 				A45399BF22EEBA8B00918A12 /* LZGoalReviewViewOC.m in Sources */,
-				D622B01624B2F64F00CB3CF9 /* LetCenter_B_ScrollView.m in Sources */,
+				D622B01624B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m in Sources */,
 				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
+				D69C267D2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

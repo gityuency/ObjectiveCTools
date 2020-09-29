@@ -1,21 +1,21 @@
 //
-//  LetCenter_A_ScrollView.m
+//  LetCenter_FixedWidth_UIScrollView.m
 //  ObjectiveCTools
 //
-//  Created by aidong on 2020/7/6.
+//  Created by aidong on 2020/9/29.
 //  Copyright © 2020 姬友大人. All rights reserved.
 //
 
-#import "LetCenter_A_ScrollView.h"
+#import "LetCenter_FixedWidth_UIScrollView.h"
 
-@interface LetCenter_A_ScrollView () <UIScrollViewDelegate>
+@interface LetCenter_FixedWidth_UIScrollView () <UIScrollViewDelegate>
 
 /// 放入子视图
 @property (nonatomic, strong) NSMutableArray <UIView *> *arrayItemViews;
 
 @end
 
-@implementation LetCenter_A_ScrollView
+@implementation LetCenter_FixedWidth_UIScrollView
 
 - (instancetype)initWithFrameFixedSubViewWidth:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -25,38 +25,6 @@
         self.delegate = self;
     }
     return self;
-}
-
-- (instancetype)initWithFrameRandomSubViewWidth:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor redColor];
-        [self randomButtonWidth];
-        self.delegate = self;
-    }
-    return self;
-}
-
-/// 变宽 按钮
-- (void)randomButtonWidth {
-    UIButton *beforeButton;
-    _arrayItemViews = [NSMutableArray array];
-    for (int i = 0; i < 25; i ++) {
-        UIButton *b = [[UIButton alloc] init];
-        b.backgroundColor = [self RandomColor];
-        [b setTitle:@"变宽按钮" forState:UIControlStateNormal];
-        CGFloat w = 50 + (arc4random_uniform(30) / 2) * 10;
-        if (beforeButton) {  //第二个按钮开始排
-            b.frame = CGRectMake(CGRectGetMaxX(beforeButton.frame), 0, w, self.frame.size.height);
-        } else {              //第一个按钮
-            b.frame = CGRectMake(0, 0, w, self.frame.size.height);
-        }
-        beforeButton = b;
-        [b addTarget:self action:@selector(actionButton:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:b];
-        [_arrayItemViews addObject:b];
-    }
-    self.contentSize = CGSizeMake(CGRectGetMaxX(beforeButton.frame), self.frame.size.height);
 }
 
 /// 定宽 按钮

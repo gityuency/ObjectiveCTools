@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LetCenter_B_ScrollView : UIScrollView
+@interface LetCenter_ScaleWidth_ScrollView : UIScrollView
 
 /// 初始化
 - (instancetype)initWithFrame:(CGRect)frame;

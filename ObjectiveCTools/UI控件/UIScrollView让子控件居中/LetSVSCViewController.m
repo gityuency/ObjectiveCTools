@@ -7,8 +7,9 @@
 //
 
 #import "LetSVSCViewController.h"
-#import "LetCenter_A_ScrollView.h"
-#import "LetCenter_B_ScrollView.h"
+#import "LetCenter_RandomWidth_ScrollView.h"
+#import "LetCenter_ScaleWidth_ScrollView.h"
+#import "LetCenter_FixedWidth_UIScrollView.h"
 
 @interface LetSVSCViewController ()
 
@@ -23,13 +24,13 @@
     CGFloat sw = [UIScreen mainScreen].bounds.size.width;
     CGFloat sh = [UIScreen mainScreen].bounds.size.height;
     
-    LetCenter_A_ScrollView *scrollView1 = [[LetCenter_A_ScrollView alloc] initWithFrameFixedSubViewWidth:CGRectMake(0, 100, sw, 80)];
+    LetCenter_FixedWidth_UIScrollView *scrollView1 = [[LetCenter_FixedWidth_UIScrollView alloc] initWithFrameFixedSubViewWidth:CGRectMake(0, 100, sw, 80)];
     [self.view addSubview:scrollView1];
     
-    LetCenter_A_ScrollView *scrollView2 = [[LetCenter_A_ScrollView alloc] initWithFrameRandomSubViewWidth:CGRectMake(0, 220, sw, 80)];
+    LetCenter_RandomWidth_ScrollView *scrollView2 = [[LetCenter_RandomWidth_ScrollView alloc] initWithFrameRandomSubViewWidth:CGRectMake(0, 220, sw, 80)];
     [self.view addSubview:scrollView2];
     
-    LetCenter_B_ScrollView *scrollView3 = [[LetCenter_B_ScrollView alloc] initWithFrame:CGRectMake(0, 350, sw, 80)];
+    LetCenter_ScaleWidth_ScrollView *scrollView3 = [[LetCenter_ScaleWidth_ScrollView alloc] initWithFrame:CGRectMake(0, 350, sw, 80)];
     [self.view addSubview:scrollView3];
     
     CGFloat x = (sw + 1) / 2;
