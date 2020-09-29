@@ -74,6 +74,8 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSLog(@"停止减速 offsetX %f", scrollView.contentOffset.x);
     
+    //如何找打需要居中的按钮, 方案一
+    
     CGFloat offsetX = scrollView.contentOffset.x + self.frame.size.width * 0.5;  // 哪个按钮和这个距离最接近,就放大哪个按钮
     
     UIButton *needLargeButton;

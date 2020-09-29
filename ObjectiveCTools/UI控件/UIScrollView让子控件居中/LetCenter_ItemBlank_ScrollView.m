@@ -1,26 +1,26 @@
 //
-//  LetCenter_A_ScrollView.m
+//  LetCenter_ItemBlank_ScrollView.m
 //  ObjectiveCTools
 //
-//  Created by aidong on 2020/7/6.
+//  Created by aidong on 2020/9/29.
 //  Copyright © 2020 姬友大人. All rights reserved.
 //
 
-#import "LetCenter_RandomWidth_ScrollView.h"
+#import "LetCenter_ItemBlank_ScrollView.h"
 
-@interface LetCenter_RandomWidth_ScrollView () <UIScrollViewDelegate>
+@interface LetCenter_ItemBlank_ScrollView () <UIScrollViewDelegate>
 
 /// 放入子视图
 @property (nonatomic, strong) NSMutableArray <UIView *> *arrayItemViews;
 
 @end
 
-@implementation LetCenter_RandomWidth_ScrollView
+@implementation LetCenter_ItemBlank_ScrollView
 
-- (instancetype)initWithFrameRandomSubViewWidth:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor systemPinkColor];
         [self randomButtonWidth];
         self.delegate = self;
     }
@@ -31,22 +31,29 @@
 - (void)randomButtonWidth {
     UIButton *beforeButton;
     _arrayItemViews = [NSMutableArray array];
+    
+    //间隙
+    CGFloat space = 100;
+    
     for (int i = 0; i < 25; i ++) {
         UIButton *b = [[UIButton alloc] init];
-        b.backgroundColor = [self RandomColor];
-        [b setTitle:@"变宽按钮" forState:UIControlStateNormal];
+        b.backgroundColor = UIColor.blackColor;
+        
+        NSString *t = [NSString stringWithFormat:@"变宽按钮 %d", i];
+        
+        [b setTitle:t forState:UIControlStateNormal];
         CGFloat w = 50 + (arc4random_uniform(30) / 2) * 10;
         if (beforeButton) {  //第二个按钮开始排
-            b.frame = CGRectMake(CGRectGetMaxX(beforeButton.frame), 0, w, self.frame.size.height);
+            b.frame = CGRectMake(CGRectGetMaxX(beforeButton.frame) + space, 0, w, self.frame.size.height);
         } else {              //第一个按钮
-            b.frame = CGRectMake(0, 0, w, self.frame.size.height);
+            b.frame = CGRectMake(space, 0, w, self.frame.size.height);
         }
         beforeButton = b;
         [b addTarget:self action:@selector(actionButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:b];
         [_arrayItemViews addObject:b];
     }
-    self.contentSize = CGSizeMake(CGRectGetMaxX(beforeButton.frame), self.frame.size.height);
+    self.contentSize = CGSizeMake(CGRectGetMaxX(beforeButton.frame) + space, self.frame.size.height);
 }
 
 /// 按钮点击事件
@@ -75,29 +82,27 @@
     }
 }
 
-
+//代理
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSLog(@"停止减速 offsetX %f", scrollView.contentOffset.x);
     
-    //如何找打需要居中的按钮, 方案一
-
-    CGFloat offsetX = scrollView.contentOffset.x + self.frame.size.width * 0.5;  // 哪个按钮和这个距离最接近,就放大哪个按钮
+    //如何找打需要居中的按钮, 方案二
     
-    UIButton *needLargeButton;
-    for (UIButton *b in _arrayItemViews) {
-        if ((CGRectGetMinX(b.frame) <= offsetX) && (CGRectGetMaxX(b.frame) >= offsetX)) {
-            needLargeButton = b;
-            NSLog(@" %@", b.titleLabel.text);
+    CGFloat offsetX = scrollView.contentOffset.x + self.frame.size.width * 0.5;  // 哪个按钮和这个距离最接近,就放大哪个按钮
+    UIButton *aimButton;
+    CGFloat maxViewOffset = MAXFLOAT;
+    for (UIButton *v in _arrayItemViews) {  //可以用中心点来判断
+        CGFloat tempCenter = CGRectGetMidX(v.frame);
+        CGFloat a = fabs(tempCenter - offsetX);
+        if (a < maxViewOffset) {
+            maxViewOffset = a;
+            aimButton = v;// 就是上一个
+        } else {
+            //当最小距离变大的时候,说明上一视图就是需要居中的视图,break掉,取得上一个
             break;
         }
     }
-    [self actionButton:needLargeButton];
-}
-
-
-- (UIColor *)RandomColor {
-    UIColor * randomColor= [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
-    return randomColor;
+    [self actionButton:aimButton];
 }
 
 @end

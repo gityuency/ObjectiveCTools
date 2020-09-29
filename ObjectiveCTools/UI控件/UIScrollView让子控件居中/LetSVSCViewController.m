@@ -10,6 +10,7 @@
 #import "LetCenter_RandomWidth_ScrollView.h"
 #import "LetCenter_ScaleWidth_ScrollView.h"
 #import "LetCenter_FixedWidth_UIScrollView.h"
+#import "LetCenter_ItemBlank_ScrollView.h"
 
 @interface LetSVSCViewController ()
 
@@ -27,16 +28,21 @@
     LetCenter_FixedWidth_UIScrollView *scrollView1 = [[LetCenter_FixedWidth_UIScrollView alloc] initWithFrameFixedSubViewWidth:CGRectMake(0, 100, sw, 80)];
     [self.view addSubview:scrollView1];
     
-    LetCenter_RandomWidth_ScrollView *scrollView2 = [[LetCenter_RandomWidth_ScrollView alloc] initWithFrameRandomSubViewWidth:CGRectMake(0, 220, sw, 80)];
+    LetCenter_RandomWidth_ScrollView *scrollView2 = [[LetCenter_RandomWidth_ScrollView alloc] initWithFrameRandomSubViewWidth:CGRectMake(0, CGRectGetMaxY(scrollView1.frame) + 40, sw, 80)];
     [self.view addSubview:scrollView2];
     
-    LetCenter_ScaleWidth_ScrollView *scrollView3 = [[LetCenter_ScaleWidth_ScrollView alloc] initWithFrame:CGRectMake(0, 350, sw, 80)];
+    LetCenter_ScaleWidth_ScrollView *scrollView3 = [[LetCenter_ScaleWidth_ScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(scrollView2.frame) + 40, sw, 80)];
     [self.view addSubview:scrollView3];
+    
+    LetCenter_ItemBlank_ScrollView *scrollView4 = [[LetCenter_ItemBlank_ScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(scrollView3.frame) + 40, sw, 80)];
+    [self.view addSubview:scrollView4];
+    
     
     CGFloat x = (sw + 1) / 2;
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(x, 0, 1, sh)];
     line.backgroundColor = [UIColor blackColor];
     [self.view addSubview:line];
 }
+
 
 @end

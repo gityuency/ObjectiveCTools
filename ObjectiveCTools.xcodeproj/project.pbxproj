@@ -42,6 +42,7 @@
 		D6996B332521C24100C0A78B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B282521C24100C0A78B /* MASViewAttribute.m */; };
 		D6996B342521C24100C0A78B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6996B292521C24100C0A78B /* Info.plist */; };
 		D69C267D2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69C267C2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m */; };
+		D69C26802522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69C267F2522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m */; };
 		D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */; };
 		D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */; };
 		D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */; };
@@ -203,6 +204,8 @@
 		D6996B292521C24100C0A78B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69C267B2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_FixedWidth_UIScrollView.h; sourceTree = "<group>"; };
 		D69C267C2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_FixedWidth_UIScrollView.m; sourceTree = "<group>"; };
+		D69C267E2522E3360046E741 /* LetCenter_ItemBlank_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_ItemBlank_ScrollView.h; sourceTree = "<group>"; };
+		D69C267F2522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetCenter_ItemBlank_ScrollView.m; sourceTree = "<group>"; };
 		D6B614CA24B3268C00B6EC90 /* AsyncDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoViewController.h; sourceTree = "<group>"; };
 		D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoViewController.m; sourceTree = "<group>"; };
 		D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AsyncDemoViewController.xib; sourceTree = "<group>"; };
@@ -463,6 +466,8 @@
 				D622B01224B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m */,
 				D622B01424B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.h */,
 				D622B01524B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m */,
+				D69C267E2522E3360046E741 /* LetCenter_ItemBlank_ScrollView.h */,
+				D69C267F2522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m */,
 			);
 			path = "UIScrollView让子控件居中";
 			sourceTree = "<group>";
@@ -1134,6 +1139,7 @@
 				E19DB29021B50CB100FF0042 /* NSString+Yuency.m in Sources */,
 				D6996B2F2521C24100C0A78B /* NSArray+MASAdditions.m in Sources */,
 				E163C3F32193C5E400B63EC5 /* LockView.m in Sources */,
+				D69C26802522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
