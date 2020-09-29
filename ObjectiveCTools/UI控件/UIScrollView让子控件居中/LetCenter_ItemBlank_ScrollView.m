@@ -96,7 +96,7 @@
         CGFloat a = fabs(tempCenter - offsetX);
         if (a < maxViewOffset) {
             maxViewOffset = a;
-            aimButton = v;// 就是上一个
+            aimButton = v;
         } else {
             //当最小距离变大的时候,说明上一视图就是需要居中的视图,break掉,取得上一个
             break;
