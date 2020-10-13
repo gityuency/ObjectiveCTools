@@ -33,6 +33,9 @@
 		D62881F7252335B900A6A0A1 /* TagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62881F5252335B900A6A0A1 /* TagsViewController.m */; };
 		D62881F8252335B900A6A0A1 /* TagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62881F6252335B900A6A0A1 /* TagsViewController.xib */; };
 		D62881FB2523366100A6A0A1 /* YXTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62881FA2523366100A6A0A1 /* YXTagsView.m */; };
+		D63F0A3425354E6200005AC2 /* SMSCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F0A3325354E6200005AC2 /* SMSCodeViewController.m */; };
+		D63F0A3725354E7900005AC2 /* SMSCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F0A3625354E7900005AC2 /* SMSCodeView.m */; };
+		D63F0A3A25354E8B00005AC2 /* SMSCodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F0A3925354E8B00005AC2 /* SMSCodeInputView.m */; };
 		D6996B2A2521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B112521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D6996B2B2521C24100C0A78B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B1A2521C24100C0A78B /* ViewController+MASAdditions.m */; };
 		D6996B2C2521C24100C0A78B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D6996B1E2521C24100C0A78B /* MASCompositeConstraint.m */; };
@@ -184,6 +187,12 @@
 		D62881F6252335B900A6A0A1 /* TagsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagsViewController.xib; sourceTree = "<group>"; };
 		D62881F92523366100A6A0A1 /* YXTagsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXTagsView.h; sourceTree = "<group>"; };
 		D62881FA2523366100A6A0A1 /* YXTagsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTagsView.m; sourceTree = "<group>"; };
+		D63F0A3225354E6100005AC2 /* SMSCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSCodeViewController.h; sourceTree = "<group>"; };
+		D63F0A3325354E6200005AC2 /* SMSCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSCodeViewController.m; sourceTree = "<group>"; };
+		D63F0A3525354E7900005AC2 /* SMSCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSCodeView.h; sourceTree = "<group>"; };
+		D63F0A3625354E7900005AC2 /* SMSCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSCodeView.m; sourceTree = "<group>"; };
+		D63F0A3825354E8B00005AC2 /* SMSCodeInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSCodeInputView.h; sourceTree = "<group>"; };
+		D63F0A3925354E8B00005AC2 /* SMSCodeInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSCodeInputView.m; sourceTree = "<group>"; };
 		D6996B102521C24100C0A78B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		D6996B112521C24100C0A78B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		D6996B122521C24100C0A78B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -492,6 +501,19 @@
 			path = "自动布局写小标签格子";
 			sourceTree = "<group>";
 		};
+		D63F0A3125354E1E00005AC2 /* 验证码输入框 */ = {
+			isa = PBXGroup;
+			children = (
+				D63F0A3225354E6100005AC2 /* SMSCodeViewController.h */,
+				D63F0A3325354E6200005AC2 /* SMSCodeViewController.m */,
+				D63F0A3825354E8B00005AC2 /* SMSCodeInputView.h */,
+				D63F0A3925354E8B00005AC2 /* SMSCodeInputView.m */,
+				D63F0A3525354E7900005AC2 /* SMSCodeView.h */,
+				D63F0A3625354E7900005AC2 /* SMSCodeView.m */,
+			);
+			path = "验证码输入框";
+			sourceTree = "<group>";
+		};
 		D6996B0F2521C24100C0A78B /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +612,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D63F0A3125354E1E00005AC2 /* 验证码输入框 */,
 				D62881F32523359C00A6A0A1 /* 自动布局写小标签格子 */,
 				D6FCA60E2521D9D9008639B0 /* UIScrollView控件悬浮 */,
 				D6B614C924B3266A00B6EC90 /* 多重异步最为致命 */,
@@ -1212,6 +1235,7 @@
 				D62881F7252335B900A6A0A1 /* TagsViewController.m in Sources */,
 				E1646AB621BA0FD900378083 /* SelectionCell.m in Sources */,
 				D62881FB2523366100A6A0A1 /* YXTagsView.m in Sources */,
+				D63F0A3A25354E8B00005AC2 /* SMSCodeInputView.m in Sources */,
 				E150A7BD21C73D7600953640 /* ThreadSafeViewController.m in Sources */,
 				E1459A192122DDDF00293226 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				A45399B222EEA87C00918A12 /* YXGoalReviewView.m in Sources */,
@@ -1224,6 +1248,7 @@
 				E142FB4E21CA523200C8227C /* OptionEnumeViewController.m in Sources */,
 				D6996B2E2521C24100C0A78B /* MASLayoutConstraint.m in Sources */,
 				E19DB28D21B509C400FF0042 /* NSArray+Yuency.m in Sources */,
+				D63F0A3725354E7900005AC2 /* SMSCodeView.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
 				E13A562D21F9B09B006447E3 /* LeftSwipDeleteViewController.m in Sources */,
@@ -1247,6 +1272,7 @@
 				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
 				D69C267D2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
+				D63F0A3425354E6200005AC2 /* SMSCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
