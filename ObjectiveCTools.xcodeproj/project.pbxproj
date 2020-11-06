@@ -27,6 +27,8 @@
 		B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */; };
 		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
 		D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BD630248A047E00BDAD0D /* MyTextView.m */; };
+		D620E0112554E0ED00066787 /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D620E00F2554E0ED00066787 /* ImageOrientationViewController.m */; };
+		D620E0122554E0ED00066787 /* ImageOrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D620E0102554E0ED00066787 /* ImageOrientationViewController.xib */; };
 		D622B01024B2F57900CB3CF9 /* LetSVSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */; };
 		D622B01324B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01224B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.m */; };
 		D622B01624B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D622B01524B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m */; };
@@ -176,6 +178,9 @@
 		B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAudioRecorder.m; sourceTree = "<group>"; };
 		D61BD62F248A047E00BDAD0D /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
 		D61BD630248A047E00BDAD0D /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
+		D620E00E2554E0ED00066787 /* ImageOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationViewController.h; sourceTree = "<group>"; };
+		D620E00F2554E0ED00066787 /* ImageOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationViewController.m; sourceTree = "<group>"; };
+		D620E0102554E0ED00066787 /* ImageOrientationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageOrientationViewController.xib; sourceTree = "<group>"; };
 		D622B00E24B2F57900CB3CF9 /* LetSVSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetSVSCViewController.h; sourceTree = "<group>"; };
 		D622B00F24B2F57900CB3CF9 /* LetSVSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetSVSCViewController.m; sourceTree = "<group>"; };
 		D622B01124B2F64600CB3CF9 /* LetCenter_RandomWidth_ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LetCenter_RandomWidth_ScrollView.h; sourceTree = "<group>"; };
@@ -472,6 +477,16 @@
 			path = YXRecorder;
 			sourceTree = "<group>";
 		};
+		D620E00D2554E0A700066787 /* 图片旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				D620E00E2554E0ED00066787 /* ImageOrientationViewController.h */,
+				D620E00F2554E0ED00066787 /* ImageOrientationViewController.m */,
+				D620E0102554E0ED00066787 /* ImageOrientationViewController.xib */,
+			);
+			path = "图片旋转";
+			sourceTree = "<group>";
+		};
 		D622B00D24B2F51B00CB3CF9 /* UIScrollView让子控件居中 */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +627,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D620E00D2554E0A700066787 /* 图片旋转 */,
 				D63F0A3125354E1E00005AC2 /* 验证码输入框 */,
 				D62881F32523359C00A6A0A1 /* 自动布局写小标签格子 */,
 				D6FCA60E2521D9D9008639B0 /* UIScrollView控件悬浮 */,
@@ -1139,6 +1155,7 @@
 				E163C4042193CFEC00B63EC5 /* DrawingBoardViewController.xib in Resources */,
 				E199252721A651A000591074 /* MemoryView.xib in Resources */,
 				B0E9A7952238EBD000787F85 /* RecordingViewController.xib in Resources */,
+				D620E0122554E0ED00066787 /* ImageOrientationViewController.xib in Resources */,
 				E15F7AE9218AE9640011A334 /* ClearImageViewController.xib in Resources */,
 				E115D675210FFA57007514FE /* Assets.xcassets in Resources */,
 				E115D673210FFA57007514FE /* Main.storyboard in Resources */,
@@ -1264,6 +1281,7 @@
 				E1459A262122DDDF00293226 /* NSDictionary+Easy.m in Sources */,
 				D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */,
 				E1658F142139239100479FE3 /* TextViewViewController.m in Sources */,
+				D620E0112554E0ED00066787 /* ImageOrientationViewController.m in Sources */,
 				D6996B2D2521C24100C0A78B /* MASConstraintMaker.m in Sources */,
 				E1B8574321B8CC7E00882989 /* RebateTradingKeyBoardView.m in Sources */,
 				E1459A1B2122DDDF00293226 /* SkillDevice.m in Sources */,
