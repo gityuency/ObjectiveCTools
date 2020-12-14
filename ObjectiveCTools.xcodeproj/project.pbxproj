@@ -28,6 +28,10 @@
 		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
 		D60F762425870F070005CC5B /* CocoaDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60F761F25870E8A0005CC5B /* CocoaDebug.framework */; };
 		D60F762525870F070005CC5B /* CocoaDebug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D60F761F25870E8A0005CC5B /* CocoaDebug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D60F762F2587102D0005CC5B /* WKWebView+PDFLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F76292587102D0005CC5B /* WKWebView+PDFLoader.m */; };
+		D60F76302587102D0005CC5B /* ISPDFProgressPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F762C2587102D0005CC5B /* ISPDFProgressPoster.m */; };
+		D60F7634258715F50005CC5B /* MyPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F7633258715F50005CC5B /* MyPDFViewController.m */; };
+		D60F763725873EA10005CC5B /* PDFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F763625873EA10005CC5B /* PDFCell.m */; };
 		D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BD630248A047E00BDAD0D /* MyTextView.m */; };
 		D620E0112554E0ED00066787 /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D620E00F2554E0ED00066787 /* ImageOrientationViewController.m */; };
 		D620E0122554E0ED00066787 /* ImageOrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D620E0102554E0ED00066787 /* ImageOrientationViewController.xib */; };
@@ -193,6 +197,14 @@
 		B0F8B291224CB06800A8A2AD /* YXRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecorderManager.h; sourceTree = "<group>"; };
 		B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAudioRecorder.m; sourceTree = "<group>"; };
 		D60F761F25870E8A0005CC5B /* CocoaDebug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaDebug.framework; sourceTree = "<group>"; };
+		D60F76292587102D0005CC5B /* WKWebView+PDFLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+PDFLoader.m"; sourceTree = "<group>"; };
+		D60F762A2587102D0005CC5B /* ISPDFProgressPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISPDFProgressPoster.h; sourceTree = "<group>"; };
+		D60F762C2587102D0005CC5B /* ISPDFProgressPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISPDFProgressPoster.m; sourceTree = "<group>"; };
+		D60F762D2587102D0005CC5B /* WKWebView+PDFLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+PDFLoader.h"; sourceTree = "<group>"; };
+		D60F7632258715F50005CC5B /* MyPDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPDFViewController.h; sourceTree = "<group>"; };
+		D60F7633258715F50005CC5B /* MyPDFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPDFViewController.m; sourceTree = "<group>"; };
+		D60F763525873EA10005CC5B /* PDFCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFCell.h; sourceTree = "<group>"; };
+		D60F763625873EA10005CC5B /* PDFCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFCell.m; sourceTree = "<group>"; };
 		D61BD62F248A047E00BDAD0D /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
 		D61BD630248A047E00BDAD0D /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
 		D620E00E2554E0ED00066787 /* ImageOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationViewController.h; sourceTree = "<group>"; };
@@ -503,6 +515,21 @@
 			path = "沙盒查看工具包";
 			sourceTree = "<group>";
 		};
+		D60F76282587102D0005CC5B /* WebView加载PDF */ = {
+			isa = PBXGroup;
+			children = (
+				D60F7632258715F50005CC5B /* MyPDFViewController.h */,
+				D60F7633258715F50005CC5B /* MyPDFViewController.m */,
+				D60F762A2587102D0005CC5B /* ISPDFProgressPoster.h */,
+				D60F762C2587102D0005CC5B /* ISPDFProgressPoster.m */,
+				D60F762D2587102D0005CC5B /* WKWebView+PDFLoader.h */,
+				D60F76292587102D0005CC5B /* WKWebView+PDFLoader.m */,
+				D60F763525873EA10005CC5B /* PDFCell.h */,
+				D60F763625873EA10005CC5B /* PDFCell.m */,
+			);
+			path = "WebView加载PDF";
+			sourceTree = "<group>";
+		};
 		D620E00D2554E0A700066787 /* 图片旋转 */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +680,7 @@
 		E123BAF42133FC45003AE0C9 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				D60F76282587102D0005CC5B /* WebView加载PDF */,
 				D620E00D2554E0A700066787 /* 图片旋转 */,
 				D63F0A3125354E1E00005AC2 /* 验证码输入框 */,
 				D62881F32523359C00A6A0A1 /* 自动布局写小标签格子 */,
@@ -1227,10 +1255,12 @@
 				D6996B2B2521C24100C0A78B /* ViewController+MASAdditions.m in Sources */,
 				D6996B332521C24100C0A78B /* MASViewAttribute.m in Sources */,
 				E19DB29021B50CB100FF0042 /* NSString+Yuency.m in Sources */,
+				D60F7634258715F50005CC5B /* MyPDFViewController.m in Sources */,
 				D6996B2F2521C24100C0A78B /* NSArray+MASAdditions.m in Sources */,
 				E163C3F32193C5E400B63EC5 /* LockView.m in Sources */,
 				D69C26802522E3360046E741 /* LetCenter_ItemBlank_ScrollView.m in Sources */,
 				E123BAF82133FC5F003AE0C9 /* TextFieldViewController.m in Sources */,
+				D60F762F2587102D0005CC5B /* WKWebView+PDFLoader.m in Sources */,
 				E13F22F52187FA4D00F9A965 /* FakeChooseModel.m in Sources */,
 				E1459A1D2122DDDF00293226 /* NSString+BankFinance.m in Sources */,
 				A44AE9DF23137AE3006E2FEB /* DateFormatViewController.m in Sources */,
@@ -1252,6 +1282,7 @@
 				E163C4012193CFEC00B63EC5 /* DrawingBoardViewController.m in Sources */,
 				E1459A1F2122DDDF00293226 /* NSString+ChineseCharactersToSpelling.m in Sources */,
 				B0E9A7942238EBD000787F85 /* RecordingViewController.m in Sources */,
+				D60F763725873EA10005CC5B /* PDFCell.m in Sources */,
 				E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */,
 				E15FD01D21D4CB58003B1B15 /* BankCardListView.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
@@ -1296,6 +1327,7 @@
 				D63F0A3725354E7900005AC2 /* SMSCodeView.m in Sources */,
 				E115D67B210FFA58007514FE /* main.m in Sources */,
 				E163C4022193CFEC00B63EC5 /* HandleImageView.m in Sources */,
+				D60F76302587102D0005CC5B /* ISPDFProgressPoster.m in Sources */,
 				E13A562D21F9B09B006447E3 /* LeftSwipDeleteViewController.m in Sources */,
 				A45399AE22EEA84E00918A12 /* SlidingCircularViewController.m in Sources */,
 				E115D66D210FFA57007514FE /* AppDelegate.m in Sources */,
