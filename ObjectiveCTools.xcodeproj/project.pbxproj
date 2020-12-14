@@ -26,6 +26,8 @@
 		B0F8B294224CB06800A8A2AD /* YXFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28C224CB06800A8A2AD /* YXFilePath.m */; };
 		B0F8B295224CB06800A8A2AD /* YXRecorderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B28D224CB06800A8A2AD /* YXRecorderManager.m */; };
 		B0F8B296224CB06800A8A2AD /* YXAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */; };
+		D60F762425870F070005CC5B /* CocoaDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60F761F25870E8A0005CC5B /* CocoaDebug.framework */; };
+		D60F762525870F070005CC5B /* CocoaDebug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D60F761F25870E8A0005CC5B /* CocoaDebug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D61BD631248A047E00BDAD0D /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BD630248A047E00BDAD0D /* MyTextView.m */; };
 		D620E0112554E0ED00066787 /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D620E00F2554E0ED00066787 /* ImageOrientationViewController.m */; };
 		D620E0122554E0ED00066787 /* ImageOrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D620E0102554E0ED00066787 /* ImageOrientationViewController.xib */; };
@@ -140,6 +142,20 @@
 		E1B8574421B8CC7E00882989 /* RebateTradingKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8574221B8CC7E00882989 /* RebateTradingKeyBoardView.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D60F762625870F070005CC5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D60F762525870F070005CC5B /* CocoaDebug.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A44AE9D22313797D006E2FEB /* YXDateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXDateFormat.h; sourceTree = "<group>"; };
 		A44AE9D3231379BF006E2FEB /* NSDateComponents+YXDateComponentsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+YXDateComponentsCategory.h"; sourceTree = "<group>"; };
@@ -176,6 +192,7 @@
 		B0F8B290224CB06800A8A2AD /* YXFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFilePath.h; sourceTree = "<group>"; };
 		B0F8B291224CB06800A8A2AD /* YXRecorderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecorderManager.h; sourceTree = "<group>"; };
 		B0F8B292224CB06800A8A2AD /* YXAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAudioRecorder.m; sourceTree = "<group>"; };
+		D60F761F25870E8A0005CC5B /* CocoaDebug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaDebug.framework; sourceTree = "<group>"; };
 		D61BD62F248A047E00BDAD0D /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
 		D61BD630248A047E00BDAD0D /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
 		D620E00E2554E0ED00066787 /* ImageOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationViewController.h; sourceTree = "<group>"; };
@@ -386,6 +403,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60F762425870F070005CC5B /* CocoaDebug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +493,14 @@
 				B0F8B28C224CB06800A8A2AD /* YXFilePath.m */,
 			);
 			path = YXRecorder;
+			sourceTree = "<group>";
+		};
+		D60F761E25870E680005CC5B /* 沙盒查看工具包 */ = {
+			isa = PBXGroup;
+			children = (
+				D60F761F25870E8A0005CC5B /* CocoaDebug.framework */,
+			);
+			path = "沙盒查看工具包";
 			sourceTree = "<group>";
 		};
 		D620E00D2554E0A700066787 /* 图片旋转 */ = {
@@ -744,6 +770,7 @@
 		E14599E52122DDDE00293226 /* 三方引用 */ = {
 			isa = PBXGroup;
 			children = (
+				D60F761E25870E680005CC5B /* 沙盒查看工具包 */,
 				D6996B0F2521C24100C0A78B /* Masonry */,
 				E14599E62122DDDE00293226 /* HYBUnicodeReadable */,
 			);
@@ -1102,6 +1129,7 @@
 				E115D664210FFA57007514FE /* Sources */,
 				E115D665210FFA57007514FE /* Frameworks */,
 				E115D666210FFA57007514FE /* Resources */,
+				D60F762625870F070005CC5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1430,6 +1458,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ObjectiveCTools/三方引用/沙盒查看工具包",
+				);
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1445,6 +1477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ObjectiveCTools/三方引用/沙盒查看工具包",
+				);
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

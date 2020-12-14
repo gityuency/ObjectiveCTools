@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+        @{@"PDFViewController": @"PDF下载"},
         @{@"ImageOrientationViewController": @"图片旋转"},
         @{@"SMSCodeViewController": @"一个验证码输入框"},
         @{@"TagsViewController": @"自动布局写标签小格子"},
