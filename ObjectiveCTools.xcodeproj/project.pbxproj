@@ -60,6 +60,9 @@
 		D6B614CD24B3268C00B6EC90 /* AsyncDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614CB24B3268C00B6EC90 /* AsyncDemoViewController.m */; };
 		D6B614CE24B3268C00B6EC90 /* AsyncDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */; };
 		D6B614D124B32D1E00B6EC90 /* AsyncDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */; };
+		D6F9EAF6266DD6F400E3CCD6 /* NSDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9EAF0266DD6F400E3CCD6 /* NSDictionary+NilSafe.m */; };
+		D6F9EAF7266DD6F400E3CCD6 /* NSArray+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9EAF2266DD6F400E3CCD6 /* NSArray+NilSafe.m */; };
+		D6F9EAF8266DD6F400E3CCD6 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9EAF4266DD6F400E3CCD6 /* NSObject+Swizzling.m */; };
 		D6FCA6112521DA08008639B0 /* FloatScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FCA6102521DA08008639B0 /* FloatScrollViewController.m */; };
 		E115D66D210FFA57007514FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66C210FFA57007514FE /* AppDelegate.m */; };
 		E115D670210FFA57007514FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E115D66F210FFA57007514FE /* ViewController.m */; };
@@ -262,6 +265,13 @@
 		D6B614CC24B3268C00B6EC90 /* AsyncDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AsyncDemoViewController.xib; sourceTree = "<group>"; };
 		D6B614CF24B32D1E00B6EC90 /* AsyncDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDemoView.h; sourceTree = "<group>"; };
 		D6B614D024B32D1E00B6EC90 /* AsyncDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncDemoView.m; sourceTree = "<group>"; };
+		D6F9EAEF266DD6F400E3CCD6 /* NSArray+NilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NilSafe.h"; sourceTree = "<group>"; };
+		D6F9EAF0266DD6F400E3CCD6 /* NSDictionary+NilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSafe.m"; sourceTree = "<group>"; };
+		D6F9EAF1266DD6F400E3CCD6 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		D6F9EAF2266DD6F400E3CCD6 /* NSArray+NilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NilSafe.m"; sourceTree = "<group>"; };
+		D6F9EAF3266DD6F400E3CCD6 /* NSDictionary+NilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSafe.h"; sourceTree = "<group>"; };
+		D6F9EAF4266DD6F400E3CCD6 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		D6F9EAF5266DD6F400E3CCD6 /* Swzzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swzzling.h; sourceTree = "<group>"; };
 		D6FCA60F2521DA08008639B0 /* FloatScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatScrollViewController.h; sourceTree = "<group>"; };
 		D6FCA6102521DA08008639B0 /* FloatScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatScrollViewController.m; sourceTree = "<group>"; };
 		E115D668210FFA57007514FE /* ObjectiveCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -627,6 +637,20 @@
 			path = "多重异步最为致命";
 			sourceTree = "<group>";
 		};
+		D6F9EAEE266DD6F400E3CCD6 /* 全局防崩溃 */ = {
+			isa = PBXGroup;
+			children = (
+				D6F9EAF5266DD6F400E3CCD6 /* Swzzling.h */,
+				D6F9EAF1266DD6F400E3CCD6 /* NSObject+Swizzling.h */,
+				D6F9EAF4266DD6F400E3CCD6 /* NSObject+Swizzling.m */,
+				D6F9EAEF266DD6F400E3CCD6 /* NSArray+NilSafe.h */,
+				D6F9EAF2266DD6F400E3CCD6 /* NSArray+NilSafe.m */,
+				D6F9EAF3266DD6F400E3CCD6 /* NSDictionary+NilSafe.h */,
+				D6F9EAF0266DD6F400E3CCD6 /* NSDictionary+NilSafe.m */,
+			);
+			path = "全局防崩溃";
+			sourceTree = "<group>";
+		};
 		D6FCA60E2521D9D9008639B0 /* UIScrollView控件悬浮 */ = {
 			isa = PBXGroup;
 			children = (
@@ -845,6 +869,7 @@
 		E14599F22122DDDF00293226 /* 奇技淫巧 */ = {
 			isa = PBXGroup;
 			children = (
+				D6F9EAEE266DD6F400E3CCD6 /* 全局防崩溃 */,
 				E1950D902153AD1C007D7265 /* 图片无损存取 */,
 				E1950D912153AD30007D7265 /* 获取设备信息 */,
 			);
@@ -1253,6 +1278,7 @@
 				E163C4052193CFEC00B63EC5 /* MyBezierPath.m in Sources */,
 				E199252321A6518600591074 /* NormalPopUpViewController.m in Sources */,
 				D6996B2B2521C24100C0A78B /* ViewController+MASAdditions.m in Sources */,
+				D6F9EAF6266DD6F400E3CCD6 /* NSDictionary+NilSafe.m in Sources */,
 				D6996B332521C24100C0A78B /* MASViewAttribute.m in Sources */,
 				E19DB29021B50CB100FF0042 /* NSString+Yuency.m in Sources */,
 				D60F7634258715F50005CC5B /* MyPDFViewController.m in Sources */,
@@ -1284,6 +1310,7 @@
 				B0E9A7942238EBD000787F85 /* RecordingViewController.m in Sources */,
 				D60F763725873EA10005CC5B /* PDFCell.m in Sources */,
 				E150A7BA21C72FC000953640 /* NSthreadViewController.m in Sources */,
+				D6F9EAF7266DD6F400E3CCD6 /* NSArray+NilSafe.m in Sources */,
 				E15FD01D21D4CB58003B1B15 /* BankCardListView.m in Sources */,
 				E13F22EF2187F5A600F9A965 /* ItemCollectionView.m in Sources */,
 				E15F7AE3218AD8F60011A334 /* UIView+Yuency.m in Sources */,
@@ -1349,6 +1376,7 @@
 				D622B01624B2F64F00CB3CF9 /* LetCenter_ScaleWidth_ScrollView.m in Sources */,
 				B0F8B293224CB06800A8A2AD /* YXFrameRecorder.m in Sources */,
 				D69C267D2522DB2F0046E741 /* LetCenter_FixedWidth_UIScrollView.m in Sources */,
+				D6F9EAF8266DD6F400E3CCD6 /* NSObject+Swizzling.m in Sources */,
 				E1689AEC21C8C99400F85232 /* NSOperationViewController.m in Sources */,
 				D63F0A3425354E6200005AC2 /* SMSCodeViewController.m in Sources */,
 			);
@@ -1489,7 +1517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				DEVELOPMENT_TEAM = BFA354ZFJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ObjectiveCTools/三方引用/沙盒查看工具包",
@@ -1497,7 +1525,7 @@
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuency.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuency.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1508,7 +1536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DPG7R2T6WP;
+				DEVELOPMENT_TEAM = BFA354ZFJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ObjectiveCTools/三方引用/沙盒查看工具包",
@@ -1516,7 +1544,7 @@
 				INFOPLIST_FILE = ObjectiveCTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuency.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuency.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

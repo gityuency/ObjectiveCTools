@@ -12,6 +12,8 @@
 
 @implementation MemoryView
 
+///注意, 对于单次使用的弹窗, 用完就直接销毁, 在用完之后, 把block置为nil是可以的
+///如果是一次点击要同时弹出3个这样的弹窗,那么,这种静态变量的写法就有问题,在第二个弹框使用的时候,就会造成崩溃,原因是这个成员变量的指向已经改变了.
 static ActionBlock selfAction = nil;
 
 + (void)showWithAction:(ActionBlock)action {
