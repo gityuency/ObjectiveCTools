@@ -22,6 +22,7 @@
     [super viewDidLoad];
     
     self.dataArray = @[
+        @{@"AboutTimeViewController": @"时间,时间字符串,时区,日历,格式化到相同"},
         @{@"MyPDFViewController": @"PDF下载"},
         @{@"ImageOrientationViewController": @"图片旋转"},
         @{@"SMSCodeViewController": @"一个验证码输入框"},
